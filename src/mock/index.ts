@@ -42,7 +42,7 @@ const menulist = [{
               name:"运营管理",
               url:"/operation",
               icon:"Files",
-              childre:[
+              children:[
                 {
                   name:"订单管理",
                   url:"/operation/order",
@@ -122,7 +122,7 @@ const menulist2 = [{
               name:"运营管理",
               url:"/operation",
               icon:"Files",
-              childre:[
+              children:[
                 {
                   name:"订单管理",
                   url:"/operation/order",

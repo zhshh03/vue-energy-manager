@@ -3,7 +3,7 @@ import type { AxiosInstance, InternalAxiosRequestConfig,AxiosError,AxiosResponse
 import { ElNotification } from 'element-plus'
 
 export const request:AxiosInstance = axios.create({
-  baseURL: 'request://www.demo.com',
+  baseURL: 'https://www.demo.com',
   timeout: 5000,
 })
 
@@ -22,9 +22,17 @@ request.interceptors.request.use(function (config:InternalAxiosRequestConfig) {
 
 // 添加响应拦截器
 request.interceptors.response.use(function (response:AxiosResponse) {
-    // 2xx 范围内的状态码都会触发该函数。
-    // 对响应数据做点什么
-    return response;
+    const res = response.data
+    // 业务状态码校验
+    if (res.code === 200) {
+      return res
+    }
+    ElNotification({
+      title: '操作失败',
+      message: res.message || '请求异常',
+      type: 'error',
+    })
+    return Promise.reject(new Error(res.message || '请求异常'))
   }, function (error) {
     // 超出 2xx 范围的状态码都会触发该函数。
     // 对响应错误做点什么
