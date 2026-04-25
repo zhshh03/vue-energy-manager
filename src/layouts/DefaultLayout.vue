@@ -5,7 +5,9 @@
         <Menu />
       </el-aside>
       <el-container>
-        <el-header>Header</el-header>
+        <el-header>
+          <TopHeader />
+        </el-header>
         <el-main>
           <router-view></router-view>
         </el-main>
@@ -17,6 +19,7 @@
 
 <script setup>
 import Menu from '@/components/NavMenu/menu.vue'
+import TopHeader from '@/components/TopHeader/topHeader.vue'
 </script>
 
 
