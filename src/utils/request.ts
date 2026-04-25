@@ -33,7 +33,7 @@ request.interceptors.response.use(function (response:AxiosResponse) {
       type: 'error',
     })
     return Promise.reject(new Error(res.message || '请求异常'))
-  }, function (error) {
+  }, function (error:AxiosError) {
     // 超出 2xx 范围的状态码都会触发该函数。
     // 对响应错误做点什么
     ElNotification({
