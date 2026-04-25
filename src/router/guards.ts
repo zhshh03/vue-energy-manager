@@ -14,5 +14,9 @@ router.beforeEach((to) => {
   return {
     path: '/'
   }
- }
+ }else if (to.meta?.needAuth && !userStore.rolus.some((item:string) =>(to.meta.needAuth as string[]).includes(item))) {
+    return {
+      path: '/403'
+    }
+  }
 });
