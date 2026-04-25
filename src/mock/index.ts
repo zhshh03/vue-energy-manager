@@ -9,7 +9,7 @@ mock.setup({
 const menulist = [{
               name:"数据看板",
               url:"/dashboard",
-              icon:"DateLine"
+              icon:"DataLine"
             },
             {
               name:"充电站管理",
@@ -19,12 +19,12 @@ const menulist = [{
                 {
                   name:"充电站监控",
                   url:"/chargingstation/monitor",
-                  icon:"Videocamera"
+                  icon:"VideoCamera"
                 },
                 {
                   name:"营收统计",
                   url:"/chargingstation/revenue",
-                  icon:"DetaAnlysis"
+                  icon:"DataAnalysis"
                 },
                 {
                   name:"充电站管理",
@@ -50,7 +50,7 @@ const menulist = [{
                 },
                 {
                   name:"订单详情",
-                  url:"/operation/order",
+                  url:"/operation/detail",
                   icon:"Share"
                 },
                 {
@@ -89,7 +89,7 @@ const menulist = [{
 const menulist2 = [{
               name:"数据看板",
               url:"/dashboard",
-              icon:"DateLine"
+              icon:"DataLine"
             },
             {
               name:"充电站管理",
@@ -99,12 +99,12 @@ const menulist2 = [{
                 {
                   name:"充电站监控",
                   url:"/chargingstation/monitor",
-                  icon:"Videocamera"
+                  icon:"VideoCamera"
                 },
                 {
                   name:"营收统计",
                   url:"/chargingstation/revenue",
-                  icon:"DetaAnlysis"
+                  icon:"DataAnalysis"
                 },
                 {
                   name:"充电站管理",
@@ -130,7 +130,7 @@ const menulist2 = [{
                 },
                 {
                   name:"订单详情",
-                  url:"/operation/order",
+                  url:"/operation/detail",
                   icon:"Share"
                 },
                 {

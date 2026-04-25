@@ -2,14 +2,18 @@
 
   <el-sub-menu v-if="item.children" :index="item.url">
     <template #title>
-      <el-icon></el-icon>
+      <el-icon>
+        <component :is="item.icon"></component>
+      </el-icon>
       <span>{{item.name}}</span>
     </template>
     <my-menu v-for="child in item.children" :key="child.name" :item="child"></my-menu>
   </el-sub-menu>
   
   <el-menu-item v-else :index="item.url">
-    <el-icon></el-icon>
+    <el-icon>
+    <component :is="item.icon"></component>
+    </el-icon>
     <span>{{item.name}}</span>
   </el-menu-item>
 
@@ -31,3 +35,23 @@ export default defineComponent({
 });
 
 </script>
+
+<style lang="less" scoped>
+.el-menu-item.is-active{
+  background-color: rgb(34, 136, 255) !important;
+  color: #fff !important;
+  div{
+    span{
+      color: #fff;
+    }
+  }
+}
+.el-menu-item:not(.is-active):hover{
+  background-color: transparent !important;
+  color: rgb(34, 136, 255) !important;
+}
+::v-deep .el-sub-menu:not(.is-active) .el-sub-menu__title:hover{
+  background-color: transparent !important;
+  color: rgb(34, 136, 255) !important;
+}
+</style>
