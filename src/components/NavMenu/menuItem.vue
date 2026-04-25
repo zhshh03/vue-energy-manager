@@ -10,7 +10,7 @@
     <my-menu v-for="child in item.children" :key="child.name" :item="child"></my-menu>
   </el-sub-menu>
   
-  <el-menu-item v-else :index="item.url">
+  <el-menu-item v-else :index="item.url" v-show="!(item.name === '订单详情')">
     <el-icon>
     <component :is="item.icon"></component>
     </el-icon>

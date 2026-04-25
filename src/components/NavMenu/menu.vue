@@ -3,16 +3,18 @@
    <img :src="logo" width="34px" height="34px"><img>
     <h1>动力港</h1>
   </div>
-  <el-menu :router="true" default-active="$route.path">
+  <el-menu :router="true" :default-active="route.path">
         <menu-item v-for="item in menuItemList" :key="item.url" :item="item"></menu-item>
   </el-menu>
 </template>
 <script setup>
 import { useUserStore } from '@/store/auth';
+import { useRoute } from 'vue-router';
 import MenuItem from '@/components/NavMenu/menuItem.vue';
 import logo from '@/assets/images/logo.png'
 
 const userStore = useUserStore()
+const route = useRoute()
 const menuItemList = userStore.menu
 </script>
 
