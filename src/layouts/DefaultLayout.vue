@@ -24,8 +24,16 @@ import TabsLayout from './TabsLayout.vue';
 </script>
 
 <style lang="less" scoped>
-.el-aside{
+.common-layout {
   height: 100vh;
+}
+
+.el-container {
+  height: 100%;
+}
+
+.el-aside{
+  height: 100%;
   background-color: white;
   box-shadow: 10px 0 8px -2px rgba(0, 0, 0, 0.2);
 }

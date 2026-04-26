@@ -48,26 +48,196 @@
           </div>
         </div>
       </el-card>
+      <el-card class="mt">
+        <h3>能源统计</h3>
+        <el-row>
+          <el-col :span="6">
+            <div ref="chartRef2" style="width: 100%; height: 400px;"></div>
+          </el-col>
+          <el-col :span="18">
+            <div ref="chartRef" style="width: 100%; height: 400px;"></div>
+          </el-col>
+        </el-row>
+      </el-card>
     </el-col>
     <el-col :span=6>
-      <el-card></el-card>
+      <el-card>
+        <template #header>
+          <div class="card-header">
+            <h3>设备总览</h3>
+          </div>
+        </template>
+        <div ref="chartRef3" style="width: 100%;height: 240px;"></div>
+      </el-card>
     </el-col>
   </el-row>
 </template>
 
 <script setup lang="ts">
-import { ref, markRaw } from 'vue'
-import {
-  Refresh,
-  InfoFilled,
-  CaretTop,
-  Tools,
-  Document,
-  List,
-  PieChart,
-  Wallet,
-  Tickets
-} from '@element-plus/icons-vue'
+import { ref, markRaw, reactive} from 'vue'
+import {Refresh,InfoFilled,CaretTop,Tools,Document,List,PieChart,Wallet,Tickets} from '@element-plus/icons-vue'
+import { useChart } from '@/hooks/useChart'
+import { getChartDataAPI,getChartData2API,getChartData3API } from '@/api/dashboard'
+
+const chartRef = ref<HTMLElement | null>(null)
+const chartRef2 = ref<HTMLElement | null>(null)
+const chartRef3 = ref<HTMLElement | null>(null)
+
+const getChartData = async () => {
+  const chartOptions:any = reactive({
+  title: {
+    text: '电量统计',
+    left: 0
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    top: '5%',
+    data: []
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', "20:00","21:00"]
+  },
+  yAxis: {
+    type: 'value',
+    axisLabel:{
+      formatter:"{value}kw"
+    }
+  },
+  series: [
+    {
+      name: '',
+      type: 'line',
+      data: [],
+      lineStyle:{
+        width:4
+      },
+      itemStyle:{
+        color:"purple",
+        shadowBlur:5,
+        shadowColor:"rgba(0,255,0,0.5)"
+      },
+      smooth: true
+    },
+    {
+      name: '',
+      type: 'line',
+      data: [],
+       lineStyle:{
+        width:4
+      },
+      itemStyle:{
+        color:"lightgreen",
+        shadowBlur:5,
+        shadowColor:"rgba(0,255,0,0.5)"
+      },
+      smooth:true
+    },
+    {
+      name: '',
+      type: 'line',
+      data: [],
+       lineStyle:{
+        width:4
+      },
+      itemStyle:{
+        color:"skyblue",
+        shadowBlur:5,
+        shadowColor:"rgba(0,255,0,0.5)"
+      },
+      smooth:true
+    }
+  ]
+});
+  const res = await getChartDataAPI()
+  chartOptions.legend.data = res.data.list.map((item:any) => item.name)
+  for(let i=0; i<res.data.list.length; i++){
+    chartOptions.series[i].name = res.data.list[i].name
+    chartOptions.series[i].data = res.data.list[i].data
+  }
+  return chartOptions
+}
+
+const getChartData2 = async () => {
+  const chartOptions:any = reactive({
+  legend: {
+    top: 'bottom'
+  },
+  tooltip:{
+    trigger:"item",
+    formatter:"{a}<br/>{b}：{c}"
+  },
+  series: [
+    {
+      name: '营收占比',
+      type: 'pie',
+      radius: ["50%", "70%"],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      emphasis:{
+        label:{
+          show:true,
+          fontSize:"16",
+          fontWeight:"bold"
+        }
+      },
+      data: []
+    }
+  ],
+  graphic:{
+    type:'text',
+    left:"center",
+    top:'center',
+    style:{
+      text:"营收占比",
+      fontSize:20,
+      fill:"#333"
+    }
+  }
+})
+  const res = await getChartData2API()
+  chartOptions.series[0].data = res.data.list
+return chartOptions
+}
+
+const getChartData3 = async () => {
+  const chartOptions:any = reactive(
+    {
+  radar: {
+    indicator: [
+      { name: '闲置数', max: 65 },
+      { name: '使用数', max: 160 },
+      { name: '故障数', max: 300 },
+      { name: '维修数', max: 380 },
+      { name: '更换数', max: 520 },
+      { name: '报废数', max: 250 }
+    ]
+  },
+  series: [
+    {
+      name: '设备总览',
+      type: 'radar',
+      data: [
+        {
+          value: [],
+          name: '设备总览'
+        }
+      ]
+    }
+  ]
+}
+  )
+  const res = await getChartData3API()
+  chartOptions.series[0].data[0].value = res.data.list
+  return chartOptions
+}
+
+useChart(chartRef,getChartData)
+useChart(chartRef2,getChartData2)
+useChart(chartRef3,getChartData3)
 
 const equipmentData = ref([
   {
