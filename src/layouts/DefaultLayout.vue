@@ -1,5 +1,5 @@
 <template>
-   <div class="common-layout">
+  <div class="common-layout">
     <el-container>
       <el-aside width="200px">
         <Menu />
@@ -16,11 +16,10 @@
   </div>
 </template>
 
-
 <script setup>
-import Menu from '@/components/NavMenu/menu.vue'
-import TopHeader from '@/components/TopHeader/topHeader.vue'
-import TabsLayout from './TabsLayout.vue';
+import Menu from "@/components/NavMenu/menu.vue";
+import TopHeader from "@/components/TopHeader/topHeader.vue";
+import TabsLayout from "./TabsLayout.vue";
 </script>
 
 <style lang="less" scoped>
@@ -32,18 +31,17 @@ import TabsLayout from './TabsLayout.vue';
   height: 100%;
 }
 
-.el-aside{
+.el-aside {
   height: 100%;
   background-color: white;
   box-shadow: 10px 0 8px -2px rgba(0, 0, 0, 0.2);
 }
-.el-main{
+.el-main {
   overflow: auto;
   background-color: #f0f2f5;
 }
 
-.el-header{
+.el-header {
   padding: 0 !important;
 }
-
 </style>

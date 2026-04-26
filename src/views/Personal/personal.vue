@@ -2,5 +2,4 @@
   <div>个人中心</div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

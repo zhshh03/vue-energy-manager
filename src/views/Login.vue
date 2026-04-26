@@ -27,7 +27,12 @@
           />
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" class="login-btn" :loading="loading" @click="handleLogin">
+          <el-button
+            type="primary"
+            class="login-btn"
+            :loading="loading"
+            @click="handleLogin"
+          >
             登录
           </el-button>
         </el-form-item>
@@ -37,39 +42,39 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
-import { useRouter } from 'vue-router'
-import { ElMessage } from 'element-plus'
-import { User, Lock } from '@element-plus/icons-vue'
-import type { FormInstance, FormRules } from 'element-plus'
-import { useUserStore } from '@/store/auth'
+import { ref, reactive } from "vue";
+import { useRouter } from "vue-router";
+import { ElMessage } from "element-plus";
+import { User, Lock } from "@element-plus/icons-vue";
+import type { FormInstance, FormRules } from "element-plus";
+import { useUserStore } from "@/store/auth";
 
-const router = useRouter()
-const formRef = ref<FormInstance>()
-const loading = ref(false)
+const router = useRouter();
+const formRef = ref<FormInstance>();
+const loading = ref(false);
 
 const formData = reactive({
-  username: '',
-  password: ''
-})
+  username: "",
+  password: "",
+});
 
 const rules: FormRules = {
-  username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
-  password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
-}
+  username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
+  password: [{ required: true, message: "请输入密码", trigger: "blur" }],
+};
 
 async function handleLogin() {
-  const userStore = useUserStore()
-  const valid = await formRef.value?.validate().catch(() => false)
-  if (!valid) return
-  loading.value = true
+  const userStore = useUserStore();
+  const valid = await formRef.value?.validate().catch(() => false);
+  if (!valid) return;
+  loading.value = true;
   try {
     // TODO: 替换为实际登录接口
-    await userStore.login(formData)
-    ElMessage.success('登录成功')
-    router.push('/')
+    await userStore.login(formData);
+    ElMessage.success("登录成功");
+    router.push("/");
   } finally {
-    loading.value = false
+    loading.value = false;
   }
 }
 </script>
@@ -81,7 +86,7 @@ async function handleLogin() {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('../assets/images/bg.png');
+  background-image: url("../assets/images/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

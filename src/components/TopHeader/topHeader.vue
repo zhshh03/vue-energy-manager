@@ -7,9 +7,10 @@
         </el-icon>
       </el-badge>
       <el-avatar
-        src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"/>
+        src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"
+      />
 
-        <el-dropdown @command="handleCommand">
+      <el-dropdown @command="handleCommand">
         <span class="el-dropdown-link">
           欢迎你{{ userName }}
           <el-icon class="el-icon--right">
@@ -18,8 +19,12 @@
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item icon="User"command="user">个人中心</el-dropdown-item>
-            <el-dropdown-item icon="SwitchButton" command="logout">退出登录</el-dropdown-item>
+            <el-dropdown-item icon="User" command="user"
+              >个人中心</el-dropdown-item
+            >
+            <el-dropdown-item icon="SwitchButton" command="logout"
+              >退出登录</el-dropdown-item
+            >
           </el-dropdown-menu>
         </template>
       </el-dropdown>
@@ -28,21 +33,21 @@
 </template>
 
 <script lang="ts" setup>
-import { useUserStore } from '@/store/auth';
-import { useRouter } from 'vue-router';
+import { useUserStore } from "@/store/auth";
+import { useRouter } from "vue-router";
 
-const router = useRouter()
-const userStore = useUserStore()
-const userName = userStore.username
+const router = useRouter();
+const userStore = useUserStore();
+const userName = userStore.username;
 
-const handleCommand = (command: string) =>{
-  if(command === 'logout'){
-    userStore.logout()
-    router.push('/login')
-  }else {
-    router.push('/personal')
+const handleCommand = (command: string) => {
+  if (command === "logout") {
+    userStore.logout();
+    router.push("/login");
+  } else {
+    router.push("/personal");
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
@@ -96,5 +101,4 @@ const handleCommand = (command: string) =>{
     }
   }
 }
-
 </style>

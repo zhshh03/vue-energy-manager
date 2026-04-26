@@ -2,21 +2,26 @@ import router from "./index";
 import { useUserStore } from "@/store/auth";
 
 router.beforeEach((to) => {
-  const userStore = useUserStore()
-  const isLogin = userStore.token
- if(!isLogin) {
-  if(to.path !== '/login') {
-    return {
-      path: '/login'
+  const userStore = useUserStore();
+  const isLogin = userStore.token;
+  if (!isLogin) {
+    if (to.path !== "/login") {
+      return {
+        path: "/login",
+      };
     }
-  }
- }else if(to.path === '/login') {
-  return {
-    path: '/'
-  }
- }else if (to.meta?.needAuth && !userStore.rolus.some((item:string) =>(to.meta.needAuth as string[]).includes(item))) {
+  } else if (to.path === "/login") {
     return {
-      path: '/403'
-    }
+      path: "/",
+    };
+  } else if (
+    to.meta?.needAuth &&
+    !userStore.rolus.some((item: string) =>
+      (to.meta.needAuth as string[]).includes(item),
+    )
+  ) {
+    return {
+      path: "/403",
+    };
   }
 });

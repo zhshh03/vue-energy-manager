@@ -5,4 +5,4 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
-export type { MenuItem }
+export type { MenuItem };
