@@ -9,7 +9,7 @@
           <TopHeader />
         </el-header>
         <el-main>
-          <router-view></router-view>
+          <tabs-layout></tabs-layout>
         </el-main>
       </el-container>
     </el-container>
@@ -20,8 +20,8 @@
 <script setup>
 import Menu from '@/components/NavMenu/menu.vue'
 import TopHeader from '@/components/TopHeader/topHeader.vue'
+import TabsLayout from './TabsLayout.vue';
 </script>
-
 
 <style lang="less" scoped>
 .el-aside{
