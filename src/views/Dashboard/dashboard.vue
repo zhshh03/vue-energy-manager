@@ -1,15 +1,18 @@
 <template>
   <el-row :gutter="20">
     <el-col :span=18>
+
       <!-- 今日设备运行状态 -->
       <el-card class="status-card">
-        <div class="card-header">
+        <template #header>
+          <div class="card-header">
           <h3>今日设备运行状态</h3>
           <div class="header-right">
-            <p>更新时间：2024年8月31日</p>
+            <p>更新时间：2026年4月30日</p>
             <el-icon color="#86909c" class="refresh-icon"><Refresh /></el-icon>
           </div>
         </div>
+        </template>
         <div class="equipment-list">
           <div class="equipment-item" v-for="(item, index) in equipmentData" :key="index">
             <div class="item-top">
@@ -38,7 +41,11 @@
 
       <!-- 常用功能 -->
       <el-card class="function-card">
-        <h3>常用功能</h3>
+        <template #header>
+          <div class="card-header">
+            <h3>常用功能</h3>
+          </div>
+        </template>
         <div class="function-list">
           <div class="function-item" v-for="(func, index) in functionList" :key="index">
             <div class="func-icon" :style="{ background: func.bgColor }">
@@ -48,8 +55,13 @@
           </div>
         </div>
       </el-card>
+
       <el-card class="mt">
-        <h3>能源统计</h3>
+        <template #header>
+          <div class="card-header">
+            <h3>能源统计</h3>
+          </div>
+        </template>
         <el-row>
           <el-col :span="6">
             <div ref="chartRef2" style="width: 100%; height: 400px;"></div>
@@ -60,6 +72,7 @@
         </el-row>
       </el-card>
     </el-col>
+
     <el-col :span=6>
       <el-card>
         <template #header>
@@ -69,13 +82,90 @@
         </template>
         <div ref="chartRef3" style="width: 100%;height: 240px;"></div>
       </el-card>
-    </el-col>
-  </el-row>
+
+      <el-card class="mt">
+        <template #header>
+          <div class="card-header">
+            <h3>营收统计表</h3>
+          </div>
+        </template>
+        <ul class="ranking-list">
+          <li class="ranking-item">
+            <span class="rank top-rank" style="background: #52c41a;">1</span>
+            <span class="store-name">广州</span>
+            <span class="sales">52,457</span>
+            <span class="percent up">24%<el-icon><CaretTop /></el-icon></span>
+          </li>
+          <li class="ranking-item">
+            <span class="rank top-rank" style="background: #1890ff;">2</span>
+            <span class="store-name">上海</span>
+            <span class="sales">323,234</span>
+            <span class="percent down">24%<el-icon><CaretBottom /></el-icon></span>
+          </li>
+          <li class="ranking-item">
+            <span class="rank top-rank" style="background: #faad14;">3</span>
+            <span class="store-name">佛山</span>
+            <span class="sales">192,255</span>
+            <span class="percent down">24%<el-icon><CaretBottom /></el-icon></span>
+          </li>
+          <li class="ranking-item">
+            <span class="rank">4</span>
+            <span class="store-name">珠海</span>
+            <span class="sales">17,540</span>
+            <span class="percent up">24%<el-icon><CaretTop /></el-icon></span>
+          </li>
+          <li class="ranking-item">
+            <span class="rank">5</span>
+            <span class="store-name">深圳</span>
+            <span class="sales">662,337</span>
+            <span class="percent down">24%<el-icon><CaretBottom /></el-icon></span>
+          </li>
+          <li class="ranking-item">
+            <span class="rank">6</span>
+            <span class="store-name">厦门</span>
+            <span class="sales">22,941</span>
+            <span class="percent up">24%<el-icon><CaretTop /></el-icon></span>
+          </li>
+          <li class="ranking-item">
+            <span class="rank">7</span>
+            <span class="store-name">长沙</span>
+            <span class="sales">565,221</span>
+            <span class="percent up">24%<el-icon><CaretTop /></el-icon></span>
+          </li>
+        </ul>
+      </el-card>
+
+      <el-card class="mt">
+        <template #header>
+          <div class="card-header">
+            <h3>故障警报</h3>
+          </div>
+        </template>
+        <el-timeline class="alarm-timeline">
+          <el-timeline-item timestamp="2026/4/12" placement="top" type="danger" :hollow="true">
+            <el-card>
+              <h4>矿业北路通讯中断</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2026/4/3" placement="top" type="warning" :hollow="true">
+            <el-card>
+              <h4>黄河南路超出服务区域</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2026/4/2" placement="top" type="danger" :hollow="true">
+            <el-card>
+              <h4>6号机组异常断电</h4>
+            </el-card>
+          </el-timeline-item>
+        </el-timeline>
+            </el-card>
+          </el-col>
+        </el-row>
 </template>
 
 <script setup lang="ts">
 import { ref, markRaw, reactive} from 'vue'
-import {Refresh,InfoFilled,CaretTop,Tools,Document,List,PieChart,Wallet,Tickets} from '@element-plus/icons-vue'
+import {Refresh,InfoFilled,CaretTop,CaretBottom,Tools,Document,List,PieChart,Wallet,Tickets} from '@element-plus/icons-vue'
 import { useChart } from '@/hooks/useChart'
 import { getChartDataAPI,getChartData2API,getChartData3API } from '@/api/dashboard'
 
@@ -287,7 +377,7 @@ const functionList = ref([
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     h3 {
       font-size: 18px;
@@ -435,6 +525,120 @@ const functionList = ref([
       span {
         font-size: 13px;
         color: #4e5969;
+      }
+    }
+  }
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .ranking-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid #f2f3f5;
+
+    &:nth-child(even) {
+      background-color: #f2f3f5;
+      border-radius: 8px;
+      margin: 0 -8px;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .rank {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #4e5969;
+      flex-shrink: 0;
+
+      &.top-rank {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+
+    .store-name {
+      margin-left: 10px;
+      font-size: 15px;
+      color: #1d2129;
+      flex: 1;
+    }
+
+    .sales {
+      font-size: 16px;
+      font-weight: 600;
+      color: #86909c;
+      margin-right: 20px;
+    }
+
+    .percent {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      gap: 2px;
+
+      &.up {
+        color: #00b42a;
+      }
+
+      &.down {
+        color: #f53f3f;
+      }
+    }
+  }
+}
+
+.alarm-timeline {
+  padding-left: 0;
+
+  :deep(.el-timeline-item) {
+    padding-bottom: 10px;
+
+    .el-timeline-item__wrapper {
+      padding-left: 18px;
+    }
+
+    .el-timeline-item__node {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .el-timeline-item__tail {
+      top: calc(50% + 10px);
+    }
+
+    .el-timeline-item__timestamp {
+      margin-bottom: 4px;
+      font-size: 12px;
+      color: #86909c;
+    }
+
+    .el-card {
+      margin: 0 !important;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+
+      :deep(&__body) {
+        padding: 6px 12px;
+      }
+
+      h4 {
+        font-size: 13px;
+        color: #1d2129;
+        margin: 0;
+        font-weight: normal;
       }
     }
   }
