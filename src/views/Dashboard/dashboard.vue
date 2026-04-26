@@ -56,7 +56,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, markRaw } from 'vue'
 import {
   Refresh,
   InfoFilled,
@@ -100,12 +100,12 @@ const equipmentData = ref([
 ])
 
 const functionList = ref([
-  { name: '设备维修', icon: Tools, bgColor: '#faad14' },
-  { name: '每日日报', icon: Document, bgColor: '#1890ff' },
-  { name: '任务进度', icon: List, bgColor: '#722ed1' },
-  { name: '营收占比', icon: PieChart, bgColor: '#eb2f96' },
-  { name: '营收统计', icon: Wallet, bgColor: '#1890ff' },
-  { name: '待办事项', icon: Tickets, bgColor: '#f5222d' }
+  { name: '设备维修', icon: markRaw(Tools), bgColor: '#faad14' },
+  { name: '每日日报', icon: markRaw(Document), bgColor: '#1890ff' },
+  { name: '任务进度', icon: markRaw(List), bgColor: '#722ed1' },
+  { name: '营收占比', icon: markRaw(PieChart), bgColor: '#eb2f96' },
+  { name: '营收统计', icon: markRaw(Wallet), bgColor: '#1890ff' },
+  { name: '待办事项', icon: markRaw(Tickets), bgColor: '#f5222d' }
 ])
 </script>
 
