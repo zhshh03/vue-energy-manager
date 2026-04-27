@@ -47,7 +47,7 @@
       </el-col>
     </el-row>
     <div class="fr mb mr">
-      <el-button type="primary" icon="Plus">新增充电站</el-button>
+      <el-button type="primary" icon="Plus" @click="add">新增充电站</el-button>
     </div>
     <el-table :data="tableData" style="width: 100%" v-loading="loading">
       <el-table-column type="index" label="序号" width="60" />
@@ -98,14 +98,17 @@
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
     />
+    <StationForm />
   </el-card>
 </template>
 
 <script setup lang="ts">
 import { onMounted, reactive, ref } from "vue";
 import { getListApi } from "@/api/chargingstation";
+import StationForm from "@/views/Chargingstation/components/StationForm.vue";
+import type { RowType } from "@/types/station";
 
-const tableData = ref([]);
+const tableData = ref<RowType[]>([]);
 const select = ref("name");
 const total = ref<number>(0);
 const loading = ref<boolean>(false);
@@ -128,7 +131,6 @@ const getList = async () => {
     status: formParams.value,
     [select.value]: formParams.input,
   });
-  console.log(res);
   tableData.value = res.data.list;
   total.value = res.data.total;
   loading.value = false;
@@ -158,6 +160,10 @@ const handleSizeChange = (val: number) => {
 const handleCurrentChange = (val: number) => {
   pageInfo.value.page = val;
   getList();
+};
+//新增充电站
+const add = () => {
+  console.log("新增充电站");
 };
 
 onMounted(() => {
