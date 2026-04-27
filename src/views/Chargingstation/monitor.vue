@@ -47,7 +47,9 @@
       </el-col>
     </el-row>
     <div class="fr mb mr">
-      <el-button type="primary" icon="Plus" @click="add">新增充电站</el-button>
+      <el-button type="primary" icon="Plus" @click="addStation"
+        >新增充电站</el-button
+      >
     </div>
     <el-table :data="tableData" style="width: 100%" v-loading="loading">
       <el-table-column type="index" label="序号" width="60" />
@@ -77,12 +79,16 @@
               @click="handleEdit(scope.row)"
               >编辑</el-button
             >
-            <el-button
-              type="danger"
-              size="small"
-              @click="handleDelete(scope.row)"
-              >删除</el-button
+            <el-popconfirm
+              class="box-item"
+              title="确定删除吗？"
+              @confirm="handleDelete(scope.row)"
+              placement="left"
             >
+              <template #reference>
+                <el-button type="danger" size="small">删除</el-button>
+              </template>
+            </el-popconfirm>
           </el-space>
         </template>
       </el-table-column>
@@ -98,7 +104,7 @@
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
     />
-    <StationForm />
+    <StationForm ref="stationFormRef" @submit="getList" />
   </el-card>
 </template>
 
@@ -107,11 +113,16 @@ import { onMounted, reactive, ref } from "vue";
 import { getListApi } from "@/api/chargingstation";
 import StationForm from "@/views/Chargingstation/components/StationForm.vue";
 import type { RowType } from "@/types/station";
+import { useStationStore } from "@/store/station";
+import { deleteStationApi } from "@/api/station";
+import { ElMessage } from "element-plus";
 
 const tableData = ref<RowType[]>([]);
 const select = ref("name");
 const total = ref<number>(0);
 const loading = ref<boolean>(false);
+const stationFormRef = ref();
+const stationStore = useStationStore();
 
 //表单数据
 const formParams = reactive({
@@ -145,11 +156,19 @@ const resetForm = () => {
 };
 //编辑
 const handleEdit = (row: any) => {
-  console.log(row);
+  stationStore.setRowData(row);
+  open();
 };
 //删除
-const handleDelete = (row: any) => {
-  console.log(row);
+const handleDelete = async (row: any) => {
+  await deleteStationApi(row.id);
+  ElMessage.success("删除成功");
+  getList();
+};
+//新增
+const addStation = () => {
+  stationStore.resizeRowData();
+  open();
 };
 //更改分页数
 const handleSizeChange = (val: number) => {
@@ -161,9 +180,9 @@ const handleCurrentChange = (val: number) => {
   pageInfo.value.page = val;
   getList();
 };
-//新增充电站
-const add = () => {
-  console.log("新增充电站");
+//打开对话框
+const open = () => {
+  stationFormRef.value?.openDialog();
 };
 
 onMounted(() => {

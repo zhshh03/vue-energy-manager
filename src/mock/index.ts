@@ -672,6 +672,46 @@ let chargingStation = [
   },
 ];
 const originalChargingStation = JSON.parse(JSON.stringify(chargingStation));
+//新增站点接口
+mock.mock("https://www.demo.com/addStation", "post", (options: any) => {
+  const newStation = JSON.parse(options.body);
+  chargingStation.unshift(newStation);
+  return {
+    code: 200,
+    message: "新增成功",
+    success: true,
+  };
+});
+//编辑站点接口（id、status、now不可修改）
+mock.mock("https://www.demo.com/editStation", "post", (options: any) => {
+  const editedData = JSON.parse(options.body);
+  const index = chargingStation.findIndex((item) => item.id === editedData.id);
+  if (index !== -1) {
+    chargingStation[index] = {
+      ...chargingStation[index],
+      name: editedData.name,
+      city: editedData.city,
+      person: editedData.person,
+      tel: editedData.tel,
+      fast: editedData.fast,
+      slow: editedData.slow,
+      fault: editedData.fault,
+    };
+    return { code: 200, message: "编辑成功", success: true };
+  }
+  return { code: 404, message: "站点不存在", success: false };
+});
+//删除站点接口
+mock.mock("https://www.demo.com/deleteStation", "post", (options: any) => {
+  const { id } = JSON.parse(options.body);
+  const index = chargingStation.findIndex((item) => item.id === id);
+  if (index !== -1) {
+    chargingStation.splice(index, 1);
+    return { code: 200, message: "删除成功", success: true };
+  }
+  return { code: 404, message: "站点不存在", success: false };
+});
+//获取站点列表接口
 mock.mock("https://www.demo.com/stationList", "post", (options: any) => {
   chargingStation = originalChargingStation;
   const { id, name, status, page, pageSize } = options.body

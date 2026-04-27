@@ -6,7 +6,7 @@ interface RowType {
   tel: string;
   fast: string;
   slow: string;
-  status: number;
+  status?: number;
   now: string;
   fault: string;
 }
