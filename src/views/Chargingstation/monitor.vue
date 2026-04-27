@@ -19,7 +19,7 @@
     <el-row :gutter="20">
       <el-col :span="6">
         <el-input
-          v-model="formParams.input"
+          v-model.trim="formParams.input"
           style="max-width: 600px"
           placeholder="请输入站点名称、ID"
           class="input-with-select"
@@ -135,7 +135,10 @@ const getList = async () => {
 };
 //重置
 const resetForm = () => {
-  ((formParams.input = ""), (formParams.value = 1), (pageInfo.value.page = 1));
+  ((formParams.input = ""),
+    (formParams.value = 1),
+    (pageInfo.value.page = 1),
+    (select.value = "name"));
   getList();
 };
 //编辑
