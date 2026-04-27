@@ -3,7 +3,7 @@ import request from "./request";
 interface ResponseData {
   code: number;
   message: string;
-  data: string;
+  data: any;
 }
 
 function get(url: string, params?: any): Promise<ResponseData> {
