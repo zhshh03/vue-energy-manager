@@ -1,7 +1,19 @@
 <template>
   <el-card>
     <div class="mb">
-      <el-select style="width: 300px" placeholder="选择站点名称"></el-select>
+      <el-select
+        v-model="value"
+        filterable
+        style="width: 300px"
+        placeholder="选择站点名称"
+      >
+        <el-option
+          v-for="item in options"
+          :key="item.id"
+          :label="item.name"
+          :value="item.name"
+        ></el-option>
+      </el-select>
     </div>
     <div style="margin-bottom: 30px">
       <el-radio-group size="large">
@@ -43,95 +55,28 @@
           </div>
         </div>
       </el-col>
-      <el-col :span="6">
-        <div class="station-card">
-          <div class="item">
-            <div class="pic">
-              <p>空闲中</p>
-              <i class="iconfont icon-chongdianzhuang"></i>
-              <p>80%</p>
-            </div>
-            <div class="info">
-              <h3>CD1002</h3>
-              <p>电压：314v</p>
-              <p>电流：212.2A</p>
-              <p>功率：21KW</p>
-              <p>温度：32°C</p>
-            </div>
-          </div>
-          <div class="btn">
-            <div class="divder"></div>
-            <div class="btn-footer">
-              <span class="warn-text">暂无预警</span>
-              <div>
-                <el-button size="small">维保记录</el-button>
-                <el-button size="small" type="primary">使用记录</el-button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </el-col>
-      <el-col :span="6">
-        <div class="station-card">
-          <div class="item">
-            <div class="pic">
-              <p>空闲中</p>
-              <i class="iconfont icon-chongdianzhuang"></i>
-              <p>80%</p>
-            </div>
-            <div class="info">
-              <h3>CD1003</h3>
-              <p>电压：314v</p>
-              <p>电流：212.2A</p>
-              <p>功率：21KW</p>
-              <p>温度：32°C</p>
-            </div>
-          </div>
-          <div class="btn">
-            <div class="divder"></div>
-            <div class="btn-footer">
-              <span class="warn-text">暂无预警</span>
-              <div>
-                <el-button size="small">维保记录</el-button>
-                <el-button size="small" type="primary">使用记录</el-button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </el-col>
-      <el-col :span="6">
-        <div class="station-card">
-          <div class="item">
-            <div class="pic">
-              <p>空闲中</p>
-              <i class="iconfont icon-chongdianzhuang"></i>
-              <p>80%</p>
-            </div>
-            <div class="info">
-              <h3>CD1004</h3>
-              <p>电压：314v</p>
-              <p>电流：212.2A</p>
-              <p>功率：21KW</p>
-              <p>温度：32°C</p>
-            </div>
-          </div>
-          <div class="btn">
-            <div class="divder"></div>
-            <div class="btn-footer">
-              <span class="warn-text">暂无预警</span>
-              <div>
-                <el-button size="small">维保记录</el-button>
-                <el-button size="small" type="primary">使用记录</el-button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </el-col>
     </el-row>
   </el-card>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { getCurrentListApi } from "@/api/chargingstation";
+import { ref, onMounted } from "vue";
+
+const options = ref<any>([]);
+const value = ref("");
+const dataList = ref<any>([]);
+const loadData = async () => {
+  const { data } = await getCurrentListApi();
+  options.value = data;
+  dataList.value = data.list;
+  console.log(data);
+};
+
+onMounted(() => {
+  loadData();
+});
+</script>
 
 <style scoped lang="less">
 .el-col {
