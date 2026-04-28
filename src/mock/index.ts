@@ -236,6 +236,45 @@ mock.mock("https://www.demo.com/equipment", "get", () => {
   };
 });
 
+//新增站点接口
+mock.mock("https://www.demo.com/addStation", "post", (options: any) => {
+  const newStation = JSON.parse(options.body);
+  chargingStation.unshift(newStation);
+  return {
+    code: 200,
+    message: "新增成功",
+    success: true,
+  };
+});
+//编辑站点接口（id、status、now不可修改）
+mock.mock("https://www.demo.com/editStation", "post", (options: any) => {
+  const editedData = JSON.parse(options.body);
+  const index = chargingStation.findIndex((item) => item.id === editedData.id);
+  if (index !== -1) {
+    chargingStation[index] = {
+      ...chargingStation[index],
+      name: editedData.name,
+      city: editedData.city,
+      person: editedData.person,
+      tel: editedData.tel,
+      fast: editedData.fast,
+      slow: editedData.slow,
+      fault: editedData.fault,
+    };
+    return { code: 200, message: "编辑成功", success: true };
+  }
+  return { code: 404, message: "站点不存在", success: false };
+});
+//删除站点接口
+mock.mock("https://www.demo.com/deleteStation", "post", (options: any) => {
+  const { id } = JSON.parse(options.body);
+  const index = chargingStation.findIndex((item) => item.id === id);
+  if (index !== -1) {
+    chargingStation.splice(index, 1);
+    return { code: 200, message: "删除成功", success: true };
+  }
+  return { code: 404, message: "站点不存在", success: false };
+});
 //充电桩监控表格接口数据
 let chargingStation = [
   {
@@ -672,45 +711,6 @@ let chargingStation = [
   },
 ];
 const originalChargingStation = JSON.parse(JSON.stringify(chargingStation));
-//新增站点接口
-mock.mock("https://www.demo.com/addStation", "post", (options: any) => {
-  const newStation = JSON.parse(options.body);
-  chargingStation.unshift(newStation);
-  return {
-    code: 200,
-    message: "新增成功",
-    success: true,
-  };
-});
-//编辑站点接口（id、status、now不可修改）
-mock.mock("https://www.demo.com/editStation", "post", (options: any) => {
-  const editedData = JSON.parse(options.body);
-  const index = chargingStation.findIndex((item) => item.id === editedData.id);
-  if (index !== -1) {
-    chargingStation[index] = {
-      ...chargingStation[index],
-      name: editedData.name,
-      city: editedData.city,
-      person: editedData.person,
-      tel: editedData.tel,
-      fast: editedData.fast,
-      slow: editedData.slow,
-      fault: editedData.fault,
-    };
-    return { code: 200, message: "编辑成功", success: true };
-  }
-  return { code: 404, message: "站点不存在", success: false };
-});
-//删除站点接口
-mock.mock("https://www.demo.com/deleteStation", "post", (options: any) => {
-  const { id } = JSON.parse(options.body);
-  const index = chargingStation.findIndex((item) => item.id === id);
-  if (index !== -1) {
-    chargingStation.splice(index, 1);
-    return { code: 200, message: "删除成功", success: true };
-  }
-  return { code: 404, message: "站点不存在", success: false };
-});
 //获取站点列表接口
 mock.mock("https://www.demo.com/stationList", "post", (options: any) => {
   chargingStation = originalChargingStation;
@@ -758,6 +758,465 @@ mock.mock("https://www.demo.com/revenueChart", "get", () => {
           data: [600, 400, 600, 700, 800, 400, 700],
         },
       ],
+    },
+  };
+});
+//营收统计接口数据
+let chargingStation2 = [
+  {
+    name: "贵阳甲秀楼充电站",
+    id: "VXZ10030",
+    city: "贵阳",
+    count: 114,
+    electricity: 7850,
+    parkingFee: 2950,
+    serviceFee: 6950,
+    month: 5050,
+    member: 3400,
+    percent: -2.2,
+    mpercnet: -1.4,
+  },
+  {
+    name: "成都春熙路充电站",
+    id: "VCD10031",
+    city: "成都",
+    count: 156,
+    electricity: 9200,
+    parkingFee: 3400,
+    serviceFee: 8100,
+    month: 5800,
+    member: 4100,
+    percent: 3.5,
+    mpercnet: 1.2,
+  },
+  {
+    name: "重庆解放碑充电站",
+    id: "VCQ10032",
+    city: "重庆",
+    count: 98,
+    electricity: 6300,
+    parkingFee: 2100,
+    serviceFee: 5800,
+    month: 4200,
+    member: 2800,
+    percent: -1.8,
+    mpercnet: -0.6,
+  },
+  {
+    name: "武汉黄鹤楼充电站",
+    id: "VWH10033",
+    city: "武汉",
+    count: 132,
+    electricity: 8100,
+    parkingFee: 2700,
+    serviceFee: 7200,
+    month: 4800,
+    member: 3200,
+    percent: 2.8,
+    mpercnet: 0.9,
+  },
+  {
+    name: "南京夫子庙充电站",
+    id: "VNJ10034",
+    city: "南京",
+    count: 145,
+    electricity: 8600,
+    parkingFee: 3100,
+    serviceFee: 7600,
+    month: 5200,
+    member: 3600,
+    percent: 3.1,
+    mpercnet: 1.5,
+  },
+  {
+    name: "杭州西湖充电站",
+    id: "VHZ10035",
+    city: "杭州",
+    count: 168,
+    electricity: 9800,
+    parkingFee: 3600,
+    serviceFee: 8700,
+    month: 6200,
+    member: 4400,
+    percent: -4.0,
+    mpercnet: 2.1,
+  },
+  {
+    name: "西安大雁塔充电站",
+    id: "VXA10036",
+    city: "西安",
+    count: 108,
+    electricity: 7100,
+    parkingFee: 2400,
+    serviceFee: 6400,
+    month: 4600,
+    member: 3100,
+    percent: 2.0,
+    mpercnet: -0.3,
+  },
+  {
+    name: "长沙岳麓山充电站",
+    id: "VCS10037",
+    city: "长沙",
+    count: 89,
+    electricity: 5800,
+    parkingFee: 1900,
+    serviceFee: 5200,
+    month: 3800,
+    member: 2500,
+    percent: -1.5,
+    mpercnet: -1.8,
+  },
+  {
+    name: "郑州二七广场充电站",
+    id: "VZZ10038",
+    city: "郑州",
+    count: 121,
+    electricity: 7500,
+    parkingFee: 2600,
+    serviceFee: 6700,
+    month: 4700,
+    member: 3200,
+    percent: 2.4,
+    mpercnet: 0.7,
+  },
+  {
+    name: "昆明翠湖充电站",
+    id: "VKM10039",
+    city: "昆明",
+    count: 76,
+    electricity: 5200,
+    parkingFee: 1700,
+    serviceFee: 4800,
+    month: 3500,
+    member: 2300,
+    percent: -1.2,
+    mpercnet: -2.1,
+  },
+  {
+    name: "济南趵突泉充电站",
+    id: "VJN10040",
+    city: "济南",
+    count: 95,
+    electricity: 6100,
+    parkingFee: 2000,
+    serviceFee: 5500,
+    month: 3900,
+    member: 2600,
+    percent: -1.6,
+    mpercnet: -0.9,
+  },
+  {
+    name: "福州三坊七巷充电站",
+    id: "VFZ10041",
+    city: "福州",
+    count: 103,
+    electricity: 6800,
+    parkingFee: 2300,
+    serviceFee: 6100,
+    month: 4300,
+    member: 2900,
+    percent: 1.9,
+    mpercnet: 0.4,
+  },
+  {
+    name: "合肥天鹅湖充电站",
+    id: "VHF10042",
+    city: "合肥",
+    count: 87,
+    electricity: 5600,
+    parkingFee: 1800,
+    serviceFee: 5000,
+    month: 3600,
+    member: 2400,
+    percent: 1.3,
+    mpercnet: -1.6,
+  },
+  {
+    name: "太原五一广场充电站",
+    id: "VTY10043",
+    city: "太原",
+    count: 68,
+    electricity: 4500,
+    parkingFee: 1500,
+    serviceFee: 4100,
+    month: 3000,
+    member: 2000,
+    percent: -0.8,
+    mpercnet: -2.5,
+  },
+  {
+    name: "石家庄裕华路充电站",
+    id: "VSJ10044",
+    city: "石家庄",
+    count: 92,
+    electricity: 6000,
+    parkingFee: 2000,
+    serviceFee: 5400,
+    month: 3800,
+    member: 2500,
+    percent: 1.5,
+    mpercnet: -1.1,
+  },
+  {
+    name: "长春人民广场充电站",
+    id: "VCC10045",
+    city: "长春",
+    count: 72,
+    electricity: 4800,
+    parkingFee: 1600,
+    serviceFee: 4300,
+    month: 3100,
+    member: 2100,
+    percent: -0.9,
+    mpercnet: -2.3,
+  },
+  {
+    name: "南昌八一广场充电站",
+    id: "VNC10046",
+    city: "南昌",
+    count: 83,
+    electricity: 5500,
+    parkingFee: 1800,
+    serviceFee: 4900,
+    month: 3500,
+    member: 2300,
+    percent: 1.1,
+    mpercnet: -1.9,
+  },
+  {
+    name: "南宁青秀山充电站",
+    id: "VNN10047",
+    city: "南宁",
+    count: 78,
+    electricity: 5100,
+    parkingFee: 1700,
+    serviceFee: 4600,
+    month: 3300,
+    member: 2200,
+    percent: -1.0,
+    mpercnet: -2.0,
+  },
+  {
+    name: "贵阳花溪公园充电站",
+    id: "VGY10048",
+    city: "贵阳",
+    count: 64,
+    electricity: 4200,
+    parkingFee: 1400,
+    serviceFee: 3800,
+    month: 2800,
+    member: 1900,
+    percent: -0.6,
+    mpercnet: -2.8,
+  },
+  {
+    name: "兰州中山桥充电站",
+    id: "VLZ10049",
+    city: "兰州",
+    count: 55,
+    electricity: 3800,
+    parkingFee: 1300,
+    serviceFee: 3500,
+    month: 2600,
+    member: 1700,
+    percent: 0.5,
+    mpercnet: -3.0,
+  },
+  {
+    name: "海口万绿园充电站",
+    id: "VHK10050",
+    city: "海口",
+    count: 91,
+    electricity: 5900,
+    parkingFee: 2000,
+    serviceFee: 5300,
+    month: 3700,
+    member: 2500,
+    percent: 1.4,
+    mpercnet: -1.2,
+  },
+  {
+    name: "银川悦海湾充电站",
+    id: "VYC10051",
+    city: "银川",
+    count: 48,
+    electricity: 3400,
+    parkingFee: 1100,
+    serviceFee: 3100,
+    month: 2300,
+    member: 1500,
+    percent: -0.3,
+    mpercnet: -3.2,
+  },
+  {
+    name: "西宁中心广场充电站",
+    id: "VXN10052",
+    city: "西宁",
+    count: 42,
+    electricity: 3100,
+    parkingFee: 1000,
+    serviceFee: 2800,
+    month: 2100,
+    member: 1400,
+    percent: 0.2,
+    mpercnet: -3.5,
+  },
+  {
+    name: "呼和浩特新华广场充电站",
+    id: "VHH10053",
+    city: "呼和浩特",
+    count: 58,
+    electricity: 4000,
+    parkingFee: 1300,
+    serviceFee: 3600,
+    month: 2700,
+    member: 1800,
+    percent: 0.7,
+    mpercnet: -2.6,
+  },
+  {
+    name: "乌鲁木齐红山充电站",
+    id: "VWL10054",
+    city: "乌鲁木齐",
+    count: 45,
+    electricity: 3200,
+    parkingFee: 1100,
+    serviceFee: 2900,
+    month: 2200,
+    member: 1500,
+    percent: 0.4,
+    mpercnet: -3.1,
+  },
+  {
+    name: "拉萨布达拉宫充电站",
+    id: "VLS10055",
+    city: "拉萨",
+    count: 35,
+    electricity: 2600,
+    parkingFee: 900,
+    serviceFee: 2400,
+    month: 1800,
+    member: 1200,
+    percent: -0.1,
+    mpercnet: -3.8,
+  },
+  {
+    name: "深圳南山科技园充电站",
+    id: "VSZ10056",
+    city: "深圳",
+    count: 185,
+    electricity: 10800,
+    parkingFee: 4100,
+    serviceFee: 9500,
+    month: 6800,
+    member: 4800,
+    percent: 4.8,
+    mpercnet: 2.5,
+  },
+  {
+    name: "广州天河城充电站",
+    id: "VGZ10057",
+    city: "广州",
+    count: 162,
+    electricity: 9500,
+    parkingFee: 3500,
+    serviceFee: 8400,
+    month: 6000,
+    member: 4200,
+    percent: -3.8,
+    mpercnet: 1.8,
+  },
+  {
+    name: "上海陆家嘴充电站",
+    id: "VSH10058",
+    city: "上海",
+    count: 198,
+    electricity: 11500,
+    parkingFee: 4300,
+    serviceFee: 10100,
+    month: 7200,
+    member: 5100,
+    percent: 5.2,
+    mpercnet: 2.8,
+  },
+  {
+    name: "北京国贸充电站",
+    id: "VBJ10059",
+    city: "北京",
+    count: 210,
+    electricity: 12200,
+    parkingFee: 4600,
+    serviceFee: 10800,
+    month: 7600,
+    member: 5400,
+    percent: -5.6,
+    mpercnet: 3.1,
+  },
+  {
+    name: "天津滨江道充电站",
+    id: "VTJ10060",
+    city: "天津",
+    count: 118,
+    electricity: 7300,
+    parkingFee: 2500,
+    serviceFee: 6500,
+    month: 4600,
+    member: 3100,
+    percent: 2.1,
+    mpercnet: -0.2,
+  },
+  {
+    name: "苏州观前街充电站",
+    id: "VSU10061",
+    city: "苏州",
+    count: 137,
+    electricity: 8200,
+    parkingFee: 2800,
+    serviceFee: 7300,
+    month: 5100,
+    member: 3500,
+    percent: -2.9,
+    mpercnet: 1.0,
+  },
+  {
+    name: "厦门鼓浪屿充电站",
+    id: "VXM10062",
+    city: "厦门",
+    count: 105,
+    electricity: 6900,
+    parkingFee: 2300,
+    serviceFee: 6200,
+    month: 4400,
+    member: 3000,
+    percent: 1.9,
+    mpercnet: 0.3,
+  },
+];
+const originalChargingStation2 = JSON.parse(JSON.stringify(chargingStation2));
+//获取站点列表接口
+mock.mock("https://www.demo.com/revenueList", "post", (options: any) => {
+  chargingStation = originalChargingStation2;
+  const {
+    name = "",
+    page = 1,
+    pageSize = 10,
+  } = options.body ? JSON.parse(options.body) : {};
+  if (name) {
+    chargingStation2 = chargingStation2.filter((item) =>
+      item.name.includes(name),
+    );
+  }
+
+  const total = chargingStation2.length;
+  const start = (page - 1) * pageSize;
+  const paginatedItems = chargingStation2.slice(start, start + pageSize);
+  return {
+    code: 200,
+    success: true,
+    data: {
+      list: paginatedItems,
+      total,
     },
   };
 });
