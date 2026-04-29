@@ -1,42 +1,41 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background-color: rgba(241, 242, 246);
 }
 
-.fl{
+.fl {
   float: left;
 }
 
-.fr{
+.fr {
   float: right;
 }
 
-.clear:after{
-  content: '';
+.clear:after {
+  content: "";
   height: 0;
   display: block;
   clear: both;
 }
 
-.mt{
-  margin-top:20px;
+.mt {
+  margin-top: 20px;
 }
 
-.mb{
+.mb {
   margin-bottom: 20px;
 }
 
-.ml{
+.ml {
   margin-left: 20px;
 }
 
-.mr{
+.mr {
   margin-right: 20px;
 }
-
 
 ::-webkit-scrollbar {
   display: none;
