@@ -16,7 +16,7 @@
       </el-select>
     </div>
     <div style="margin-bottom: 30px">
-      <el-radio-group size="large" v-model="radio">
+      <el-radio-group size="large" v-model="radio" @change="handleChange">
         <el-radio-button :label="`全部(${checkSum})`" :value="0" />
         <el-radio-button :label="`空闲中(${checkCount(1)})`" :value="1" />
         <el-radio-button :label="`充电中(${checkCount(2)})`" :value="2" />
@@ -27,7 +27,7 @@
       </el-radio-group>
     </div>
     <el-row :gutter="20">
-      <el-col :span="6" v-for="item in dataList" :key="item.id">
+      <el-col :span="6" v-for="item in dataListCopy" :key="item.id">
         <div class="station-card">
           <div class="item">
             <div class="pic" :class="'status-' + item.status">
@@ -67,16 +67,17 @@
 <script setup lang="ts">
 import { getCurrentListApi } from "@/api/chargingstation";
 import { computed } from "@vue/reactivity";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 
 const options = ref<any>([]);
 const value = ref<string>("");
 const dataList = ref<any>([]);
+const dataListCopy = ref<any>([]);
 const loadData = async () => {
   const { data } = await getCurrentListApi();
   options.value = data;
   dataList.value = data[0].list;
-  console.log(data);
+  dataListCopy.value = data[0].list;
 };
 
 const checkCount = (num: number) => {
@@ -84,6 +85,15 @@ const checkCount = (num: number) => {
 };
 
 const radio = ref<number>(0);
+
+const handleChange = () => {
+  dataListCopy.value = dataList.value;
+  if (radio.value !== 0) {
+    dataListCopy.value = dataListCopy.value.filter(
+      (item: any) => item.status === radio.value,
+    );
+  }
+};
 
 const checkSum = computed(
   () =>
@@ -94,6 +104,13 @@ const checkSum = computed(
     checkCount(5) +
     checkCount(6),
 );
+
+watch(value, () => {
+  const res = options.value.filter((item: any) => item.name === value.value);
+  dataListCopy.value = res[0]?.list || [];
+  dataList.value = res[0]?.list || [];
+  radio.value = 0;
+});
 
 onMounted(() => {
   loadData();
