@@ -1233,6 +1233,10 @@ let chargingPile = [
         power: "21KW",
         tem: "32℃",
         status: 1,
+        recode: [
+          { time: "06:26:25", msg: "充电52度，花费27元" },
+          { time: "17:28:51", msg: "充电80度，花费60元" },
+        ],
       },
       {
         id: "BJGM02",
@@ -1242,6 +1246,12 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "70%",
+        recode: [
+          { time: "05:42:48", msg: "充电28度，花费34元" },
+          { time: "21:26:23", msg: "充电86度，花费39元" },
+          { time: "09:49:45", msg: "充电75度，花费108元" },
+          { time: "05:11:15", msg: "充电80度，花费26元" },
+        ],
       },
       {
         id: "BJGM03",
@@ -1251,6 +1261,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "45%",
+        recode: [
+          { time: "16:00:10", msg: "充电44度，花费30元" },
+          { time: "14:33:34", msg: "充电40度，花费22元" },
+          { time: "01:00:46", msg: "充电74度，花费51元" },
+        ],
       },
       {
         id: "BJGM04",
@@ -1259,6 +1274,13 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "09:54:17", msg: "充电86度，花费52元" },
+          { time: "03:28:01", msg: "充电48度，花费70元" },
+          { time: "19:07:54", msg: "充电107度，花费33元" },
+          { time: "22:41:09", msg: "充电29度，花费31元" },
+          { time: "19:36:06", msg: "充电54度，花费31元" },
+        ],
       },
       {
         id: "BJGM05",
@@ -1268,6 +1290,11 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "88%",
+        recode: [
+          { time: "22:54:28", msg: "充电100度，花费20元" },
+          { time: "10:28:42", msg: "充电53度，花费57元" },
+          { time: "11:54:37", msg: "充电102度，花费74元" },
+        ],
       },
       {
         id: "BJGM06",
@@ -1276,6 +1303,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "06:46:56", msg: "充电108度，花费57元" },
+          { time: "07:08:43", msg: "充电78度，花费105元" },
+          { time: "19:27:34", msg: "充电108度，花费54元" },
+          { time: "05:18:47", msg: "充电65度，花费84元" },
+          { time: "05:20:14", msg: "充电39度，花费81元" },
+          { time: "12:03:23", msg: "充电39度，花费102元" },
+        ],
       },
       {
         id: "BJGM07",
@@ -1285,6 +1320,7 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "32%",
+        recode: [],
       },
       {
         id: "BJGM08",
@@ -1293,6 +1329,10 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "06:16:17", msg: "充电98度，花费24元" },
+          { time: "16:21:58", msg: "充电78度，花费21元" },
+        ],
       },
       {
         id: "BJGM09",
@@ -1301,6 +1341,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 4,
+        recode: [],
       },
       {
         id: "BJGM10",
@@ -1310,6 +1351,7 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "56%",
+        recode: [],
       },
       {
         id: "BJGM11",
@@ -1318,6 +1360,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "12:09:08", msg: "充电95度，花费71元" },
+          { time: "18:57:25", msg: "充电89度，花费27元" },
+          { time: "05:52:38", msg: "充电22度，花费30元" },
+        ],
       },
       {
         id: "BJGM12",
@@ -1327,6 +1374,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "15%",
+        recode: [
+          { time: "06:58:48", msg: "充电97度，花费105元" },
+        ],
       },
       {
         id: "BJGM13",
@@ -1335,6 +1385,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 6,
+        recode: [
+          { time: "20:53:49", msg: "充电34度，花费14元" },
+        ],
       },
       {
         id: "BJGM14",
@@ -1343,6 +1396,13 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "01:37:59", msg: "充电87度，花费95元" },
+          { time: "01:18:33", msg: "充电53度，花费107元" },
+          { time: "05:48:47", msg: "充电61度，花费30元" },
+          { time: "07:15:51", msg: "充电15度，花费12元" },
+          { time: "03:08:50", msg: "充电38度，花费93元" },
+        ],
       },
       {
         id: "BJGM15",
@@ -1352,6 +1412,14 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "62%",
+        recode: [
+          { time: "01:36:55", msg: "充电88度，花费25元" },
+          { time: "11:56:38", msg: "充电18度，花费94元" },
+          { time: "04:20:26", msg: "充电29度，花费60元" },
+          { time: "03:20:55", msg: "充电96度，花费57元" },
+          { time: "09:57:12", msg: "充电34度，花费103元" },
+          { time: "13:49:14", msg: "充电45度，花费89元" },
+        ],
       },
       {
         id: "BJGM16",
@@ -1360,6 +1428,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 5,
+        recode: [
+          { time: "22:43:34", msg: "充电47度，花费46元" },
+          { time: "02:32:12", msg: "充电40度，花费17元" },
+          { time: "05:09:45", msg: "充电63度，花费31元" },
+          { time: "02:14:49", msg: "充电15度，花费86元" },
+          { time: "03:10:35", msg: "充电69度，花费20元" },
+        ],
       },
       {
         id: "BJGM17",
@@ -1369,6 +1444,13 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "80%",
+        recode: [
+          { time: "00:06:23", msg: "充电45度，花费44元" },
+          { time: "23:17:18", msg: "充电98度，花费44元" },
+          { time: "19:58:29", msg: "充电11度，花费38元" },
+          { time: "09:06:52", msg: "充电63度，花费60元" },
+          { time: "04:30:57", msg: "充电98度，花费96元" },
+        ],
       },
     ],
   },
@@ -1384,6 +1466,13 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "58%",
+        recode: [
+          { time: "13:55:36", msg: "充电79度，花费48元" },
+          { time: "17:42:47", msg: "充电37度，花费65元" },
+          { time: "20:33:16", msg: "充电103度，花费13元" },
+          { time: "16:41:13", msg: "充电91度，花费94元" },
+          { time: "08:54:50", msg: "充电108度，花费94元" },
+        ],
       },
       {
         id: "CDCX02",
@@ -1392,6 +1481,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "22:40:19", msg: "充电49度，花费46元" },
+          { time: "06:30:46", msg: "充电76度，花费86元" },
+          { time: "23:27:14", msg: "充电32度，花费36元" },
+        ],
       },
       {
         id: "CDCX03",
@@ -1401,6 +1495,7 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "73%",
+        recode: [],
       },
       {
         id: "CDCX04",
@@ -1409,6 +1504,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "19:22:58", msg: "充电82度，花费20元" },
+          { time: "01:57:54", msg: "充电30度，花费61元" },
+          { time: "08:49:42", msg: "充电61度，花费97元" },
+          { time: "06:56:05", msg: "充电74度，花费49元" },
+          { time: "07:51:58", msg: "充电64度，花费93元" },
+          { time: "22:37:02", msg: "充电61度，花费22元" },
+        ],
       },
       {
         id: "CDCX05",
@@ -1418,6 +1521,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "41%",
+        recode: [
+          { time: "02:28:32", msg: "充电68度，花费37元" },
+          { time: "15:36:59", msg: "充电71度，花费65元" },
+          { time: "17:31:31", msg: "充电29度，花费91元" },
+        ],
       },
       {
         id: "CDCX06",
@@ -1426,6 +1534,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 6,
+        recode: [
+          { time: "23:56:50", msg: "充电14度，花费68元" },
+          { time: "18:04:37", msg: "充电79度，花费104元" },
+          { time: "04:11:23", msg: "充电105度，花费89元" },
+        ],
       },
       {
         id: "CDCX07",
@@ -1434,6 +1547,13 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "22:38:35", msg: "充电94度，花费57元" },
+          { time: "03:40:00", msg: "充电91度，花费51元" },
+          { time: "12:23:52", msg: "充电19度，花费51元" },
+          { time: "22:39:34", msg: "充电100度，花费47元" },
+          { time: "10:19:01", msg: "充电73度，花费30元" },
+        ],
       },
       {
         id: "CDCX08",
@@ -1443,6 +1563,7 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "90%",
+        recode: [],
       },
       {
         id: "CDCX09",
@@ -1451,6 +1572,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 4,
+        recode: [
+          { time: "20:06:19", msg: "充电106度，花费21元" },
+          { time: "17:05:47", msg: "充电38度，花费80元" },
+          { time: "16:25:07", msg: "充电28度，花费18元" },
+          { time: "08:58:03", msg: "充电56度，花费56元" },
+        ],
       },
       {
         id: "CDCX10",
@@ -1459,6 +1586,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "07:31:04", msg: "充电101度，花费61元" },
+          { time: "15:36:51", msg: "充电74度，花费66元" },
+          { time: "18:00:13", msg: "充电74度，花费46元" },
+        ],
       },
       {
         id: "CDCX11",
@@ -1468,6 +1600,14 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "27%",
+        recode: [
+          { time: "07:37:07", msg: "充电72度，花费62元" },
+          { time: "00:28:31", msg: "充电102度，花费83元" },
+          { time: "15:04:59", msg: "充电41度，花费92元" },
+          { time: "21:45:44", msg: "充电37度，花费79元" },
+          { time: "02:01:06", msg: "充电55度，花费109元" },
+          { time: "10:42:48", msg: "充电58度，花费84元" },
+        ],
       },
       {
         id: "CDCX12",
@@ -1476,6 +1616,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "13:41:49", msg: "充电20度，花费65元" },
+          { time: "00:01:33", msg: "充电105度，花费41元" },
+        ],
       },
       {
         id: "CDCX13",
@@ -1485,6 +1629,12 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "65%",
+        recode: [
+          { time: "09:17:58", msg: "充电43度，花费107元" },
+          { time: "12:23:45", msg: "充电82度，花费69元" },
+          { time: "12:25:53", msg: "充电22度，花费11元" },
+          { time: "16:39:02", msg: "充电16度，花费73元" },
+        ],
       },
       {
         id: "CDCX14",
@@ -1493,6 +1643,7 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 5,
+        recode: [],
       },
       {
         id: "CDCX15",
@@ -1501,6 +1652,7 @@ let chargingPile = [
         power: "0KW",
         tem: "30℃",
         status: 1,
+        recode: [],
       },
       {
         id: "CDCX16",
@@ -1510,6 +1662,7 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "52%",
+        recode: [],
       },
       {
         id: "CDCX17",
@@ -1518,6 +1671,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 3,
+        recode: [
+          { time: "18:41:36", msg: "充电29度，花费91元" },
+          { time: "11:40:30", msg: "充电32度，花费61元" },
+          { time: "20:13:40", msg: "充电31度，花费86元" },
+        ],
       },
       {
         id: "CDCX18",
@@ -1526,6 +1684,9 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "18:09:04", msg: "充电84度，花费54元" },
+        ],
       },
       {
         id: "CDCX19",
@@ -1535,6 +1696,10 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "38%",
+        recode: [
+          { time: "13:39:18", msg: "充电103度，花费10元" },
+          { time: "12:06:06", msg: "充电87度，花费91元" },
+        ],
       },
       {
         id: "CDCX20",
@@ -1543,6 +1708,11 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "04:32:52", msg: "充电92度，花费36元" },
+          { time: "11:36:58", msg: "充电54度，花费16元" },
+          { time: "02:02:07", msg: "充电85度，花费90元" },
+        ],
       },
     ],
   },
@@ -1557,6 +1727,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "18:21:24", msg: "充电45度，花费18元" },
+        ],
       },
       {
         id: "CQJF02",
@@ -1566,6 +1739,9 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "76%",
+        recode: [
+          { time: "07:15:42", msg: "充电86度，花费53元" },
+        ],
       },
       {
         id: "CQJF03",
@@ -1574,6 +1750,13 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "13:42:29", msg: "充电81度，花费55元" },
+          { time: "16:18:40", msg: "充电106度，花费105元" },
+          { time: "23:57:25", msg: "充电73度，花费69元" },
+          { time: "09:36:40", msg: "充电85度，花费10元" },
+          { time: "05:47:28", msg: "充电59度，花费105元" },
+        ],
       },
       {
         id: "CQJF04",
@@ -1583,6 +1766,14 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "33%",
+        recode: [
+          { time: "21:09:31", msg: "充电64度，花费81元" },
+          { time: "11:55:40", msg: "充电24度，花费18元" },
+          { time: "17:50:11", msg: "充电75度，花费65元" },
+          { time: "07:35:28", msg: "充电68度，花费49元" },
+          { time: "17:08:16", msg: "充电107度，花费48元" },
+          { time: "16:16:09", msg: "充电63度，花费34元" },
+        ],
       },
       {
         id: "CQJF05",
@@ -1591,6 +1782,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "04:33:50", msg: "充电22度，花费25元" },
+          { time: "13:28:32", msg: "充电79度，花费45元" },
+          { time: "10:48:51", msg: "充电73度，花费48元" },
+          { time: "20:37:44", msg: "充电107度，花费39元" },
+          { time: "17:39:25", msg: "充电103度，花费107元" },
+        ],
       },
       {
         id: "CQJF06",
@@ -1600,6 +1798,11 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "85%",
+        recode: [
+          { time: "21:30:40", msg: "充电79度，花费41元" },
+          { time: "13:03:23", msg: "充电96度，花费44元" },
+          { time: "11:42:57", msg: "充电13度，花费70元" },
+        ],
       },
       {
         id: "CQJF07",
@@ -1608,6 +1811,9 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 4,
+        recode: [
+          { time: "02:46:46", msg: "充电98度，花费61元" },
+        ],
       },
       {
         id: "CQJF08",
@@ -1616,6 +1822,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "CQJF09",
@@ -1625,6 +1832,7 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "48%",
+        recode: [],
       },
       {
         id: "CQJF10",
@@ -1633,6 +1841,11 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "23:29:56", msg: "充电99度，花费62元" },
+          { time: "02:06:11", msg: "充电75度，花费43元" },
+          { time: "19:17:34", msg: "充电102度，花费58元" },
+        ],
       },
       {
         id: "CQJF11",
@@ -1641,6 +1854,13 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 6,
+        recode: [
+          { time: "08:31:47", msg: "充电97度，花费89元" },
+          { time: "15:57:39", msg: "充电108度，花费68元" },
+          { time: "03:08:09", msg: "充电98度，花费21元" },
+          { time: "19:21:14", msg: "充电44度，花费51元" },
+          { time: "11:36:18", msg: "充电24度，花费26元" },
+        ],
       },
       {
         id: "CQJF12",
@@ -1650,6 +1870,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "60%",
+        recode: [
+          { time: "05:44:17", msg: "充电84度，花费10元" },
+        ],
       },
       {
         id: "CQJF13",
@@ -1658,6 +1881,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "00:52:03", msg: "充电26度，花费104元" },
+          { time: "07:31:27", msg: "充电30度，花费13元" },
+          { time: "21:50:36", msg: "充电101度，花费45元" },
+        ],
       },
       {
         id: "CQJF14",
@@ -1666,6 +1894,14 @@ let chargingPile = [
         power: "0KW",
         tem: "30℃",
         status: 5,
+        recode: [
+          { time: "19:37:10", msg: "充电23度，花费87元" },
+          { time: "14:14:42", msg: "充电69度，花费26元" },
+          { time: "13:41:08", msg: "充电12度，花费79元" },
+          { time: "05:15:31", msg: "充电67度，花费96元" },
+          { time: "21:39:37", msg: "充电107度，花费106元" },
+          { time: "01:16:17", msg: "充电62度，花费108元" },
+        ],
       },
       {
         id: "CQJF15",
@@ -1675,6 +1911,14 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "22%",
+        recode: [
+          { time: "06:15:42", msg: "充电59度，花费27元" },
+          { time: "18:16:21", msg: "充电106度，花费108元" },
+          { time: "07:45:33", msg: "充电87度，花费35元" },
+          { time: "07:47:51", msg: "充电15度，花费11元" },
+          { time: "02:30:58", msg: "充电28度，花费18元" },
+          { time: "17:05:45", msg: "充电35度，花费27元" },
+        ],
       },
     ],
   },
@@ -1690,6 +1934,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "67%",
+        recode: [
+          { time: "13:24:57", msg: "充电34度，花费100元" },
+        ],
       },
       {
         id: "WHHL02",
@@ -1698,6 +1945,7 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [],
       },
       {
         id: "WHHL03",
@@ -1706,6 +1954,13 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "00:40:18", msg: "充电67度，花费21元" },
+          { time: "21:25:07", msg: "充电85度，花费92元" },
+          { time: "19:08:29", msg: "充电18度，花费108元" },
+          { time: "04:49:09", msg: "充电64度，花费29元" },
+          { time: "17:15:15", msg: "充电96度，花费97元" },
+        ],
       },
       {
         id: "WHHL04",
@@ -1715,6 +1970,12 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "44%",
+        recode: [
+          { time: "03:19:03", msg: "充电42度，花费27元" },
+          { time: "01:44:03", msg: "充电61度，花费69元" },
+          { time: "08:03:14", msg: "充电88度，花费20元" },
+          { time: "01:27:28", msg: "充电36度，花费24元" },
+        ],
       },
       {
         id: "WHHL05",
@@ -1724,6 +1985,14 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "81%",
+        recode: [
+          { time: "20:45:34", msg: "充电57度，花费17元" },
+          { time: "11:09:59", msg: "充电88度，花费11元" },
+          { time: "12:08:22", msg: "充电82度，花费71元" },
+          { time: "14:38:39", msg: "充电15度，花费32元" },
+          { time: "22:49:40", msg: "充电10度，花费57元" },
+          { time: "05:59:49", msg: "充电18度，花费66元" },
+        ],
       },
       {
         id: "WHHL06",
@@ -1732,6 +2001,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 4,
+        recode: [
+          { time: "10:30:19", msg: "充电37度，花费17元" },
+          { time: "21:49:27", msg: "充电69度，花费19元" },
+          { time: "20:28:35", msg: "充电98度，花费11元" },
+          { time: "18:16:10", msg: "充电92度，花费65元" },
+        ],
       },
       {
         id: "WHHL07",
@@ -1740,6 +2015,13 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "12:01:01", msg: "充电50度，花费87元" },
+          { time: "08:19:24", msg: "充电68度，花费104元" },
+          { time: "22:55:57", msg: "充电85度，花费80元" },
+          { time: "04:36:44", msg: "充电35度，花费77元" },
+          { time: "04:37:19", msg: "充电27度，花费82元" },
+        ],
       },
       {
         id: "WHHL08",
@@ -1749,6 +2031,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "19%",
+        recode: [
+          { time: "13:30:25", msg: "充电102度，花费49元" },
+          { time: "03:43:26", msg: "充电47度，花费61元" },
+          { time: "08:54:06", msg: "充电24度，花费63元" },
+        ],
       },
       {
         id: "WHHL09",
@@ -1757,6 +2044,7 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [],
       },
       {
         id: "WHHL10",
@@ -1765,6 +2053,14 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "05:40:00", msg: "充电50度，花费88元" },
+          { time: "20:37:16", msg: "充电73度，花费22元" },
+          { time: "20:41:41", msg: "充电95度，花费102元" },
+          { time: "13:00:06", msg: "充电75度，花费109元" },
+          { time: "03:15:01", msg: "充电13度，花费79元" },
+          { time: "22:33:29", msg: "充电90度，花费108元" },
+        ],
       },
       {
         id: "WHHL11",
@@ -1774,6 +2070,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "55%",
+        recode: [
+          { time: "08:29:00", msg: "充电95度，花费36元" },
+          { time: "19:33:14", msg: "充电99度，花费89元" },
+          { time: "09:47:50", msg: "充电64度，花费92元" },
+        ],
       },
       {
         id: "WHHL12",
@@ -1782,6 +2083,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "20:31:38", msg: "充电87度，花费17元" },
+        ],
       },
       {
         id: "WHHL13",
@@ -1791,6 +2095,9 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "89%",
+        recode: [
+          { time: "16:57:24", msg: "充电27度，花费63元" },
+        ],
       },
       {
         id: "WHHL14",
@@ -1799,6 +2106,14 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 5,
+        recode: [
+          { time: "08:34:10", msg: "充电48度，花费42元" },
+          { time: "11:47:08", msg: "充电57度，花费84元" },
+          { time: "10:23:16", msg: "充电61度，花费98元" },
+          { time: "19:27:54", msg: "充电82度，花费51元" },
+          { time: "09:51:16", msg: "充电34度，花费38元" },
+          { time: "21:16:24", msg: "充电32度，花费38元" },
+        ],
       },
       {
         id: "WHHL15",
@@ -1807,6 +2122,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "07:39:37", msg: "充电30度，花费77元" },
+        ],
       },
       {
         id: "WHHL16",
@@ -1816,6 +2134,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "36%",
+        recode: [
+          { time: "10:24:54", msg: "充电47度，花费82元" },
+        ],
       },
       {
         id: "WHHL17",
@@ -1824,6 +2145,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 3,
+        recode: [
+          { time: "23:43:07", msg: "充电27度，花费22元" },
+          { time: "13:22:36", msg: "充电109度，花费64元" },
+          { time: "00:16:04", msg: "充电94度，花费77元" },
+          { time: "02:44:17", msg: "充电18度，花费57元" },
+        ],
       },
       {
         id: "WHHL18",
@@ -1832,6 +2159,9 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "16:27:46", msg: "充电10度，花费84元" },
+        ],
       },
       {
         id: "WHHL19",
@@ -1841,6 +2171,7 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "72%",
+        recode: [],
       },
       {
         id: "WHHL20",
@@ -1850,6 +2181,12 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "69%",
+        recode: [
+          { time: "01:08:45", msg: "充电26度，花费26元" },
+          { time: "17:41:50", msg: "充电21度，花费26元" },
+          { time: "13:26:47", msg: "充电48度，花费54元" },
+          { time: "23:08:46", msg: "充电79度，花费96元" },
+        ],
       },
       {
         id: "WHHL21",
@@ -1859,6 +2196,14 @@ let chargingPile = [
         tem: "24℃",
         status: 2,
         percent: "75%",
+        recode: [
+          { time: "11:57:41", msg: "充电94度，花费45元" },
+          { time: "17:51:12", msg: "充电76度，花费84元" },
+          { time: "00:04:54", msg: "充电42度，花费109元" },
+          { time: "05:36:59", msg: "充电11度，花费57元" },
+          { time: "17:41:10", msg: "充电44度，花费39元" },
+          { time: "01:40:00", msg: "充电12度，花费10元" },
+        ],
       },
       {
         id: "WHHL22",
@@ -1867,6 +2212,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "21:50:15", msg: "充电81度，花费102元" },
+          { time: "13:14:59", msg: "充电76度，花费67元" },
+          { time: "06:33:06", msg: "充电89度，花费55元" },
+          { time: "13:45:42", msg: "充电91度，花费107元" },
+          { time: "13:09:01", msg: "充电38度，花费78元" },
+          { time: "05:04:48", msg: "充电77度，花费32元" },
+        ],
       },
     ],
   },
@@ -1881,6 +2234,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "14:39:15", msg: "充电39度，花费57元" },
+          { time: "18:15:24", msg: "充电89度，花费36元" },
+          { time: "19:31:04", msg: "充电90度，花费94元" },
+        ],
       },
       {
         id: "NJFM02",
@@ -1890,6 +2248,11 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "78%",
+        recode: [
+          { time: "05:46:07", msg: "充电17度，花费10元" },
+          { time: "01:04:52", msg: "充电96度，花费86元" },
+          { time: "01:57:21", msg: "充电57度，花费37元" },
+        ],
       },
       {
         id: "NJFM03",
@@ -1898,6 +2261,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "23:36:08", msg: "充电30度，花费90元" },
+          { time: "07:23:49", msg: "充电69度，花费109元" },
+          { time: "10:54:41", msg: "充电15度，花费44元" },
+          { time: "18:22:32", msg: "充电63度，花费41元" },
+        ],
       },
       {
         id: "NJFM04",
@@ -1907,6 +2276,14 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "51%",
+        recode: [
+          { time: "13:26:24", msg: "充电60度，花费12元" },
+          { time: "11:07:07", msg: "充电73度，花费30元" },
+          { time: "15:37:45", msg: "充电20度，花费17元" },
+          { time: "22:21:13", msg: "充电22度，花费27元" },
+          { time: "20:24:56", msg: "充电40度，花费19元" },
+          { time: "22:59:31", msg: "充电21度，花费39元" },
+        ],
       },
       {
         id: "NJFM05",
@@ -1915,6 +2292,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "NJFM06",
@@ -1924,6 +2302,7 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "25%",
+        recode: [],
       },
       {
         id: "NJFM07",
@@ -1932,6 +2311,7 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 4,
+        recode: [],
       },
       {
         id: "NJFM08",
@@ -1941,6 +2321,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "63%",
+        recode: [
+          { time: "00:15:19", msg: "充电106度，花费64元" },
+        ],
       },
       {
         id: "NJFM09",
@@ -1949,6 +2332,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "16:39:45", msg: "充电75度，花费10元" },
+          { time: "23:33:38", msg: "充电30度，花费50元" },
+          { time: "20:22:00", msg: "充电47度，花费20元" },
+          { time: "02:11:27", msg: "充电51度，花费103元" },
+          { time: "23:49:16", msg: "充电21度，花费72元" },
+          { time: "11:07:40", msg: "充电36度，花费106元" },
+        ],
       },
       {
         id: "NJFM10",
@@ -1957,6 +2348,13 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 5,
+        recode: [
+          { time: "19:42:30", msg: "充电59度，花费23元" },
+          { time: "13:28:01", msg: "充电23度，花费69元" },
+          { time: "02:25:36", msg: "充电66度，花费83元" },
+          { time: "10:28:59", msg: "充电18度，花费37元" },
+          { time: "13:35:10", msg: "充电71度，花费37元" },
+        ],
       },
       {
         id: "NJFM11",
@@ -1966,6 +2364,13 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "94%",
+        recode: [
+          { time: "05:36:15", msg: "充电60度，花费72元" },
+          { time: "10:10:35", msg: "充电15度，花费74元" },
+          { time: "16:18:40", msg: "充电76度，花费62元" },
+          { time: "09:30:08", msg: "充电103度，花费91元" },
+          { time: "10:29:37", msg: "充电59度，花费83元" },
+        ],
       },
       {
         id: "NJFM12",
@@ -1974,6 +2379,12 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [
+          { time: "07:27:37", msg: "充电86度，花费103元" },
+          { time: "13:29:45", msg: "充电69度，花费43元" },
+          { time: "04:32:28", msg: "充电43度，花费91元" },
+          { time: "17:41:29", msg: "充电85度，花费17元" },
+        ],
       },
       {
         id: "NJFM13",
@@ -1982,6 +2393,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "02:35:36", msg: "充电40度，花费16元" },
+        ],
       },
       {
         id: "NJFM14",
@@ -1991,6 +2405,10 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "40%",
+        recode: [
+          { time: "14:32:55", msg: "充电82度，花费96元" },
+          { time: "19:47:25", msg: "充电24度，花费49元" },
+        ],
       },
       {
         id: "NJFM15",
@@ -1999,6 +2417,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "09:15:51", msg: "充电40度，花费102元" },
+          { time: "02:04:49", msg: "充电51度，花费98元" },
+          { time: "11:27:30", msg: "充电75度，花费22元" },
+          { time: "22:54:49", msg: "充电20度，花费48元" },
+          { time: "02:35:40", msg: "充电88度，花费96元" },
+        ],
       },
       {
         id: "NJFM16",
@@ -2008,6 +2433,12 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "57%",
+        recode: [
+          { time: "09:04:47", msg: "充电96度，花费35元" },
+          { time: "17:54:24", msg: "充电71度，花费42元" },
+          { time: "12:06:20", msg: "充电86度，花费80元" },
+          { time: "00:19:46", msg: "充电70度，花费99元" },
+        ],
       },
       {
         id: "NJFM17",
@@ -2016,6 +2447,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 3,
+        recode: [
+          { time: "01:27:26", msg: "充电27度，花费102元" },
+        ],
       },
       {
         id: "NJFM18",
@@ -2024,6 +2458,10 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "20:18:52", msg: "充电65度，花费53元" },
+          { time: "00:18:37", msg: "充电19度，花费99元" },
+        ],
       },
     ],
   },
@@ -2039,6 +2477,7 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "69%",
+        recode: [],
       },
       {
         id: "HZXH02",
@@ -2047,6 +2486,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "00:13:13", msg: "充电50度，花费50元" },
+          { time: "02:25:25", msg: "充电70度，花费101元" },
+          { time: "04:06:36", msg: "充电47度，花费18元" },
+          { time: "08:18:43", msg: "充电55度，花费74元" },
+          { time: "09:43:40", msg: "充电60度，花费31元" },
+          { time: "07:05:03", msg: "充电28度，花费18元" },
+        ],
       },
       {
         id: "HZXH03",
@@ -2056,6 +2503,13 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "46%",
+        recode: [
+          { time: "21:46:47", msg: "充电17度，花费27元" },
+          { time: "14:31:15", msg: "充电81度，花费68元" },
+          { time: "14:39:56", msg: "充电61度，花费44元" },
+          { time: "19:15:33", msg: "充电38度，花费55元" },
+          { time: "16:04:47", msg: "充电48度，花费72元" },
+        ],
       },
       {
         id: "HZXH04",
@@ -2064,6 +2518,14 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "12:57:59", msg: "充电76度，花费17元" },
+          { time: "06:37:00", msg: "充电27度，花费32元" },
+          { time: "06:34:28", msg: "充电93度，花费106元" },
+          { time: "09:24:42", msg: "充电92度，花费74元" },
+          { time: "17:41:14", msg: "充电69度，花费92元" },
+          { time: "18:09:53", msg: "充电96度，花费49元" },
+        ],
       },
       {
         id: "HZXH05",
@@ -2073,6 +2535,12 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "87%",
+        recode: [
+          { time: "09:26:15", msg: "充电69度，花费62元" },
+          { time: "12:29:56", msg: "充电97度，花费41元" },
+          { time: "05:32:30", msg: "充电103度，花费31元" },
+          { time: "06:48:27", msg: "充电104度，花费97元" },
+        ],
       },
       {
         id: "HZXH06",
@@ -2081,6 +2549,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 4,
+        recode: [
+          { time: "21:55:15", msg: "充电108度，花费34元" },
+        ],
       },
       {
         id: "HZXH07",
@@ -2089,6 +2560,14 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "02:49:07", msg: "充电80度，花费73元" },
+          { time: "08:32:54", msg: "充电93度，花费73元" },
+          { time: "21:26:09", msg: "充电102度，花费41元" },
+          { time: "12:20:17", msg: "充电13度，花费26元" },
+          { time: "18:29:15", msg: "充电105度，花费62元" },
+          { time: "15:14:56", msg: "充电79度，花费27元" },
+        ],
       },
       {
         id: "HZXH08",
@@ -2098,6 +2577,9 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "21%",
+        recode: [
+          { time: "01:25:12", msg: "充电59度，花费42元" },
+        ],
       },
       {
         id: "HZXH09",
@@ -2106,6 +2588,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "15:41:31", msg: "充电19度，花费52元" },
+        ],
       },
       {
         id: "HZXH10",
@@ -2114,6 +2599,11 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [
+          { time: "02:59:06", msg: "充电77度，花费46元" },
+          { time: "06:38:44", msg: "充电28度，花费60元" },
+          { time: "12:42:14", msg: "充电36度，花费78元" },
+        ],
       },
       {
         id: "HZXH11",
@@ -2123,6 +2613,7 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "54%",
+        recode: [],
       },
       {
         id: "HZXH12",
@@ -2131,6 +2622,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "03:23:37", msg: "充电53度，花费83元" },
+          { time: "12:53:53", msg: "充电88度，花费14元" },
+        ],
       },
       {
         id: "HZXH13",
@@ -2140,6 +2635,9 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "75%",
+        recode: [
+          { time: "11:25:10", msg: "充电17度，花费36元" },
+        ],
       },
       {
         id: "HZXH14",
@@ -2148,6 +2646,13 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 5,
+        recode: [
+          { time: "11:21:39", msg: "充电96度，花费36元" },
+          { time: "10:00:07", msg: "充电54度，花费36元" },
+          { time: "02:38:46", msg: "充电88度，花费36元" },
+          { time: "04:54:55", msg: "充电14度，花费88元" },
+          { time: "20:50:23", msg: "充电69度，花费20元" },
+        ],
       },
       {
         id: "HZXH15",
@@ -2156,6 +2661,7 @@ let chargingPile = [
         power: "0KW",
         tem: "30℃",
         status: 1,
+        recode: [],
       },
       {
         id: "HZXH16",
@@ -2165,6 +2671,12 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "35%",
+        recode: [
+          { time: "05:38:55", msg: "充电21度，花费24元" },
+          { time: "00:24:26", msg: "充电73度，花费62元" },
+          { time: "04:52:42", msg: "充电92度，花费42元" },
+          { time: "21:45:16", msg: "充电68度，花费44元" },
+        ],
       },
     ],
   },
@@ -2180,6 +2692,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "58%",
+        recode: [
+          { time: "23:00:36", msg: "充电59度，花费56元" },
+        ],
       },
       {
         id: "XADY02",
@@ -2188,6 +2703,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "11:24:57", msg: "充电65度，花费29元" },
+          { time: "07:33:59", msg: "充电47度，花费11元" },
+        ],
       },
       {
         id: "XADY03",
@@ -2197,6 +2716,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "82%",
+        recode: [
+          { time: "10:47:31", msg: "充电96度，花费97元" },
+        ],
       },
       {
         id: "XADY04",
@@ -2205,6 +2727,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "11:09:02", msg: "充电33度，花费50元" },
+          { time: "01:32:06", msg: "充电35度，花费26元" },
+          { time: "15:20:08", msg: "充电12度，花费96元" },
+          { time: "06:18:51", msg: "充电24度，花费55元" },
+          { time: "02:50:58", msg: "充电95度，花费71元" },
+          { time: "17:49:50", msg: "充电87度，花费75元" },
+        ],
       },
       {
         id: "XADY05",
@@ -2214,6 +2744,14 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "29%",
+        recode: [
+          { time: "12:08:59", msg: "充电88度，花费75元" },
+          { time: "22:24:20", msg: "充电15度，花费11元" },
+          { time: "07:51:49", msg: "充电84度，花费87元" },
+          { time: "11:45:29", msg: "充电108度，花费101元" },
+          { time: "13:37:48", msg: "充电87度，花费18元" },
+          { time: "18:47:41", msg: "充电37度，花费100元" },
+        ],
       },
       {
         id: "XADY06",
@@ -2222,6 +2760,12 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 4,
+        recode: [
+          { time: "11:10:00", msg: "充电26度，花费85元" },
+          { time: "07:07:41", msg: "充电15度，花费12元" },
+          { time: "18:21:44", msg: "充电33度，花费83元" },
+          { time: "03:08:05", msg: "充电55度，花费25元" },
+        ],
       },
       {
         id: "XADY07",
@@ -2230,6 +2774,10 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "03:31:09", msg: "充电34度，花费98元" },
+          { time: "18:13:07", msg: "充电87度，花费71元" },
+        ],
       },
       {
         id: "XADY08",
@@ -2239,6 +2787,13 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "71%",
+        recode: [
+          { time: "16:05:28", msg: "充电64度，花费100元" },
+          { time: "20:07:11", msg: "充电59度，花费57元" },
+          { time: "01:38:21", msg: "充电54度，花费37元" },
+          { time: "20:04:42", msg: "充电36度，花费60元" },
+          { time: "14:07:36", msg: "充电43度，花费83元" },
+        ],
       },
       {
         id: "XADY09",
@@ -2247,6 +2802,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "07:04:50", msg: "充电21度，花费13元" },
+          { time: "13:46:18", msg: "充电90度，花费104元" },
+          { time: "01:36:53", msg: "充电73度，花费84元" },
+          { time: "06:26:13", msg: "充电80度，花费62元" },
+        ],
       },
       {
         id: "XADY10",
@@ -2255,6 +2816,9 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 6,
+        recode: [
+          { time: "19:26:38", msg: "充电98度，花费15元" },
+        ],
       },
       {
         id: "XADY11",
@@ -2264,6 +2828,14 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "44%",
+        recode: [
+          { time: "15:37:54", msg: "充电10度，花费50元" },
+          { time: "11:01:30", msg: "充电74度，花费50元" },
+          { time: "19:59:31", msg: "充电102度，花费38元" },
+          { time: "08:04:00", msg: "充电24度，花费81元" },
+          { time: "11:00:30", msg: "充电103度，花费61元" },
+          { time: "22:07:07", msg: "充电72度，花费60元" },
+        ],
       },
       {
         id: "XADY12",
@@ -2272,6 +2844,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "02:32:01", msg: "充电25度，花费49元" },
+        ],
       },
       {
         id: "XADY13",
@@ -2281,6 +2856,14 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "91%",
+        recode: [
+          { time: "09:50:14", msg: "充电97度，花费28元" },
+          { time: "20:00:28", msg: "充电34度，花费96元" },
+          { time: "03:58:32", msg: "充电91度，花费107元" },
+          { time: "19:10:26", msg: "充电41度，花费17元" },
+          { time: "06:38:01", msg: "充电23度，花费31元" },
+          { time: "15:26:52", msg: "充电83度，花费10元" },
+        ],
       },
       {
         id: "XADY14",
@@ -2289,6 +2872,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 5,
+        recode: [
+          { time: "19:29:56", msg: "充电32度，花费11元" },
+          { time: "19:41:05", msg: "充电29度，花费63元" },
+          { time: "16:05:44", msg: "充电48度，花费104元" },
+        ],
       },
       {
         id: "XADY15",
@@ -2297,6 +2885,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "19:11:56", msg: "充电10度，花费20元" },
+        ],
       },
       {
         id: "XADY16",
@@ -2306,6 +2897,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "37%",
+        recode: [
+          { time: "04:18:14", msg: "充电89度，花费50元" },
+          { time: "18:10:19", msg: "充电29度，花费36元" },
+          { time: "19:21:53", msg: "充电64度，花费29元" },
+        ],
       },
       {
         id: "XADY17",
@@ -2314,6 +2910,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 3,
+        recode: [
+          { time: "05:46:48", msg: "充电86度，花费14元" },
+          { time: "13:37:04", msg: "充电18度，花费89元" },
+          { time: "00:46:28", msg: "充电25度，花费97元" },
+        ],
       },
       {
         id: "XADY18",
@@ -2322,6 +2923,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "22:09:18", msg: "充电34度，花费60元" },
+          { time: "18:37:04", msg: "充电48度，花费12元" },
+          { time: "08:14:13", msg: "充电104度，花费88元" },
+        ],
       },
       {
         id: "XADY19",
@@ -2331,6 +2937,10 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "65%",
+        recode: [
+          { time: "17:26:14", msg: "充电51度，花费23元" },
+          { time: "07:37:31", msg: "充电47度，花费61元" },
+        ],
       },
       {
         id: "XADY20",
@@ -2340,6 +2950,13 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "96%",
+        recode: [
+          { time: "05:43:03", msg: "充电103度，花费89元" },
+          { time: "00:17:56", msg: "充电82度，花费31元" },
+          { time: "16:10:36", msg: "充电28度，花费13元" },
+          { time: "19:19:58", msg: "充电33度，花费21元" },
+          { time: "16:43:45", msg: "充电87度，花费63元" },
+        ],
       },
       {
         id: "XADY21",
@@ -2348,6 +2965,7 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 5,
+        recode: [],
       },
     ],
   },
@@ -2362,6 +2980,11 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "19:52:47", msg: "充电103度，花费10元" },
+          { time: "03:10:41", msg: "充电40度，花费17元" },
+          { time: "10:53:16", msg: "充电33度，花费27元" },
+        ],
       },
       {
         id: "CSYL02",
@@ -2371,6 +2994,14 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "73%",
+        recode: [
+          { time: "11:13:01", msg: "充电97度，花费75元" },
+          { time: "00:58:20", msg: "充电87度，花费55元" },
+          { time: "10:41:35", msg: "充电107度，花费76元" },
+          { time: "00:59:29", msg: "充电11度，花费94元" },
+          { time: "11:08:20", msg: "充电74度，花费61元" },
+          { time: "00:54:13", msg: "充电52度，花费14元" },
+        ],
       },
       {
         id: "CSYL03",
@@ -2379,6 +3010,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "11:32:15", msg: "充电67度，花费57元" },
+          { time: "00:37:11", msg: "充电103度，花费44元" },
+          { time: "18:58:12", msg: "充电16度，花费38元" },
+        ],
       },
       {
         id: "CSYL04",
@@ -2388,6 +3024,14 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "31%",
+        recode: [
+          { time: "17:35:35", msg: "充电64度，花费83元" },
+          { time: "03:42:31", msg: "充电18度，花费28元" },
+          { time: "04:26:55", msg: "充电72度，花费75元" },
+          { time: "20:32:37", msg: "充电58度，花费41元" },
+          { time: "14:16:29", msg: "充电95度，花费13元" },
+          { time: "13:01:35", msg: "充电11度，花费88元" },
+        ],
       },
       {
         id: "CSYL05",
@@ -2397,6 +3041,7 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "86%",
+        recode: [],
       },
       {
         id: "CSYL06",
@@ -2405,6 +3050,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
       {
         id: "CSYL07",
@@ -2413,6 +3059,7 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [],
       },
       {
         id: "CSYL08",
@@ -2422,6 +3069,7 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "52%",
+        recode: [],
       },
       {
         id: "CSYL09",
@@ -2430,6 +3078,12 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 4,
+        recode: [
+          { time: "20:48:52", msg: "充电92度，花费17元" },
+          { time: "15:23:58", msg: "充电24度，花费68元" },
+          { time: "17:09:35", msg: "充电51度，花费40元" },
+          { time: "07:51:20", msg: "充电49度，花费39元" },
+        ],
       },
       {
         id: "CSYL10",
@@ -2438,6 +3092,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "09:10:03", msg: "充电78度，花费47元" },
+          { time: "10:03:39", msg: "充电89度，花费99元" },
+        ],
       },
       {
         id: "CSYL11",
@@ -2447,6 +3105,11 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "68%",
+        recode: [
+          { time: "07:30:10", msg: "充电101度，花费89元" },
+          { time: "15:12:43", msg: "充电83度，花费90元" },
+          { time: "21:39:01", msg: "充电67度，花费81元" },
+        ],
       },
       {
         id: "CSYL12",
@@ -2455,6 +3118,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "04:14:31", msg: "充电32度，花费104元" },
+          { time: "10:27:58", msg: "充电57度，花费22元" },
+        ],
       },
       {
         id: "CSYL13",
@@ -2464,6 +3131,13 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "18%",
+        recode: [
+          { time: "05:31:12", msg: "充电51度，花费80元" },
+          { time: "05:24:47", msg: "充电50度，花费68元" },
+          { time: "20:14:24", msg: "充电106度，花费56元" },
+          { time: "11:20:19", msg: "充电41度，花费106元" },
+          { time: "00:38:43", msg: "充电71度，花费22元" },
+        ],
       },
       {
         id: "CSYL14",
@@ -2472,6 +3146,10 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 5,
+        recode: [
+          { time: "07:14:35", msg: "充电49度，花费40元" },
+          { time: "16:07:46", msg: "充电65度，花费20元" },
+        ],
       },
     ],
   },
@@ -2487,6 +3165,13 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "77%",
+        recode: [
+          { time: "23:29:12", msg: "充电69度，花费58元" },
+          { time: "15:23:43", msg: "充电17度，花费43元" },
+          { time: "09:36:12", msg: "充电73度，花费48元" },
+          { time: "05:00:48", msg: "充电19度，花费63元" },
+          { time: "20:06:29", msg: "充电30度，花费96元" },
+        ],
       },
       {
         id: "ZZEQ02",
@@ -2495,6 +3180,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "12:35:16", msg: "充电98度，花费73元" },
+          { time: "09:39:45", msg: "充电27度，花费81元" },
+          { time: "10:53:35", msg: "充电32度，花费42元" },
+          { time: "09:52:40", msg: "充电80度，花费74元" },
+          { time: "13:28:14", msg: "充电75度，花费19元" },
+        ],
       },
       {
         id: "ZZEQ03",
@@ -2503,6 +3195,14 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "21:06:13", msg: "充电82度，花费104元" },
+          { time: "15:57:48", msg: "充电49度，花费68元" },
+          { time: "12:01:00", msg: "充电86度，花费12元" },
+          { time: "01:30:31", msg: "充电25度，花费70元" },
+          { time: "10:09:36", msg: "充电72度，花费58元" },
+          { time: "01:52:36", msg: "充电65度，花费82元" },
+        ],
       },
       {
         id: "ZZEQ04",
@@ -2512,6 +3212,7 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "34%",
+        recode: [],
       },
       {
         id: "ZZEQ05",
@@ -2521,6 +3222,7 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "89%",
+        recode: [],
       },
       {
         id: "ZZEQ06",
@@ -2529,6 +3231,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 4,
+        recode: [
+          { time: "15:14:10", msg: "充电44度，花费37元" },
+          { time: "01:44:11", msg: "充电57度，花费98元" },
+          { time: "01:01:03", msg: "充电109度，花费15元" },
+          { time: "18:26:48", msg: "充电29度，花费100元" },
+          { time: "17:44:40", msg: "充电15度，花费94元" },
+        ],
       },
       {
         id: "ZZEQ07",
@@ -2537,6 +3246,12 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "08:12:19", msg: "充电70度，花费12元" },
+          { time: "06:41:54", msg: "充电44度，花费105元" },
+          { time: "20:46:43", msg: "充电106度，花费81元" },
+          { time: "00:23:27", msg: "充电21度，花费70元" },
+        ],
       },
       {
         id: "ZZEQ08",
@@ -2546,6 +3261,9 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "53%",
+        recode: [
+          { time: "04:50:42", msg: "充电52度，花费75元" },
+        ],
       },
       {
         id: "ZZEQ09",
@@ -2554,6 +3272,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "05:31:26", msg: "充电20度，花费38元" },
+        ],
       },
       {
         id: "ZZEQ10",
@@ -2563,6 +3284,13 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "61%",
+        recode: [
+          { time: "21:32:59", msg: "充电43度，花费89元" },
+          { time: "09:35:45", msg: "充电43度，花费86元" },
+          { time: "00:42:46", msg: "充电104度，花费28元" },
+          { time: "18:11:40", msg: "充电41度，花费10元" },
+          { time: "12:19:03", msg: "充电61度，花费33元" },
+        ],
       },
       {
         id: "ZZEQ11",
@@ -2571,6 +3299,12 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [
+          { time: "04:04:35", msg: "充电59度，花费88元" },
+          { time: "03:52:37", msg: "充电19度，花费81元" },
+          { time: "22:12:25", msg: "充电54度，花费101元" },
+          { time: "17:59:14", msg: "充电106度，花费50元" },
+        ],
       },
       {
         id: "ZZEQ12",
@@ -2579,6 +3313,11 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "02:38:18", msg: "充电38度，花费19元" },
+          { time: "16:46:00", msg: "充电38度，花费21元" },
+          { time: "13:47:32", msg: "充电98度，花费87元" },
+        ],
       },
       {
         id: "ZZEQ13",
@@ -2588,6 +3327,9 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "16%",
+        recode: [
+          { time: "08:07:50", msg: "充电15度，花费87元" },
+        ],
       },
       {
         id: "ZZEQ14",
@@ -2596,6 +3338,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 5,
+        recode: [
+          { time: "03:14:31", msg: "充电74度，花费22元" },
+          { time: "23:26:27", msg: "充电42度，花费77元" },
+          { time: "21:54:22", msg: "充电15度，花费26元" },
+          { time: "06:12:31", msg: "充电13度，花费47元" },
+          { time: "18:46:25", msg: "充电76度，花费81元" },
+          { time: "12:11:42", msg: "充电40度，花费66元" },
+        ],
       },
       {
         id: "ZZEQ15",
@@ -2604,6 +3354,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "ZZEQ16",
@@ -2613,6 +3364,14 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "70%",
+        recode: [
+          { time: "05:41:51", msg: "充电103度，花费109元" },
+          { time: "09:42:46", msg: "充电55度，花费66元" },
+          { time: "20:11:30", msg: "充电50度，花费68元" },
+          { time: "11:24:04", msg: "充电75度，花费104元" },
+          { time: "14:39:35", msg: "充电46度，花费97元" },
+          { time: "12:28:30", msg: "充电54度，花费94元" },
+        ],
       },
       {
         id: "ZZEQ17",
@@ -2621,6 +3380,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 3,
+        recode: [
+          { time: "20:35:28", msg: "充电67度，花费19元" },
+          { time: "22:14:06", msg: "充电69度，花费38元" },
+          { time: "19:24:10", msg: "充电15度，花费55元" },
+          { time: "21:55:19", msg: "充电55度，花费25元" },
+          { time: "07:15:00", msg: "充电82度，花费26元" },
+          { time: "04:04:54", msg: "充电102度，花费104元" },
+        ],
       },
       {
         id: "ZZEQ18",
@@ -2629,6 +3396,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "ZZEQ19",
@@ -2638,6 +3406,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "42%",
+        recode: [
+          { time: "02:34:16", msg: "充电86度，花费78元" },
+        ],
       },
     ],
   },
@@ -2653,6 +3424,13 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "84%",
+        recode: [
+          { time: "00:36:00", msg: "充电60度，花费83元" },
+          { time: "05:31:59", msg: "充电81度，花费70元" },
+          { time: "12:50:53", msg: "充电63度，花费103元" },
+          { time: "17:47:52", msg: "充电100度，花费51元" },
+          { time: "16:01:14", msg: "充电79度，花费13元" },
+        ],
       },
       {
         id: "SZNS02",
@@ -2661,6 +3439,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "SZNS03",
@@ -2670,6 +3449,13 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "56%",
+        recode: [
+          { time: "04:33:04", msg: "充电64度，花费99元" },
+          { time: "20:47:27", msg: "充电108度，花费23元" },
+          { time: "08:50:24", msg: "充电43度，花费54元" },
+          { time: "21:16:17", msg: "充电83度，花费36元" },
+          { time: "09:00:09", msg: "充电37度，花费100元" },
+        ],
       },
       {
         id: "SZNS04",
@@ -2678,6 +3464,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "03:52:15", msg: "充电109度，花费83元" },
+          { time: "13:40:24", msg: "充电82度，花费37元" },
+          { time: "12:30:44", msg: "充电26度，花费67元" },
+        ],
       },
       {
         id: "SZNS05",
@@ -2687,6 +3478,14 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "72%",
+        recode: [
+          { time: "20:33:54", msg: "充电28度，花费91元" },
+          { time: "13:22:12", msg: "充电38度，花费42元" },
+          { time: "22:04:43", msg: "充电60度，花费53元" },
+          { time: "05:33:27", msg: "充电22度，花费64元" },
+          { time: "05:25:43", msg: "充电25度，花费101元" },
+          { time: "23:48:45", msg: "充电16度，花费93元" },
+        ],
       },
       {
         id: "SZNS06",
@@ -2695,6 +3494,7 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 4,
+        recode: [],
       },
       {
         id: "SZNS07",
@@ -2703,6 +3503,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "04:15:30", msg: "充电101度，花费50元" },
+        ],
       },
       {
         id: "SZNS08",
@@ -2712,6 +3515,14 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "28%",
+        recode: [
+          { time: "10:08:43", msg: "充电35度，花费30元" },
+          { time: "15:09:18", msg: "充电35度，花费41元" },
+          { time: "02:48:56", msg: "充电33度，花费100元" },
+          { time: "01:11:05", msg: "充电69度，花费20元" },
+          { time: "10:41:55", msg: "充电28度，花费75元" },
+          { time: "14:27:21", msg: "充电106度，花费63元" },
+        ],
       },
       {
         id: "SZNS09",
@@ -2720,6 +3531,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "23:58:42", msg: "充电39度，花费87元" },
+        ],
       },
       {
         id: "SZNS10",
@@ -2729,6 +3543,13 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "91%",
+        recode: [
+          { time: "12:26:05", msg: "充电47度，花费79元" },
+          { time: "04:53:33", msg: "充电94度，花费105元" },
+          { time: "04:40:11", msg: "充电21度，花费74元" },
+          { time: "23:14:13", msg: "充电78度，花费23元" },
+          { time: "19:33:47", msg: "充电32度，花费108元" },
+        ],
       },
       {
         id: "SZNS11",
@@ -2737,6 +3558,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 6,
+        recode: [
+          { time: "21:51:01", msg: "充电55度，花费79元" },
+          { time: "04:53:15", msg: "充电29度，花费71元" },
+          { time: "10:42:55", msg: "充电52度，花费92元" },
+        ],
       },
       {
         id: "SZNS12",
@@ -2745,6 +3571,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "17:53:28", msg: "充电14度，花费47元" },
+          { time: "11:13:07", msg: "充电47度，花费77元" },
+        ],
       },
       {
         id: "SZNS13",
@@ -2754,6 +3584,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "45%",
+        recode: [
+          { time: "01:56:57", msg: "充电55度，花费81元" },
+        ],
       },
       {
         id: "SZNS14",
@@ -2762,6 +3595,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 5,
+        recode: [
+          { time: "18:54:58", msg: "充电10度，花费75元" },
+        ],
       },
       {
         id: "SZNS15",
@@ -2770,6 +3606,10 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "08:14:52", msg: "充电103度，花费92元" },
+          { time: "07:50:03", msg: "充电109度，花费22元" },
+        ],
       },
       {
         id: "SZNS16",
@@ -2779,6 +3619,13 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "63%",
+        recode: [
+          { time: "02:03:00", msg: "充电100度，花费33元" },
+          { time: "08:23:36", msg: "充电26度，花费35元" },
+          { time: "17:56:47", msg: "充电82度，花费20元" },
+          { time: "02:19:35", msg: "充电109度，花费66元" },
+          { time: "18:00:48", msg: "充电100度，花费86元" },
+        ],
       },
       {
         id: "SZNS17",
@@ -2787,6 +3634,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 3,
+        recode: [
+          { time: "03:15:55", msg: "充电50度，花费109元" },
+          { time: "00:02:24", msg: "充电62度，花费67元" },
+          { time: "16:06:43", msg: "充电34度，花费39元" },
+          { time: "02:27:29", msg: "充电93度，花费48元" },
+          { time: "02:30:30", msg: "充电85度，花费73元" },
+        ],
       },
       {
         id: "SZNS18",
@@ -2795,6 +3649,13 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "03:36:45", msg: "充电56度，花费24元" },
+          { time: "03:46:19", msg: "充电90度，花费14元" },
+          { time: "14:02:13", msg: "充电94度，花费66元" },
+          { time: "20:53:52", msg: "充电69度，花费45元" },
+          { time: "16:58:27", msg: "充电90度，花费84元" },
+        ],
       },
       {
         id: "SZNS19",
@@ -2804,6 +3665,7 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "39%",
+        recode: [],
       },
       {
         id: "SZNS20",
@@ -2813,6 +3675,12 @@ let chargingPile = [
         tem: "26℃",
         status: 2,
         percent: "45%",
+        recode: [
+          { time: "04:15:20", msg: "充电104度，花费99元" },
+          { time: "05:32:51", msg: "充电104度，花费61元" },
+          { time: "09:08:25", msg: "充电53度，花费101元" },
+          { time: "16:00:47", msg: "充电92度，花费51元" },
+        ],
       },
       {
         id: "SZNS21",
@@ -2821,6 +3689,10 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "06:46:04", msg: "充电57度，花费101元" },
+          { time: "04:44:56", msg: "充电43度，花费66元" },
+        ],
       },
       {
         id: "SZNS22",
@@ -2829,6 +3701,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 5,
+        recode: [
+          { time: "14:14:11", msg: "充电36度，花费22元" },
+          { time: "19:50:43", msg: "充电62度，花费83元" },
+          { time: "01:49:25", msg: "充电98度，花费89元" },
+        ],
       },
       {
         id: "SZNS23",
@@ -2837,6 +3714,7 @@ let chargingPile = [
         power: "0KW",
         tem: "32℃",
         status: 1,
+        recode: [],
       },
       {
         id: "SZNS24",
@@ -2846,6 +3724,7 @@ let chargingPile = [
         tem: "24℃",
         status: 2,
         percent: "65%",
+        recode: [],
       },
     ],
   },
@@ -2861,6 +3740,12 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "88%",
+        recode: [
+          { time: "11:03:49", msg: "充电10度，花费81元" },
+          { time: "08:02:26", msg: "充电30度，花费11元" },
+          { time: "18:10:38", msg: "充电50度，花费91元" },
+          { time: "09:58:34", msg: "充电97度，花费101元" },
+        ],
       },
       {
         id: "SHLJ02",
@@ -2869,6 +3754,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "17:37:33", msg: "充电53度，花费87元" },
+          { time: "13:37:30", msg: "充电74度，花费64元" },
+          { time: "23:42:53", msg: "充电23度，花费74元" },
+          { time: "23:42:48", msg: "充电101度，花费44元" },
+          { time: "16:10:52", msg: "充电44度，花费71元" },
+          { time: "17:38:59", msg: "充电98度，花费62元" },
+        ],
       },
       {
         id: "SHLJ03",
@@ -2878,6 +3771,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "49%",
+        recode: [
+          { time: "12:33:00", msg: "充电88度，花费17元" },
+        ],
       },
       {
         id: "SHLJ04",
@@ -2886,6 +3782,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "02:50:28", msg: "充电70度，花费53元" },
+          { time: "07:26:40", msg: "充电63度，花费92元" },
+          { time: "00:55:51", msg: "充电31度，花费27元" },
+          { time: "19:43:13", msg: "充电29度，花费25元" },
+        ],
       },
       {
         id: "SHLJ05",
@@ -2895,6 +3797,13 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "74%",
+        recode: [
+          { time: "06:39:45", msg: "充电62度，花费17元" },
+          { time: "14:06:04", msg: "充电43度，花费86元" },
+          { time: "01:31:03", msg: "充电10度，花费40元" },
+          { time: "19:34:32", msg: "充电59度，花费70元" },
+          { time: "21:51:41", msg: "充电74度，花费72元" },
+        ],
       },
       {
         id: "SHLJ06",
@@ -2903,6 +3812,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 4,
+        recode: [
+          { time: "14:47:41", msg: "充电73度，花费26元" },
+        ],
       },
       {
         id: "SHLJ07",
@@ -2911,6 +3823,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "16:40:16", msg: "充电104度，花费35元" },
+          { time: "12:11:37", msg: "充电102度，花费102元" },
+          { time: "10:06:19", msg: "充电17度，花费97元" },
+        ],
       },
       {
         id: "SHLJ08",
@@ -2920,6 +3837,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "23%",
+        recode: [
+          { time: "01:35:02", msg: "充电43度，花费46元" },
+          { time: "03:15:07", msg: "充电77度，花费34元" },
+          { time: "23:57:58", msg: "充电61度，花费10元" },
+        ],
       },
       {
         id: "SHLJ09",
@@ -2928,6 +3850,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "13:59:23", msg: "充电61度，花费84元" },
+          { time: "00:05:14", msg: "充电89度，花费58元" },
+          { time: "13:43:41", msg: "充电86度，花费109元" },
+          { time: "06:25:02", msg: "充电22度，花费44元" },
+          { time: "19:50:30", msg: "充电56度，花费105元" },
+        ],
       },
       {
         id: "SHLJ10",
@@ -2937,6 +3866,10 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "66%",
+        recode: [
+          { time: "04:04:49", msg: "充电96度，花费29元" },
+          { time: "13:36:46", msg: "充电26度，花费43元" },
+        ],
       },
       {
         id: "SHLJ11",
@@ -2945,6 +3878,12 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [
+          { time: "10:54:37", msg: "充电45度，花费38元" },
+          { time: "12:52:23", msg: "充电36度，花费60元" },
+          { time: "23:26:50", msg: "充电77度，花费31元" },
+          { time: "02:09:40", msg: "充电77度，花费29元" },
+        ],
       },
       {
         id: "SHLJ12",
@@ -2953,6 +3892,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "10:38:13", msg: "充电58度，花费96元" },
+          { time: "13:31:50", msg: "充电33度，花费25元" },
+          { time: "22:37:30", msg: "充电78度，花费103元" },
+          { time: "11:40:40", msg: "充电11度，花费68元" },
+        ],
       },
       {
         id: "SHLJ13",
@@ -2962,6 +3907,14 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "95%",
+        recode: [
+          { time: "21:11:44", msg: "充电55度，花费40元" },
+          { time: "17:26:34", msg: "充电82度，花费25元" },
+          { time: "08:42:57", msg: "充电76度，花费63元" },
+          { time: "15:26:16", msg: "充电101度，花费34元" },
+          { time: "17:01:44", msg: "充电13度，花费21元" },
+          { time: "15:43:53", msg: "充电72度，花费91元" },
+        ],
       },
       {
         id: "SHLJ14",
@@ -2970,6 +3923,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 5,
+        recode: [
+          { time: "05:49:31", msg: "充电62度，花费37元" },
+        ],
       },
       {
         id: "SHLJ15",
@@ -2978,6 +3934,10 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "07:12:24", msg: "充电53度，花费77元" },
+          { time: "11:15:30", msg: "充电18度，花费39元" },
+        ],
       },
       {
         id: "SHLJ16",
@@ -2987,6 +3947,14 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "57%",
+        recode: [
+          { time: "10:40:36", msg: "充电93度，花费90元" },
+          { time: "23:57:00", msg: "充电27度，花费105元" },
+          { time: "08:18:17", msg: "充电77度，花费48元" },
+          { time: "08:21:13", msg: "充电26度，花费82元" },
+          { time: "19:02:55", msg: "充电39度，花费62元" },
+          { time: "09:41:11", msg: "充电71度，花费32元" },
+        ],
       },
       {
         id: "SHLJ17",
@@ -2995,6 +3963,13 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 3,
+        recode: [
+          { time: "01:23:54", msg: "充电76度，花费66元" },
+          { time: "23:40:05", msg: "充电24度，花费37元" },
+          { time: "05:13:49", msg: "充电89度，花费71元" },
+          { time: "02:27:56", msg: "充电16度，花费82元" },
+          { time: "01:47:54", msg: "充电18度，花费86元" },
+        ],
       },
     ],
   },
@@ -3010,6 +3985,10 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "76%",
+        recode: [
+          { time: "12:12:06", msg: "充电23度，花费106元" },
+          { time: "03:28:25", msg: "充电107度，花费24元" },
+        ],
       },
       {
         id: "GZTH02",
@@ -3018,6 +3997,7 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [],
       },
       {
         id: "GZTH03",
@@ -3027,6 +4007,10 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "43%",
+        recode: [
+          { time: "18:38:19", msg: "充电22度，花费48元" },
+          { time: "05:23:29", msg: "充电73度，花费94元" },
+        ],
       },
       {
         id: "GZTH04",
@@ -3035,6 +4019,11 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [
+          { time: "09:26:18", msg: "充电63度，花费81元" },
+          { time: "22:05:53", msg: "充电71度，花费65元" },
+          { time: "06:40:45", msg: "充电106度，花费16元" },
+        ],
       },
       {
         id: "GZTH05",
@@ -3044,6 +4033,12 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "87%",
+        recode: [
+          { time: "14:38:17", msg: "充电19度，花费65元" },
+          { time: "05:12:58", msg: "充电10度，花费79元" },
+          { time: "21:41:41", msg: "充电17度，花费95元" },
+          { time: "05:55:23", msg: "充电98度，花费103元" },
+        ],
       },
       {
         id: "GZTH06",
@@ -3052,6 +4047,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 4,
+        recode: [
+          { time: "03:12:20", msg: "充电32度，花费36元" },
+        ],
       },
       {
         id: "GZTH07",
@@ -3060,6 +4058,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "GZTH08",
@@ -3069,6 +4068,10 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "24%",
+        recode: [
+          { time: "01:04:34", msg: "充电70度，花费82元" },
+          { time: "07:44:33", msg: "充电69度，花费13元" },
+        ],
       },
       {
         id: "GZTH09",
@@ -3077,6 +4080,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "18:33:13", msg: "充电40度，花费41元" },
+          { time: "21:54:31", msg: "充电37度，花费13元" },
+          { time: "15:38:59", msg: "充电78度，花费24元" },
+          { time: "23:18:02", msg: "充电75度，花费68元" },
+        ],
       },
       {
         id: "GZTH10",
@@ -3085,6 +4094,14 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 6,
+        recode: [
+          { time: "14:56:07", msg: "充电11度，花费19元" },
+          { time: "01:15:57", msg: "充电94度，花费88元" },
+          { time: "03:48:07", msg: "充电97度，花费25元" },
+          { time: "01:46:55", msg: "充电108度，花费106元" },
+          { time: "02:27:23", msg: "充电46度，花费25元" },
+          { time: "12:45:38", msg: "充电107度，花费98元" },
+        ],
       },
       {
         id: "GZTH11",
@@ -3094,6 +4111,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "61%",
+        recode: [
+          { time: "20:02:36", msg: "充电25度，花费19元" },
+          { time: "11:56:50", msg: "充电40度，花费87元" },
+          { time: "06:51:18", msg: "充电70度，花费62元" },
+        ],
       },
       {
         id: "GZTH12",
@@ -3102,6 +4124,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "00:18:49", msg: "充电76度，花费29元" },
+          { time: "02:43:29", msg: "充电60度，花费28元" },
+        ],
       },
       {
         id: "GZTH13",
@@ -3111,6 +4137,7 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "55%",
+        recode: [],
       },
       {
         id: "GZTH14",
@@ -3119,6 +4146,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 5,
+        recode: [
+          { time: "07:32:00", msg: "充电28度，花费27元" },
+          { time: "09:19:28", msg: "充电39度，花费39元" },
+          { time: "22:05:08", msg: "充电37度，花费12元" },
+          { time: "01:09:09", msg: "充电62度，花费88元" },
+        ],
       },
       {
         id: "GZTH15",
@@ -3127,6 +4160,7 @@ let chargingPile = [
         power: "0KW",
         tem: "30℃",
         status: 1,
+        recode: [],
       },
       {
         id: "GZTH16",
@@ -3136,6 +4170,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "38%",
+        recode: [
+          { time: "07:29:07", msg: "充电55度，花费39元" },
+        ],
       },
       {
         id: "GZTH17",
@@ -3144,6 +4181,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 3,
+        recode: [
+          { time: "01:56:00", msg: "充电32度，花费105元" },
+          { time: "12:54:57", msg: "充电33度，花费95元" },
+          { time: "15:25:33", msg: "充电79度，花费53元" },
+          { time: "23:37:58", msg: "充电81度，花费109元" },
+          { time: "15:17:03", msg: "充电29度，花费60元" },
+          { time: "02:48:31", msg: "充电105度，花费66元" },
+        ],
       },
       {
         id: "GZTH18",
@@ -3152,6 +4197,12 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "04:21:01", msg: "充电107度，花费27元" },
+          { time: "22:13:27", msg: "充电100度，花费103元" },
+          { time: "10:11:33", msg: "充电94度，花费78元" },
+          { time: "19:16:13", msg: "充电99度，花费63元" },
+        ],
       },
       {
         id: "GZTH19",
@@ -3161,6 +4212,9 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "69%",
+        recode: [
+          { time: "19:42:26", msg: "充电109度，花费34元" },
+        ],
       },
       {
         id: "GZTH20",
@@ -3170,6 +4224,9 @@ let chargingPile = [
         tem: "20℃",
         status: 2,
         percent: "40%",
+        recode: [
+          { time: "00:57:45", msg: "充电24度，花费46元" },
+        ],
       },
     ],
   },
@@ -3184,6 +4241,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "21:28:43", msg: "充电91度，花费30元" },
+          { time: "17:08:28", msg: "充电52度，花费53元" },
+        ],
       },
       {
         id: "TJBJ02",
@@ -3193,6 +4254,9 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "64%",
+        recode: [
+          { time: "11:17:07", msg: "充电49度，花费24元" },
+        ],
       },
       {
         id: "TJBJ03",
@@ -3201,6 +4265,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "10:48:58", msg: "充电14度，花费89元" },
+        ],
       },
       {
         id: "TJBJ04",
@@ -3210,6 +4277,10 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "35%",
+        recode: [
+          { time: "19:23:49", msg: "充电66度，花费76元" },
+          { time: "07:45:52", msg: "充电65度，花费71元" },
+        ],
       },
       {
         id: "TJBJ05",
@@ -3219,6 +4290,11 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "82%",
+        recode: [
+          { time: "09:46:55", msg: "充电34度，花费99元" },
+          { time: "11:24:01", msg: "充电29度，花费43元" },
+          { time: "03:12:11", msg: "充电86度，花费78元" },
+        ],
       },
       {
         id: "TJBJ06",
@@ -3227,6 +4303,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "22:11:52", msg: "充电55度，花费14元" },
+          { time: "19:42:42", msg: "充电42度，花费65元" },
+          { time: "15:11:22", msg: "充电41度，花费12元" },
+          { time: "15:56:54", msg: "充电96度，花费46元" },
+          { time: "20:17:07", msg: "充电66度，花费61元" },
+          { time: "02:31:54", msg: "充电97度，花费72元" },
+        ],
       },
       {
         id: "TJBJ07",
@@ -3235,6 +4319,9 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 6,
+        recode: [
+          { time: "03:48:32", msg: "充电35度，花费85元" },
+        ],
       },
       {
         id: "TJBJ08",
@@ -3244,6 +4331,13 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "51%",
+        recode: [
+          { time: "08:59:41", msg: "充电68度，花费95元" },
+          { time: "06:27:44", msg: "充电76度，花费95元" },
+          { time: "21:52:13", msg: "充电69度，花费107元" },
+          { time: "22:56:05", msg: "充电16度，花费75元" },
+          { time: "20:03:34", msg: "充电14度，花费69元" },
+        ],
       },
       {
         id: "TJBJ09",
@@ -3252,6 +4346,9 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "18:03:00", msg: "充电19度，花费35元" },
+        ],
       },
       {
         id: "TJBJ10",
@@ -3260,6 +4357,14 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "06:52:52", msg: "充电66度，花费18元" },
+          { time: "06:15:47", msg: "充电88度，花费80元" },
+          { time: "12:17:09", msg: "充电66度，花费64元" },
+          { time: "02:47:45", msg: "充电28度，花费106元" },
+          { time: "10:25:28", msg: "充电55度，花费19元" },
+          { time: "06:39:57", msg: "充电96度，花费79元" },
+        ],
       },
       {
         id: "TJBJ11",
@@ -3269,6 +4374,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "73%",
+        recode: [
+          { time: "10:50:28", msg: "充电51度，花费93元" },
+        ],
       },
       {
         id: "TJBJ12",
@@ -3277,6 +4385,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "17:20:37", msg: "充电50度，花费43元" },
+        ],
       },
       {
         id: "TJBJ13",
@@ -3286,6 +4397,13 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "14%",
+        recode: [
+          { time: "16:27:30", msg: "充电81度，花费85元" },
+          { time: "03:35:08", msg: "充电60度，花费32元" },
+          { time: "21:47:03", msg: "充电53度，花费52元" },
+          { time: "21:58:10", msg: "充电61度，花费91元" },
+          { time: "01:30:53", msg: "充电66度，花费14元" },
+        ],
       },
       {
         id: "TJBJ14",
@@ -3294,6 +4412,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 5,
+        recode: [],
       },
       {
         id: "TJBJ15",
@@ -3302,6 +4421,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "23:28:33", msg: "充电80度，花费85元" },
+          { time: "18:16:48", msg: "充电42度，花费22元" },
+        ],
       },
     ],
   },
@@ -3317,6 +4440,13 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "67%",
+        recode: [
+          { time: "07:02:12", msg: "充电81度，花费109元" },
+          { time: "22:27:40", msg: "充电72度，花费77元" },
+          { time: "00:16:14", msg: "充电19度，花费48元" },
+          { time: "07:45:09", msg: "充电15度，花费36元" },
+          { time: "00:02:05", msg: "充电39度，花费51元" },
+        ],
       },
       {
         id: "SZGQ02",
@@ -3325,6 +4455,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "21:17:27", msg: "充电29度，花费15元" },
+          { time: "00:21:14", msg: "充电15度，花费39元" },
+          { time: "00:47:23", msg: "充电38度，花费12元" },
+        ],
       },
       {
         id: "SZGQ03",
@@ -3334,6 +4469,14 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "41%",
+        recode: [
+          { time: "09:02:46", msg: "充电106度，花费15元" },
+          { time: "11:07:35", msg: "充电19度，花费65元" },
+          { time: "15:18:04", msg: "充电56度，花费95元" },
+          { time: "21:14:24", msg: "充电80度，花费41元" },
+          { time: "17:11:51", msg: "充电100度，花费70元" },
+          { time: "12:21:22", msg: "充电104度，花费68元" },
+        ],
       },
       {
         id: "SZGQ04",
@@ -3342,6 +4485,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "08:33:39", msg: "充电70度，花费13元" },
+          { time: "00:52:51", msg: "充电21度，花费58元" },
+          { time: "00:36:33", msg: "充电79度，花费40元" },
+        ],
       },
       {
         id: "SZGQ05",
@@ -3351,6 +4499,12 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "90%",
+        recode: [
+          { time: "20:56:11", msg: "充电47度，花费88元" },
+          { time: "07:42:13", msg: "充电10度，花费19元" },
+          { time: "06:03:29", msg: "充电10度，花费28元" },
+          { time: "02:49:42", msg: "充电46度，花费77元" },
+        ],
       },
       {
         id: "SZGQ06",
@@ -3359,6 +4513,10 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "02:26:08", msg: "充电98度，花费62元" },
+          { time: "16:37:58", msg: "充电89度，花费62元" },
+        ],
       },
       {
         id: "SZGQ07",
@@ -3367,6 +4525,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "10:41:15", msg: "充电78度，花费36元" },
+        ],
       },
       {
         id: "SZGQ08",
@@ -3376,6 +4537,14 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "20%",
+        recode: [
+          { time: "13:20:32", msg: "充电55度，花费35元" },
+          { time: "14:43:09", msg: "充电106度，花费81元" },
+          { time: "11:11:41", msg: "充电40度，花费37元" },
+          { time: "06:48:58", msg: "充电20度，花费64元" },
+          { time: "20:47:42", msg: "充电48度，花费102元" },
+          { time: "06:29:05", msg: "充电11度，花费70元" },
+        ],
       },
       {
         id: "SZGQ09",
@@ -3384,6 +4553,10 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 6,
+        recode: [
+          { time: "16:12:42", msg: "充电102度，花费103元" },
+          { time: "20:17:52", msg: "充电48度，花费62元" },
+        ],
       },
       {
         id: "SZGQ10",
@@ -3392,6 +4565,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "04:22:50", msg: "充电37度，花费50元" },
+          { time: "06:28:01", msg: "充电61度，花费57元" },
+          { time: "13:07:29", msg: "充电42度，花费24元" },
+          { time: "10:54:52", msg: "充电33度，花费68元" },
+          { time: "03:46:10", msg: "充电47度，花费81元" },
+        ],
       },
       {
         id: "SZGQ11",
@@ -3401,6 +4581,9 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "54%",
+        recode: [
+          { time: "18:51:18", msg: "充电25度，花费83元" },
+        ],
       },
       {
         id: "SZGQ12",
@@ -3409,6 +4592,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "21:17:25", msg: "充电109度，花费93元" },
+          { time: "04:39:28", msg: "充电13度，花费108元" },
+          { time: "21:18:12", msg: "充电103度，花费11元" },
+          { time: "02:44:10", msg: "充电29度，花费57元" },
+          { time: "05:07:02", msg: "充电25度，花费61元" },
+          { time: "06:53:17", msg: "充电87度，花费84元" },
+        ],
       },
       {
         id: "SZGQ13",
@@ -3418,6 +4609,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "78%",
+        recode: [
+          { time: "14:34:36", msg: "充电39度，花费73元" },
+        ],
       },
       {
         id: "SZGQ14",
@@ -3426,6 +4620,10 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 5,
+        recode: [
+          { time: "04:16:54", msg: "充电37度，花费19元" },
+          { time: "01:26:34", msg: "充电72度，花费94元" },
+        ],
       },
       {
         id: "SZGQ15",
@@ -3434,6 +4632,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "11:29:09", msg: "充电62度，花费94元" },
+          { time: "17:08:58", msg: "充电64度，花费13元" },
+        ],
       },
       {
         id: "SZGQ16",
@@ -3443,6 +4645,12 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "32%",
+        recode: [
+          { time: "10:56:59", msg: "充电18度，花费88元" },
+          { time: "00:50:56", msg: "充电24度，花费77元" },
+          { time: "01:12:57", msg: "充电40度，花费105元" },
+          { time: "20:07:12", msg: "充电55度，花费74元" },
+        ],
       },
       {
         id: "SZGQ17",
@@ -3451,6 +4659,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 3,
+        recode: [
+          { time: "16:19:31", msg: "充电21度，花费48元" },
+          { time: "03:24:48", msg: "充电10度，花费64元" },
+          { time: "19:48:31", msg: "充电25度，花费83元" },
+          { time: "16:01:49", msg: "充电41度，花费32元" },
+        ],
       },
       {
         id: "SZGQ18",
@@ -3459,6 +4673,13 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "01:43:39", msg: "充电40度，花费23元" },
+          { time: "15:35:26", msg: "充电71度，花费100元" },
+          { time: "00:44:09", msg: "充电33度，花费33元" },
+          { time: "10:21:38", msg: "充电35度，花费104元" },
+          { time: "10:12:07", msg: "充电63度，花费12元" },
+        ],
       },
     ],
   },
@@ -3473,6 +4694,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "20:19:23", msg: "充电35度，花费32元" },
+          { time: "13:00:24", msg: "充电21度，花费65元" },
+        ],
       },
       {
         id: "XMGL02",
@@ -3482,6 +4707,12 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "56%",
+        recode: [
+          { time: "17:31:47", msg: "充电82度，花费93元" },
+          { time: "19:18:04", msg: "充电79度，花费85元" },
+          { time: "14:41:22", msg: "充电95度，花费102元" },
+          { time: "16:42:52", msg: "充电63度，花费93元" },
+        ],
       },
       {
         id: "XMGL03",
@@ -3490,6 +4721,12 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "08:42:41", msg: "充电81度，花费73元" },
+          { time: "00:12:21", msg: "充电87度，花费89元" },
+          { time: "23:42:19", msg: "充电39度，花费60元" },
+          { time: "11:33:30", msg: "充电56度，花费38元" },
+        ],
       },
       {
         id: "XMGL04",
@@ -3499,6 +4736,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "71%",
+        recode: [
+          { time: "03:10:14", msg: "充电66度，花费24元" },
+          { time: "22:28:42", msg: "充电47度，花费64元" },
+          { time: "13:37:50", msg: "充电47度，花费66元" },
+        ],
       },
       {
         id: "XMGL05",
@@ -3507,6 +4749,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "09:43:11", msg: "充电101度，花费38元" },
+          { time: "01:20:43", msg: "充电24度，花费49元" },
+          { time: "18:56:30", msg: "充电40度，花费54元" },
+          { time: "04:22:52", msg: "充电72度，花费35元" },
+          { time: "02:11:27", msg: "充电78度，花费40元" },
+        ],
       },
       {
         id: "XMGL06",
@@ -3516,6 +4765,13 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "27%",
+        recode: [
+          { time: "12:26:53", msg: "充电85度，花费84元" },
+          { time: "02:23:39", msg: "充电78度，花费66元" },
+          { time: "19:50:22", msg: "充电47度，花费36元" },
+          { time: "23:25:51", msg: "充电60度，花费34元" },
+          { time: "22:31:14", msg: "充电64度，花费83元" },
+        ],
       },
       {
         id: "XMGL07",
@@ -3524,6 +4780,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "01:10:00", msg: "充电95度，花费57元" },
+          { time: "16:00:39", msg: "充电94度，花费95元" },
+          { time: "20:57:54", msg: "充电71度，花费86元" },
+          { time: "09:04:22", msg: "充电25度，花费12元" },
+          { time: "05:32:15", msg: "充电47度，花费76元" },
+          { time: "22:30:07", msg: "充电13度，花费87元" },
+        ],
       },
       {
         id: "XMGL08",
@@ -3532,6 +4796,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "19:58:08", msg: "充电87度，花费28元" },
+        ],
       },
       {
         id: "XMGL09",
@@ -3541,6 +4808,9 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "83%",
+        recode: [
+          { time: "01:50:42", msg: "充电33度，花费65元" },
+        ],
       },
       {
         id: "XMGL10",
@@ -3549,6 +4819,14 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 6,
+        recode: [
+          { time: "22:19:24", msg: "充电26度，花费44元" },
+          { time: "02:03:47", msg: "充电74度，花费86元" },
+          { time: "00:37:38", msg: "充电75度，花费82元" },
+          { time: "05:44:08", msg: "充电66度，花费66元" },
+          { time: "14:36:13", msg: "充电33度，花费106元" },
+          { time: "23:30:29", msg: "充电60度，花费79元" },
+        ],
       },
       {
         id: "XMGL11",
@@ -3557,6 +4835,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "01:03:15", msg: "充电37度，花费21元" },
+          { time: "06:33:02", msg: "充电93度，花费60元" },
+          { time: "19:25:31", msg: "充电68度，花费58元" },
+          { time: "02:47:18", msg: "充电85度，花费90元" },
+          { time: "04:40:29", msg: "充电45度，花费78元" },
+        ],
       },
       {
         id: "XMGL12",
@@ -3566,6 +4851,7 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "39%",
+        recode: [],
       },
       {
         id: "XMGL13",
@@ -3574,6 +4860,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "17:29:31", msg: "充电86度，花费29元" },
+        ],
       },
     ],
   },
@@ -3589,6 +4878,14 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "42%",
+        recode: [
+          { time: "11:56:05", msg: "充电47度，花费19元" },
+          { time: "06:08:29", msg: "充电53度，花费78元" },
+          { time: "09:27:20", msg: "充电97度，花费42元" },
+          { time: "23:08:19", msg: "充电86度，花费54元" },
+          { time: "18:21:57", msg: "充电11度，花费44元" },
+          { time: "11:47:46", msg: "充电21度，花费64元" },
+        ],
       },
       {
         id: "KMCH02",
@@ -3597,6 +4894,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "09:42:06", msg: "充电89度，花费31元" },
+        ],
       },
       {
         id: "KMCH03",
@@ -3606,6 +4906,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "68%",
+        recode: [
+          { time: "19:09:07", msg: "充电88度，花费82元" },
+        ],
       },
       {
         id: "KMCH04",
@@ -3614,6 +4917,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "13:09:06", msg: "充电32度，花费57元" },
+          { time: "04:39:31", msg: "充电18度，花费20元" },
+          { time: "18:01:43", msg: "充电92度，花费47元" },
+          { time: "12:08:36", msg: "充电108度，花费67元" },
+        ],
       },
       {
         id: "KMCH05",
@@ -3622,6 +4931,14 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 6,
+        recode: [
+          { time: "21:24:29", msg: "充电42度，花费34元" },
+          { time: "01:25:05", msg: "充电86度，花费59元" },
+          { time: "21:10:48", msg: "充电69度，花费78元" },
+          { time: "18:35:59", msg: "充电45度，花费49元" },
+          { time: "18:30:19", msg: "充电103度，花费61元" },
+          { time: "01:48:16", msg: "充电62度，花费78元" },
+        ],
       },
       {
         id: "KMCH06",
@@ -3631,6 +4948,13 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "53%",
+        recode: [
+          { time: "22:46:52", msg: "充电81度，花费66元" },
+          { time: "22:50:44", msg: "充电26度，花费26元" },
+          { time: "04:59:09", msg: "充电95度，花费32元" },
+          { time: "15:20:40", msg: "充电43度，花费105元" },
+          { time: "10:20:09", msg: "充电45度，花费34元" },
+        ],
       },
       {
         id: "KMCH07",
@@ -3639,6 +4963,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "11:36:16", msg: "充电86度，花费21元" },
+        ],
       },
       {
         id: "KMCH08",
@@ -3648,6 +4975,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "79%",
+        recode: [
+          { time: "15:14:02", msg: "充电57度，花费21元" },
+          { time: "08:27:13", msg: "充电39度，花费17元" },
+          { time: "15:19:41", msg: "充电10度，花费86元" },
+        ],
       },
       {
         id: "KMCH09",
@@ -3656,6 +4988,13 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "04:55:04", msg: "充电86度，花费53元" },
+          { time: "22:41:50", msg: "充电47度，花费47元" },
+          { time: "19:58:53", msg: "充电98度，花费62元" },
+          { time: "05:02:59", msg: "充电96度，花费16元" },
+          { time: "12:02:13", msg: "充电70度，花费78元" },
+        ],
       },
       {
         id: "KMCH10",
@@ -3664,6 +5003,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "23:10:48", msg: "充电49度，花费64元" },
+          { time: "20:38:36", msg: "充电73度，花费72元" },
+          { time: "04:08:36", msg: "充电102度，花费76元" },
+          { time: "10:08:34", msg: "充电45度，花费13元" },
+        ],
       },
       {
         id: "KMCH11",
@@ -3673,6 +5018,11 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "25%",
+        recode: [
+          { time: "20:04:25", msg: "充电106度，花费14元" },
+          { time: "12:37:53", msg: "充电37度，花费40元" },
+          { time: "23:20:56", msg: "充电47度，花费91元" },
+        ],
       },
       {
         id: "KMCH12",
@@ -3681,6 +5031,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [],
       },
       {
         id: "KMCH13",
@@ -3689,6 +5040,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "03:06:30", msg: "充电10度，花费101元" },
+          { time: "20:14:29", msg: "充电34度，花费75元" },
+          { time: "00:55:22", msg: "充电20度，花费40元" },
+          { time: "02:28:58", msg: "充电90度，花费80元" },
+        ],
       },
       {
         id: "KMCH14",
@@ -3698,6 +5055,10 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "61%",
+        recode: [
+          { time: "18:26:00", msg: "充电24度，花费32元" },
+          { time: "01:14:00", msg: "充电58度，花费67元" },
+        ],
       },
       {
         id: "KMCH15",
@@ -3706,6 +5067,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 5,
+        recode: [],
       },
       {
         id: "KMCH16",
@@ -3714,6 +5076,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "06:53:22", msg: "充电70度，花费49元" },
+          { time: "11:32:25", msg: "充电60度，花费21元" },
+          { time: "10:19:04", msg: "充电53度，花费100元" },
+          { time: "20:21:10", msg: "充电97度，花费107元" },
+          { time: "10:08:05", msg: "充电19度，花费108元" },
+          { time: "06:21:46", msg: "充电89度，花费94元" },
+        ],
       },
     ],
   },
@@ -3729,6 +5099,10 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "74%",
+        recode: [
+          { time: "21:06:07", msg: "充电24度，花费89元" },
+          { time: "14:58:41", msg: "充电50度，花费94元" },
+        ],
       },
       {
         id: "JNBT02",
@@ -3737,6 +5111,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "12:10:23", msg: "充电30度，花费10元" },
+          { time: "03:17:43", msg: "充电47度，花费76元" },
+          { time: "18:54:57", msg: "充电74度，花费97元" },
+          { time: "21:45:29", msg: "充电95度，花费47元" },
+        ],
       },
       {
         id: "JNBT03",
@@ -3745,6 +5125,7 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [],
       },
       {
         id: "JNBT04",
@@ -3754,6 +5135,12 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "33%",
+        recode: [
+          { time: "19:21:08", msg: "充电68度，花费30元" },
+          { time: "02:03:10", msg: "充电92度，花费21元" },
+          { time: "10:27:46", msg: "充电27度，花费102元" },
+          { time: "05:07:04", msg: "充电21度，花费64元" },
+        ],
       },
       {
         id: "JNBT05",
@@ -3762,6 +5149,12 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "09:09:31", msg: "充电15度，花费26元" },
+          { time: "19:30:12", msg: "充电88度，花费88元" },
+          { time: "13:27:51", msg: "充电20度，花费89元" },
+          { time: "15:03:08", msg: "充电99度，花费106元" },
+        ],
       },
       {
         id: "JNBT06",
@@ -3771,6 +5164,10 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "88%",
+        recode: [
+          { time: "19:15:01", msg: "充电108度，花费92元" },
+          { time: "18:19:01", msg: "充电26度，花费65元" },
+        ],
       },
       {
         id: "JNBT07",
@@ -3779,6 +5176,7 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [],
       },
       {
         id: "JNBT08",
@@ -3787,6 +5185,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "14:06:27", msg: "充电18度，花费39元" },
+          { time: "21:54:18", msg: "充电104度，花费58元" },
+          { time: "15:28:55", msg: "充电103度，花费33元" },
+        ],
       },
       {
         id: "JNBT09",
@@ -3795,6 +5198,14 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 6,
+        recode: [
+          { time: "20:24:36", msg: "充电103度，花费91元" },
+          { time: "14:08:57", msg: "充电37度，花费26元" },
+          { time: "23:14:32", msg: "充电78度，花费30元" },
+          { time: "04:44:36", msg: "充电35度，花费17元" },
+          { time: "00:57:50", msg: "充电87度，花费64元" },
+          { time: "10:56:31", msg: "充电98度，花费97元" },
+        ],
       },
       {
         id: "JNBT10",
@@ -3804,6 +5215,10 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "51%",
+        recode: [
+          { time: "04:05:24", msg: "充电45度，花费50元" },
+          { time: "13:47:06", msg: "充电95度，花费12元" },
+        ],
       },
       {
         id: "JNBT11",
@@ -3812,6 +5227,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "09:10:47", msg: "充电65度，花费39元" },
+          { time: "13:02:55", msg: "充电23度，花费41元" },
+          { time: "11:06:44", msg: "充电69度，花费25元" },
+          { time: "21:19:53", msg: "充电74度，花费23元" },
+          { time: "12:31:04", msg: "充电11度，花费78元" },
+          { time: "04:35:42", msg: "充电70度，花费109元" },
+        ],
       },
       {
         id: "JNBT12",
@@ -3821,6 +5244,13 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "19%",
+        recode: [
+          { time: "23:13:56", msg: "充电22度，花费31元" },
+          { time: "19:58:49", msg: "充电103度，花费104元" },
+          { time: "18:18:06", msg: "充电102度，花费66元" },
+          { time: "22:06:55", msg: "充电58度，花费34元" },
+          { time: "04:49:07", msg: "充电17度，花费38元" },
+        ],
       },
       {
         id: "JNBT13",
@@ -3829,6 +5259,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "20:14:21", msg: "充电109度，花费58元" },
+          { time: "05:21:20", msg: "充电70度，花费56元" },
+          { time: "16:58:13", msg: "充电15度，花费43元" },
+        ],
       },
       {
         id: "JNBT14",
@@ -3838,6 +5273,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "63%",
+        recode: [
+          { time: "20:26:24", msg: "充电29度，花费89元" },
+          { time: "21:26:37", msg: "充电64度，花费101元" },
+          { time: "15:31:58", msg: "充电75度，花费42元" },
+        ],
       },
       {
         id: "JNBT15",
@@ -3846,6 +5286,11 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 5,
+        recode: [
+          { time: "15:31:05", msg: "充电83度，花费32元" },
+          { time: "04:02:24", msg: "充电37度，花费24元" },
+          { time: "07:39:59", msg: "充电91度，花费19元" },
+        ],
       },
       {
         id: "JNBT16",
@@ -3854,6 +5299,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "09:42:00", msg: "充电28度，花费94元" },
+          { time: "04:59:54", msg: "充电71度，花费33元" },
+          { time: "05:27:45", msg: "充电31度，花费99元" },
+        ],
       },
       {
         id: "JNBT17",
@@ -3862,6 +5312,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 3,
+        recode: [
+          { time: "14:48:13", msg: "充电24度，花费27元" },
+          { time: "04:17:41", msg: "充电35度，花费18元" },
+          { time: "03:08:12", msg: "充电55度，花费22元" },
+          { time: "13:55:55", msg: "充电96度，花费12元" },
+          { time: "23:50:07", msg: "充电37度，花费90元" },
+          { time: "17:02:25", msg: "充电94度，花费42元" },
+        ],
       },
       {
         id: "JNBT18",
@@ -3871,6 +5329,14 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "45%",
+        recode: [
+          { time: "09:43:49", msg: "充电96度，花费54元" },
+          { time: "12:46:43", msg: "充电76度，花费72元" },
+          { time: "03:27:04", msg: "充电54度，花费26元" },
+          { time: "11:35:30", msg: "充电59度，花费16元" },
+          { time: "03:15:57", msg: "充电58度，花费35元" },
+          { time: "04:13:28", msg: "充电53度，花费54元" },
+        ],
       },
       {
         id: "JNBT19",
@@ -3879,6 +5345,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "21:35:44", msg: "充电48度，花费50元" },
+          { time: "08:03:37", msg: "充电94度，花费97元" },
+          { time: "13:58:40", msg: "充电53度，花费86元" },
+          { time: "18:09:30", msg: "充电16度，花费30元" },
+        ],
       },
       {
         id: "JNBT20",
@@ -3888,6 +5360,11 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "95%",
+        recode: [
+          { time: "16:49:30", msg: "充电42度，花费68元" },
+          { time: "02:08:03", msg: "充电25度，花费94元" },
+          { time: "15:40:01", msg: "充电72度，花费72元" },
+        ],
       },
       {
         id: "JNBT21",
@@ -3896,6 +5373,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "JNBT22",
@@ -3904,6 +5382,9 @@ let chargingPile = [
         power: "0KW",
         tem: "34℃",
         status: 1,
+        recode: [
+          { time: "07:51:44", msg: "充电45度，花费31元" },
+        ],
       },
     ],
   },
@@ -3918,6 +5399,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "18:24:06", msg: "充电86度，花费64元" },
+          { time: "15:57:59", msg: "充电41度，花费73元" },
+        ],
       },
       {
         id: "FZSF02",
@@ -3927,6 +5412,12 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "66%",
+        recode: [
+          { time: "06:00:50", msg: "充电90度，花费81元" },
+          { time: "00:28:56", msg: "充电84度，花费39元" },
+          { time: "18:14:02", msg: "充电74度，花费90元" },
+          { time: "23:59:54", msg: "充电21度，花费51元" },
+        ],
       },
       {
         id: "FZSF03",
@@ -3935,6 +5426,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "02:22:04", msg: "充电62度，花费101元" },
+        ],
       },
       {
         id: "FZSF04",
@@ -3944,6 +5438,7 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "28%",
+        recode: [],
       },
       {
         id: "FZSF05",
@@ -3952,6 +5447,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "05:32:56", msg: "充电19度，花费95元" },
+          { time: "02:01:47", msg: "充电67度，花费109元" },
+          { time: "12:59:21", msg: "充电12度，花费24元" },
+          { time: "06:45:00", msg: "充电58度，花费101元" },
+        ],
       },
       {
         id: "FZSF06",
@@ -3961,6 +5462,10 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "92%",
+        recode: [
+          { time: "00:46:45", msg: "充电20度，花费100元" },
+          { time: "09:02:35", msg: "充电104度，花费16元" },
+        ],
       },
       {
         id: "FZSF07",
@@ -3969,6 +5474,12 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 4,
+        recode: [
+          { time: "03:09:11", msg: "充电65度，花费28元" },
+          { time: "11:09:10", msg: "充电108度，花费35元" },
+          { time: "07:01:26", msg: "充电97度，花费80元" },
+          { time: "07:00:27", msg: "充电106度，花费38元" },
+        ],
       },
       {
         id: "FZSF08",
@@ -3977,6 +5488,13 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "00:06:52", msg: "充电49度，花费10元" },
+          { time: "04:40:17", msg: "充电39度，花费68元" },
+          { time: "08:38:07", msg: "充电93度，花费27元" },
+          { time: "12:54:31", msg: "充电39度，花费52元" },
+          { time: "22:43:15", msg: "充电14度，花费94元" },
+        ],
       },
       {
         id: "FZSF09",
@@ -3986,6 +5504,13 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "48%",
+        recode: [
+          { time: "17:26:03", msg: "充电44度，花费71元" },
+          { time: "15:26:23", msg: "充电84度，花费57元" },
+          { time: "17:45:47", msg: "充电52度，花费97元" },
+          { time: "22:30:56", msg: "充电95度，花费42元" },
+          { time: "12:31:56", msg: "充电46度，花费100元" },
+        ],
       },
       {
         id: "FZSF10",
@@ -3994,6 +5519,14 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 6,
+        recode: [
+          { time: "02:11:42", msg: "充电74度，花费69元" },
+          { time: "00:42:24", msg: "充电101度，花费109元" },
+          { time: "22:11:50", msg: "充电68度，花费108元" },
+          { time: "04:13:09", msg: "充电41度，花费103元" },
+          { time: "20:19:54", msg: "充电94度，花费19元" },
+          { time: "12:46:23", msg: "充电79度，花费52元" },
+        ],
       },
       {
         id: "FZSF11",
@@ -4002,6 +5535,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "FZSF12",
@@ -4011,6 +5545,14 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "75%",
+        recode: [
+          { time: "05:40:47", msg: "充电78度，花费97元" },
+          { time: "19:54:04", msg: "充电72度，花费28元" },
+          { time: "22:35:50", msg: "充电101度，花费57元" },
+          { time: "06:40:53", msg: "充电54度，花费76元" },
+          { time: "20:04:33", msg: "充电107度，花费60元" },
+          { time: "03:01:20", msg: "充电87度，花费48元" },
+        ],
       },
       {
         id: "FZSF13",
@@ -4019,6 +5561,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "02:38:32", msg: "充电35度，花费15元" },
+          { time: "19:31:13", msg: "充电43度，花费25元" },
+          { time: "03:42:53", msg: "充电34度，花费31元" },
+          { time: "20:13:21", msg: "充电26度，花费65元" },
+          { time: "16:01:18", msg: "充电25度，花费108元" },
+        ],
       },
       {
         id: "FZSF14",
@@ -4027,6 +5576,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 5,
+        recode: [
+          { time: "05:14:09", msg: "充电11度，花费52元" },
+        ],
       },
     ],
   },
@@ -4042,6 +5594,10 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "59%",
+        recode: [
+          { time: "23:00:27", msg: "充电108度，花费22元" },
+          { time: "13:14:32", msg: "充电87度，花费47元" },
+        ],
       },
       {
         id: "HFTH02",
@@ -4050,6 +5606,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "00:37:14", msg: "充电109度，花费93元" },
+          { time: "14:41:32", msg: "充电64度，花费66元" },
+        ],
       },
       {
         id: "HFTH03",
@@ -4059,6 +5619,7 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "37%",
+        recode: [],
       },
       {
         id: "HFTH04",
@@ -4067,6 +5628,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "21:29:58", msg: "充电46度，花费83元" },
+          { time: "21:59:18", msg: "充电12度，花费104元" },
+          { time: "19:48:42", msg: "充电108度，花费43元" },
+        ],
       },
       {
         id: "HFTH05",
@@ -4076,6 +5642,13 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "81%",
+        recode: [
+          { time: "15:45:25", msg: "充电90度，花费53元" },
+          { time: "17:16:20", msg: "充电70度，花费84元" },
+          { time: "03:54:14", msg: "充电89度，花费69元" },
+          { time: "20:01:52", msg: "充电68度，花费27元" },
+          { time: "19:27:23", msg: "充电68度，花费62元" },
+        ],
       },
       {
         id: "HFTH06",
@@ -4084,6 +5657,7 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [],
       },
       {
         id: "HFTH07",
@@ -4092,6 +5666,9 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 6,
+        recode: [
+          { time: "14:32:44", msg: "充电15度，花费59元" },
+        ],
       },
       {
         id: "HFTH08",
@@ -4100,6 +5677,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "17:17:33", msg: "充电98度，花费86元" },
+        ],
       },
       {
         id: "HFTH09",
@@ -4109,6 +5689,13 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "22%",
+        recode: [
+          { time: "03:03:11", msg: "充电42度，花费66元" },
+          { time: "04:31:39", msg: "充电66度，花费69元" },
+          { time: "21:54:36", msg: "充电43度，花费68元" },
+          { time: "12:21:19", msg: "充电41度，花费81元" },
+          { time: "14:18:43", msg: "充电10度，花费63元" },
+        ],
       },
       {
         id: "HFTH10",
@@ -4117,6 +5704,7 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [],
       },
       {
         id: "HFTH11",
@@ -4126,6 +5714,11 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "50%",
+        recode: [
+          { time: "06:43:44", msg: "充电11度，花费101元" },
+          { time: "05:29:36", msg: "充电48度，花费43元" },
+          { time: "12:09:29", msg: "充电51度，花费44元" },
+        ],
       },
       {
         id: "HFTH12",
@@ -4134,6 +5727,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
       {
         id: "HFTH13",
@@ -4143,6 +5737,13 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "70%",
+        recode: [
+          { time: "20:10:48", msg: "充电35度，花费28元" },
+          { time: "12:23:24", msg: "充电55度，花费33元" },
+          { time: "04:43:59", msg: "充电78度，花费35元" },
+          { time: "13:09:18", msg: "充电62度，花费46元" },
+          { time: "12:37:12", msg: "充电81度，花费18元" },
+        ],
       },
       {
         id: "HFTH14",
@@ -4151,6 +5752,12 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 5,
+        recode: [
+          { time: "02:12:24", msg: "充电41度，花费46元" },
+          { time: "18:48:06", msg: "充电38度，花费90元" },
+          { time: "22:20:06", msg: "充电86度，花费63元" },
+          { time: "03:35:16", msg: "充电68度，花费38元" },
+        ],
       },
       {
         id: "HFTH15",
@@ -4159,6 +5766,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "10:39:26", msg: "充电60度，花费46元" },
+        ],
       },
       {
         id: "HFTH16",
@@ -4167,6 +5777,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "14:48:42", msg: "充电74度，花费106元" },
+          { time: "18:43:20", msg: "充电33度，花费109元" },
+          { time: "02:16:41", msg: "充电46度，花费58元" },
+          { time: "23:02:55", msg: "充电59度，花费19元" },
+          { time: "02:29:47", msg: "充电42度，花费65元" },
+          { time: "15:54:39", msg: "充电108度，花费106元" },
+        ],
       },
       {
         id: "HFTH17",
@@ -4175,6 +5793,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 3,
+        recode: [
+          { time: "00:07:59", msg: "充电108度，花费104元" },
+        ],
       },
       {
         id: "HFTH18",
@@ -4184,6 +5805,14 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "31%",
+        recode: [
+          { time: "08:42:06", msg: "充电58度，花费33元" },
+          { time: "10:01:26", msg: "充电68度，花费39元" },
+          { time: "07:05:01", msg: "充电48度，花费29元" },
+          { time: "14:28:49", msg: "充电46度，花费64元" },
+          { time: "12:12:32", msg: "充电92度，花费50元" },
+          { time: "13:35:57", msg: "充电55度，花费34元" },
+        ],
       },
       {
         id: "HFTH19",
@@ -4192,6 +5821,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "04:51:52", msg: "充电80度，花费99元" },
+        ],
       },
     ],
   },
@@ -4206,6 +5838,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "06:11:12", msg: "充电55度，花费61元" },
+          { time: "13:56:42", msg: "充电68度，花费37元" },
+          { time: "14:20:10", msg: "充电39度，花费50元" },
+          { time: "05:03:46", msg: "充电36度，花费89元" },
+          { time: "07:14:22", msg: "充电85度，花费84元" },
+          { time: "09:52:33", msg: "充电76度，花费28元" },
+        ],
       },
       {
         id: "NCBY02",
@@ -4215,6 +5855,12 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "44%",
+        recode: [
+          { time: "14:18:29", msg: "充电57度，花费83元" },
+          { time: "12:41:16", msg: "充电19度，花费12元" },
+          { time: "19:30:00", msg: "充电39度，花费53元" },
+          { time: "19:10:13", msg: "充电45度，花费29元" },
+        ],
       },
       {
         id: "NCBY03",
@@ -4223,6 +5869,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "10:41:15", msg: "充电50度，花费106元" },
+          { time: "20:43:53", msg: "充电101度，花费18元" },
+          { time: "08:43:54", msg: "充电90度，花费15元" },
+        ],
       },
       {
         id: "NCBY04",
@@ -4232,6 +5883,7 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "72%",
+        recode: [],
       },
       {
         id: "NCBY05",
@@ -4240,6 +5892,10 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "12:18:20", msg: "充电62度，花费10元" },
+          { time: "02:27:07", msg: "充电70度，花费57元" },
+        ],
       },
       {
         id: "NCBY06",
@@ -4249,6 +5905,12 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "26%",
+        recode: [
+          { time: "16:18:24", msg: "充电43度，花费57元" },
+          { time: "20:35:41", msg: "充电11度，花费16元" },
+          { time: "16:59:45", msg: "充电83度，花费103元" },
+          { time: "23:05:01", msg: "充电81度，花费67元" },
+        ],
       },
       {
         id: "NCBY07",
@@ -4257,6 +5919,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 4,
+        recode: [
+          { time: "08:38:40", msg: "充电18度，花费66元" },
+          { time: "01:42:17", msg: "充电64度，花费73元" },
+          { time: "02:48:08", msg: "充电73度，花费58元" },
+          { time: "17:00:05", msg: "充电41度，花费24元" },
+          { time: "10:43:23", msg: "充电103度，花费106元" },
+          { time: "19:54:37", msg: "充电45度，花费22元" },
+        ],
       },
       {
         id: "NCBY08",
@@ -4265,6 +5935,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "04:36:41", msg: "充电67度，花费18元" },
+          { time: "01:06:20", msg: "充电106度，花费10元" },
+        ],
       },
       {
         id: "NCBY09",
@@ -4274,6 +5948,12 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "58%",
+        recode: [
+          { time: "15:45:33", msg: "充电80度，花费44元" },
+          { time: "13:24:06", msg: "充电61度，花费91元" },
+          { time: "16:45:27", msg: "充电19度，花费51元" },
+          { time: "17:13:57", msg: "充电63度，花费32元" },
+        ],
       },
       {
         id: "NCBY10",
@@ -4282,6 +5962,14 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 6,
+        recode: [
+          { time: "22:11:47", msg: "充电37度，花费72元" },
+          { time: "07:12:47", msg: "充电44度，花费75元" },
+          { time: "23:58:00", msg: "充电105度，花费21元" },
+          { time: "20:46:21", msg: "充电95度，花费42元" },
+          { time: "12:34:37", msg: "充电91度，花费91元" },
+          { time: "01:22:54", msg: "充电104度，花费23元" },
+        ],
       },
       {
         id: "NCBY11",
@@ -4290,6 +5978,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "23:36:03", msg: "充电22度，花费26元" },
+          { time: "01:20:25", msg: "充电31度，花费91元" },
+          { time: "11:31:47", msg: "充电109度，花费103元" },
+          { time: "00:46:45", msg: "充电54度，花费36元" },
+          { time: "18:11:23", msg: "充电70度，花费14元" },
+          { time: "23:54:05", msg: "充电77度，花费98元" },
+        ],
       },
       {
         id: "NCBY12",
@@ -4299,6 +5995,9 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "35%",
+        recode: [
+          { time: "01:22:37", msg: "充电29度，花费97元" },
+        ],
       },
       {
         id: "NCBY13",
@@ -4308,6 +6007,13 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "85%",
+        recode: [
+          { time: "05:02:43", msg: "充电61度，花费77元" },
+          { time: "04:50:52", msg: "充电38度，花费15元" },
+          { time: "15:11:33", msg: "充电18度，花费52元" },
+          { time: "04:44:52", msg: "充电49度，花费10元" },
+          { time: "12:52:04", msg: "充电27度，花费49元" },
+        ],
       },
       {
         id: "NCBY14",
@@ -4316,6 +6022,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 5,
+        recode: [
+          { time: "15:03:29", msg: "充电15度，花费86元" },
+        ],
       },
       {
         id: "NCBY15",
@@ -4324,6 +6033,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "02:41:18", msg: "充电36度，花费82元" },
+          { time: "15:43:05", msg: "充电19度，花费95元" },
+        ],
       },
       {
         id: "NCBY16",
@@ -4332,6 +6045,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "13:38:36", msg: "充电74度，花费100元" },
+          { time: "01:50:53", msg: "充电74度，花费85元" },
+          { time: "07:36:34", msg: "充电37度，花费103元" },
+        ],
       },
       {
         id: "NCBY17",
@@ -4340,6 +6058,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 3,
+        recode: [
+          { time: "02:30:03", msg: "充电17度，花费101元" },
+        ],
       },
     ],
   },
@@ -4355,6 +6076,11 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "63%",
+        recode: [
+          { time: "15:10:18", msg: "充电63度，花费26元" },
+          { time: "14:31:00", msg: "充电40度，花费53元" },
+          { time: "05:05:12", msg: "充电74度，花费57元" },
+        ],
       },
       {
         id: "HKWL02",
@@ -4363,6 +6089,13 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "05:47:01", msg: "充电48度，花费35元" },
+          { time: "21:36:45", msg: "充电20度，花费37元" },
+          { time: "04:07:47", msg: "充电105度，花费104元" },
+          { time: "02:55:23", msg: "充电99度，花费27元" },
+          { time: "03:13:48", msg: "充电88度，花费92元" },
+        ],
       },
       {
         id: "HKWL03",
@@ -4371,6 +6104,11 @@ let chargingPile = [
         power: "0KW",
         tem: "30℃",
         status: 1,
+        recode: [
+          { time: "02:50:59", msg: "充电108度，花费45元" },
+          { time: "10:31:43", msg: "充电86度，花费31元" },
+          { time: "05:17:46", msg: "充电104度，花费71元" },
+        ],
       },
       {
         id: "HKWL04",
@@ -4380,6 +6118,12 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "29%",
+        recode: [
+          { time: "05:07:17", msg: "充电88度，花费18元" },
+          { time: "21:23:55", msg: "充电64度，花费22元" },
+          { time: "21:48:13", msg: "充电107度，花费36元" },
+          { time: "14:13:18", msg: "充电104度，花费60元" },
+        ],
       },
       {
         id: "HKWL05",
@@ -4389,6 +6133,9 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "80%",
+        recode: [
+          { time: "00:41:41", msg: "充电102度，花费84元" },
+        ],
       },
       {
         id: "HKWL06",
@@ -4397,6 +6144,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 4,
+        recode: [
+          { time: "14:53:04", msg: "充电66度，花费79元" },
+          { time: "23:52:22", msg: "充电64度，花费28元" },
+          { time: "15:58:03", msg: "充电76度，花费99元" },
+          { time: "20:56:04", msg: "充电33度，花费14元" },
+          { time: "12:33:09", msg: "充电18度，花费46元" },
+        ],
       },
       {
         id: "HKWL07",
@@ -4405,6 +6159,9 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "17:46:39", msg: "充电28度，花费65元" },
+        ],
       },
       {
         id: "HKWL08",
@@ -4414,6 +6171,12 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "52%",
+        recode: [
+          { time: "23:43:50", msg: "充电17度，花费36元" },
+          { time: "15:04:23", msg: "充电91度，花费21元" },
+          { time: "17:29:56", msg: "充电56度，花费91元" },
+          { time: "20:38:45", msg: "充电34度，花费44元" },
+        ],
       },
       {
         id: "HKWL09",
@@ -4422,6 +6185,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [
+          { time: "08:12:32", msg: "充电101度，花费55元" },
+          { time: "10:09:03", msg: "充电55度，花费63元" },
+          { time: "04:44:08", msg: "充电11度，花费104元" },
+          { time: "05:00:41", msg: "充电44度，花费15元" },
+          { time: "23:23:50", msg: "充电10度，花费89元" },
+          { time: "01:10:24", msg: "充电93度，花费73元" },
+        ],
       },
       {
         id: "HKWL10",
@@ -4430,6 +6201,11 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "23:35:29", msg: "充电16度，花费85元" },
+          { time: "21:46:58", msg: "充电75度，花费86元" },
+          { time: "11:58:48", msg: "充电88度，花费45元" },
+        ],
       },
       {
         id: "HKWL11",
@@ -4439,6 +6215,13 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "71%",
+        recode: [
+          { time: "16:25:16", msg: "充电68度，花费105元" },
+          { time: "19:17:49", msg: "充电59度，花费81元" },
+          { time: "06:41:02", msg: "充电97度，花费93元" },
+          { time: "17:01:12", msg: "充电44度，花费15元" },
+          { time: "00:42:39", msg: "充电81度，花费68元" },
+        ],
       },
       {
         id: "HKWL12",
@@ -4447,6 +6230,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "03:16:29", msg: "充电82度，花费16元" },
+          { time: "04:40:40", msg: "充电106度，花费44元" },
+        ],
       },
     ],
   },
@@ -4462,6 +6249,14 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "47%",
+        recode: [
+          { time: "18:13:05", msg: "充电50度，花费108元" },
+          { time: "20:47:26", msg: "充电97度，花费85元" },
+          { time: "02:47:54", msg: "充电31度，花费93元" },
+          { time: "11:52:05", msg: "充电32度，花费16元" },
+          { time: "15:05:13", msg: "充电17度，花费45元" },
+          { time: "12:57:25", msg: "充电78度，花费20元" },
+        ],
       },
       {
         id: "NNQX02",
@@ -4470,6 +6265,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "NNQX03",
@@ -4478,6 +6274,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
       {
         id: "NNQX04",
@@ -4487,6 +6284,10 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "69%",
+        recode: [
+          { time: "11:13:49", msg: "充电109度，花费18元" },
+          { time: "14:50:28", msg: "充电105度，花费41元" },
+        ],
       },
       {
         id: "NNQX05",
@@ -4496,6 +6297,9 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "23%",
+        recode: [
+          { time: "17:47:52", msg: "充电11度，花费99元" },
+        ],
       },
       {
         id: "NNQX06",
@@ -4504,6 +6308,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "11:28:42", msg: "充电47度，花费100元" },
+        ],
       },
       {
         id: "NNQX07",
@@ -4512,6 +6319,10 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 6,
+        recode: [
+          { time: "04:13:37", msg: "充电102度，花费36元" },
+          { time: "13:47:29", msg: "充电47度，花费59元" },
+        ],
       },
       {
         id: "NNQX08",
@@ -4520,6 +6331,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "01:07:50", msg: "充电99度，花费71元" },
+          { time: "15:34:12", msg: "充电38度，花费25元" },
+        ],
       },
       {
         id: "NNQX09",
@@ -4529,6 +6344,7 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "81%",
+        recode: [],
       },
       {
         id: "NNQX10",
@@ -4537,6 +6353,9 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "20:54:46", msg: "充电84度，花费74元" },
+        ],
       },
       {
         id: "NNQX11",
@@ -4545,6 +6364,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "18:19:52", msg: "充电52度，花费35元" },
+          { time: "20:11:57", msg: "充电34度，花费43元" },
+        ],
       },
       {
         id: "NNQX12",
@@ -4554,6 +6377,9 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "38%",
+        recode: [
+          { time: "18:33:26", msg: "充电26度，花费69元" },
+        ],
       },
       {
         id: "NNQX13",
@@ -4562,6 +6388,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "03:58:24", msg: "充电75度，花费38元" },
+        ],
       },
       {
         id: "NNQX14",
@@ -4571,6 +6400,10 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "56%",
+        recode: [
+          { time: "03:22:30", msg: "充电79度，花费101元" },
+          { time: "22:39:42", msg: "充电88度，花费47元" },
+        ],
       },
       {
         id: "NNQX15",
@@ -4579,6 +6412,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 5,
+        recode: [
+          { time: "11:59:48", msg: "充电88度，花费91元" },
+          { time: "21:58:59", msg: "充电40度，花费84元" },
+          { time: "14:07:23", msg: "充电46度，花费98元" },
+          { time: "10:18:07", msg: "充电45度，花费49元" },
+          { time: "19:47:50", msg: "充电10度，花费103元" },
+        ],
       },
       {
         id: "NNQX16",
@@ -4587,6 +6427,9 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "16:40:03", msg: "充电80度，花费18元" },
+        ],
       },
       {
         id: "NNQX17",
@@ -4595,6 +6438,11 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 3,
+        recode: [
+          { time: "09:27:38", msg: "充电82度，花费103元" },
+          { time: "04:25:56", msg: "充电18度，花费36元" },
+          { time: "16:14:42", msg: "充电21度，花费77元" },
+        ],
       },
       {
         id: "NNQX18",
@@ -4604,6 +6452,12 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "15%",
+        recode: [
+          { time: "22:47:14", msg: "充电34度，花费104元" },
+          { time: "21:35:16", msg: "充电51度，花费39元" },
+          { time: "11:34:41", msg: "充电27度，花费90元" },
+          { time: "21:02:54", msg: "充电18度，花费95元" },
+        ],
       },
       {
         id: "NNQX19",
@@ -4612,6 +6466,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
       {
         id: "NNQX20",
@@ -4620,6 +6475,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "11:57:29", msg: "充电34度，花费17元" },
+          { time: "17:31:30", msg: "充电67度，花费26元" },
+          { time: "17:47:46", msg: "充电85度，花费36元" },
+        ],
       },
     ],
   },
@@ -4634,6 +6494,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "20:44:11", msg: "充电73度，花费26元" },
+          { time: "06:24:51", msg: "充电22度，花费78元" },
+          { time: "23:38:13", msg: "充电34度，花费73元" },
+        ],
       },
       {
         id: "GYHX02",
@@ -4643,6 +6508,14 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "62%",
+        recode: [
+          { time: "01:20:53", msg: "充电12度，花费81元" },
+          { time: "11:09:57", msg: "充电56度，花费104元" },
+          { time: "04:11:00", msg: "充电103度，花费98元" },
+          { time: "21:12:52", msg: "充电107度，花费51元" },
+          { time: "00:29:30", msg: "充电24度，花费84元" },
+          { time: "05:51:05", msg: "充电72度，花费93元" },
+        ],
       },
       {
         id: "GYHX03",
@@ -4651,6 +6524,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "01:42:20", msg: "充电57度，花费65元" },
+          { time: "00:07:40", msg: "充电91度，花费41元" },
+          { time: "13:09:19", msg: "充电96度，花费28元" },
+          { time: "19:53:03", msg: "充电19度，花费22元" },
+          { time: "07:45:40", msg: "充电78度，花费102元" },
+          { time: "02:29:14", msg: "充电47度，花费107元" },
+        ],
       },
       {
         id: "GYHX04",
@@ -4660,6 +6541,11 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "31%",
+        recode: [
+          { time: "02:00:37", msg: "充电43度，花费82元" },
+          { time: "11:17:34", msg: "充电34度，花费80元" },
+          { time: "13:41:11", msg: "充电20度，花费87元" },
+        ],
       },
       {
         id: "GYHX05",
@@ -4668,6 +6554,11 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "07:34:26", msg: "充电27度，花费96元" },
+          { time: "09:36:12", msg: "充电63度，花费30元" },
+          { time: "17:51:12", msg: "充电41度，花费69元" },
+        ],
       },
       {
         id: "GYHX06",
@@ -4676,6 +6567,12 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "10:06:27", msg: "充电48度，花费28元" },
+          { time: "16:55:46", msg: "充电14度，花费40元" },
+          { time: "23:38:33", msg: "充电88度，花费34元" },
+          { time: "00:59:42", msg: "充电93度，花费90元" },
+        ],
       },
       {
         id: "GYHX07",
@@ -4685,6 +6582,12 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "78%",
+        recode: [
+          { time: "06:59:57", msg: "充电38度，花费72元" },
+          { time: "01:39:33", msg: "充电15度，花费14元" },
+          { time: "18:50:56", msg: "充电13度，花费84元" },
+          { time: "12:50:13", msg: "充电85度，花费101元" },
+        ],
       },
       {
         id: "GYHX08",
@@ -4693,6 +6596,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [],
       },
       {
         id: "GYHX09",
@@ -4702,6 +6606,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "44%",
+        recode: [
+          { time: "23:20:28", msg: "充电68度，花费95元" },
+          { time: "04:32:18", msg: "充电93度，花费86元" },
+          { time: "09:17:24", msg: "充电98度，花费90元" },
+        ],
       },
       {
         id: "GYHX10",
@@ -4710,6 +6619,9 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 6,
+        recode: [
+          { time: "23:01:52", msg: "充电68度，花费49元" },
+        ],
       },
       {
         id: "GYHX11",
@@ -4718,6 +6630,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "05:25:52", msg: "充电50度，花费100元" },
+        ],
       },
       {
         id: "GYHX12",
@@ -4726,6 +6641,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "02:15:15", msg: "充电25度，花费44元" },
+          { time: "20:54:54", msg: "充电49度，花费89元" },
+          { time: "23:24:37", msg: "充电104度，花费17元" },
+          { time: "02:50:27", msg: "充电66度，花费47元" },
+          { time: "20:29:37", msg: "充电108度，花费68元" },
+          { time: "06:50:40", msg: "充电13度，花费37元" },
+        ],
       },
       {
         id: "GYHX13",
@@ -4735,6 +6658,7 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "19%",
+        recode: [],
       },
       {
         id: "GYHX14",
@@ -4743,6 +6667,10 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 5,
+        recode: [
+          { time: "22:55:41", msg: "充电14度，花费48元" },
+          { time: "02:30:02", msg: "充电105度，花费101元" },
+        ],
       },
       {
         id: "GYHX15",
@@ -4751,6 +6679,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
     ],
   },
@@ -4766,6 +6695,14 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "36%",
+        recode: [
+          { time: "05:53:51", msg: "充电92度，花费94元" },
+          { time: "14:00:43", msg: "充电49度，花费42元" },
+          { time: "18:41:15", msg: "充电54度，花费97元" },
+          { time: "05:43:39", msg: "充电73度，花费16元" },
+          { time: "21:30:31", msg: "充电99度，花费89元" },
+          { time: "14:32:59", msg: "充电79度，花费41元" },
+        ],
       },
       {
         id: "LZS02",
@@ -4774,6 +6711,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "18:01:01", msg: "充电74度，花费28元" },
+          { time: "08:19:52", msg: "充电82度，花费29元" },
+          { time: "02:40:23", msg: "充电44度，花费36元" },
+          { time: "07:20:15", msg: "充电48度，花费97元" },
+          { time: "02:23:15", msg: "充电58度，花费80元" },
+          { time: "21:00:47", msg: "充电17度，花费97元" },
+        ],
       },
       {
         id: "LZS03",
@@ -4783,6 +6728,7 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "67%",
+        recode: [],
       },
       {
         id: "LZS04",
@@ -4791,6 +6737,13 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "06:02:46", msg: "充电36度，花费90元" },
+          { time: "00:30:07", msg: "充电85度，花费28元" },
+          { time: "17:47:52", msg: "充电104度，花费55元" },
+          { time: "02:35:28", msg: "充电50度，花费30元" },
+          { time: "16:22:02", msg: "充电40度，花费11元" },
+        ],
       },
       {
         id: "LZS05",
@@ -4799,6 +6752,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [],
       },
       {
         id: "LZS06",
@@ -4808,6 +6762,13 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "22%",
+        recode: [
+          { time: "20:24:06", msg: "充电10度，花费91元" },
+          { time: "10:34:44", msg: "充电82度，花费14元" },
+          { time: "19:42:48", msg: "充电81度，花费72元" },
+          { time: "01:27:25", msg: "充电17度，花费76元" },
+          { time: "12:14:25", msg: "充电11度，花费66元" },
+        ],
       },
       {
         id: "LZS07",
@@ -4816,6 +6777,10 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 4,
+        recode: [
+          { time: "08:06:52", msg: "充电51度，花费97元" },
+          { time: "06:09:57", msg: "充电13度，花费89元" },
+        ],
       },
       {
         id: "LZS08",
@@ -4824,6 +6789,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [],
       },
       {
         id: "LZS09",
@@ -4833,6 +6799,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "83%",
+        recode: [
+          { time: "13:01:00", msg: "充电37度，花费52元" },
+          { time: "19:46:08", msg: "充电95度，花费22元" },
+          { time: "04:29:30", msg: "充电104度，花费48元" },
+        ],
       },
       {
         id: "LZS10",
@@ -4841,6 +6812,11 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "01:38:42", msg: "充电69度，花费16元" },
+          { time: "23:01:37", msg: "充电19度，花费42元" },
+          { time: "11:52:34", msg: "充电22度，花费52元" },
+        ],
       },
       {
         id: "LZS11",
@@ -4849,6 +6825,14 @@ let chargingPile = [
         power: "0KW",
         tem: "20℃",
         status: 6,
+        recode: [
+          { time: "12:38:36", msg: "充电93度，花费99元" },
+          { time: "06:17:43", msg: "充电101度，花费64元" },
+          { time: "18:57:06", msg: "充电49度，花费35元" },
+          { time: "01:22:13", msg: "充电71度，花费73元" },
+          { time: "00:58:02", msg: "充电55度，花费97元" },
+          { time: "09:58:07", msg: "充电92度，花费68元" },
+        ],
       },
       {
         id: "LZS12",
@@ -4858,6 +6842,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "51%",
+        recode: [
+          { time: "19:51:08", msg: "充电13度，花费98元" },
+          { time: "06:20:39", msg: "充电52度，花费82元" },
+          { time: "10:02:50", msg: "充电63度，花费99元" },
+        ],
       },
       {
         id: "LZS13",
@@ -4866,6 +6855,7 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [],
       },
       {
         id: "LZS14",
@@ -4874,6 +6864,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 5,
+        recode: [
+          { time: "12:51:24", msg: "充电33度，花费51元" },
+          { time: "02:48:00", msg: "充电109度，花费84元" },
+          { time: "13:29:12", msg: "充电68度，花费84元" },
+          { time: "13:03:31", msg: "充电70度，花费95元" },
+        ],
       },
       {
         id: "LZS15",
@@ -4882,6 +6878,12 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "14:45:15", msg: "充电81度，花费40元" },
+          { time: "06:36:42", msg: "充电17度，花费39元" },
+          { time: "23:03:45", msg: "充电31度，花费77元" },
+          { time: "03:31:53", msg: "充电106度，花费16元" },
+        ],
       },
       {
         id: "LZS16",
@@ -4891,6 +6893,13 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "59%",
+        recode: [
+          { time: "04:15:29", msg: "充电95度，花费20元" },
+          { time: "13:30:36", msg: "充电73度，花费81元" },
+          { time: "04:52:15", msg: "充电98度，花费59元" },
+          { time: "15:03:06", msg: "充电58度，花费100元" },
+          { time: "08:10:05", msg: "充电71度，花费21元" },
+        ],
       },
       {
         id: "LZS17",
@@ -4899,6 +6908,9 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 3,
+        recode: [
+          { time: "01:37:02", msg: "充电25度，花费65元" },
+        ],
       },
       {
         id: "LZS18",
@@ -4907,6 +6919,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [],
       },
     ],
   },
@@ -4921,6 +6934,13 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "02:47:47", msg: "充电46度，花费66元" },
+          { time: "10:35:36", msg: "充电67度，花费10元" },
+          { time: "15:59:19", msg: "充电14度，花费13元" },
+          { time: "10:41:10", msg: "充电71度，花费47元" },
+          { time: "07:46:37", msg: "充电107度，花费84元" },
+        ],
       },
       {
         id: "YCYH02",
@@ -4930,6 +6950,7 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "48%",
+        recode: [],
       },
       {
         id: "YCYH03",
@@ -4938,6 +6959,11 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "21:53:49", msg: "充电62度，花费39元" },
+          { time: "17:12:44", msg: "充电39度，花费74元" },
+          { time: "21:57:35", msg: "充电44度，花费29元" },
+        ],
       },
       {
         id: "YCYH04",
@@ -4947,6 +6973,11 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "72%",
+        recode: [
+          { time: "19:51:02", msg: "充电26度，花费50元" },
+          { time: "14:49:17", msg: "充电75度，花费25元" },
+          { time: "11:27:40", msg: "充电75度，花费51元" },
+        ],
       },
       {
         id: "YCYH05",
@@ -4955,6 +6986,13 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "11:17:39", msg: "充电81度，花费104元" },
+          { time: "08:22:37", msg: "充电31度，花费104元" },
+          { time: "09:14:39", msg: "充电60度，花费68元" },
+          { time: "17:53:38", msg: "充电42度，花费14元" },
+          { time: "17:37:01", msg: "充电55度，花费38元" },
+        ],
       },
       {
         id: "YCYH06",
@@ -4963,6 +7001,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 4,
+        recode: [
+          { time: "21:42:04", msg: "充电49度，花费48元" },
+          { time: "01:31:51", msg: "充电13度，花费50元" },
+          { time: "21:35:05", msg: "充电20度，花费70元" },
+          { time: "12:32:06", msg: "充电17度，花费36元" },
+          { time: "17:48:40", msg: "充电23度，花费36元" },
+          { time: "04:38:37", msg: "充电85度，花费84元" },
+        ],
       },
       {
         id: "YCYH07",
@@ -4972,6 +7018,9 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "25%",
+        recode: [
+          { time: "00:23:25", msg: "充电41度，花费76元" },
+        ],
       },
       {
         id: "YCYH08",
@@ -4980,6 +7029,14 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "02:54:37", msg: "充电58度，花费41元" },
+          { time: "14:08:59", msg: "充电21度，花费94元" },
+          { time: "01:14:27", msg: "充电63度，花费45元" },
+          { time: "00:06:49", msg: "充电89度，花费106元" },
+          { time: "05:24:48", msg: "充电101度，花费28元" },
+          { time: "19:48:02", msg: "充电47度，花费97元" },
+        ],
       },
       {
         id: "YCYH09",
@@ -4988,6 +7045,13 @@ let chargingPile = [
         power: "0KW",
         tem: "19℃",
         status: 6,
+        recode: [
+          { time: "19:41:01", msg: "充电62度，花费21元" },
+          { time: "22:43:12", msg: "充电97度，花费10元" },
+          { time: "06:31:35", msg: "充电82度，花费76元" },
+          { time: "15:17:06", msg: "充电86度，花费19元" },
+          { time: "06:22:11", msg: "充电84度，花费100元" },
+        ],
       },
       {
         id: "YCYH10",
@@ -4996,6 +7060,13 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "22:41:08", msg: "充电28度，花费68元" },
+          { time: "20:22:04", msg: "充电109度，花费63元" },
+          { time: "20:05:30", msg: "充电14度，花费18元" },
+          { time: "19:06:54", msg: "充电104度，花费35元" },
+          { time: "06:29:07", msg: "充电67度，花费26元" },
+        ],
       },
       {
         id: "YCYH11",
@@ -5005,6 +7076,13 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "79%",
+        recode: [
+          { time: "00:42:34", msg: "充电35度，花费15元" },
+          { time: "18:58:30", msg: "充电17度，花费88元" },
+          { time: "15:03:13", msg: "充电47度，花费15元" },
+          { time: "19:53:56", msg: "充电66度，花费74元" },
+          { time: "12:45:47", msg: "充电60度，花费55元" },
+        ],
       },
       {
         id: "YCYH12",
@@ -5013,6 +7091,9 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "01:38:48", msg: "充电65度，花费106元" },
+        ],
       },
       {
         id: "YCYH13",
@@ -5022,6 +7103,10 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "55%",
+        recode: [
+          { time: "14:21:10", msg: "充电25度，花费12元" },
+          { time: "01:06:41", msg: "充电45度，花费97元" },
+        ],
       },
     ],
   },
@@ -5037,6 +7122,13 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "61%",
+        recode: [
+          { time: "09:08:43", msg: "充电105度，花费31元" },
+          { time: "14:36:13", msg: "充电17度，花费37元" },
+          { time: "19:21:29", msg: "充电107度，花费74元" },
+          { time: "11:50:45", msg: "充电28度，花费64元" },
+          { time: "14:40:55", msg: "充电95度，花费74元" },
+        ],
       },
       {
         id: "XNZX02",
@@ -5045,6 +7137,12 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "18:18:34", msg: "充电26度，花费76元" },
+          { time: "01:16:34", msg: "充电97度，花费49元" },
+          { time: "04:56:00", msg: "充电94度，花费17元" },
+          { time: "10:38:42", msg: "充电20度，花费82元" },
+        ],
       },
       {
         id: "XNZX03",
@@ -5053,6 +7151,13 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "07:17:40", msg: "充电101度，花费50元" },
+          { time: "03:58:58", msg: "充电99度，花费14元" },
+          { time: "14:19:38", msg: "充电46度，花费34元" },
+          { time: "18:25:11", msg: "充电54度，花费45元" },
+          { time: "18:55:04", msg: "充电46度，花费35元" },
+        ],
       },
       {
         id: "XNZX04",
@@ -5062,6 +7167,9 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "29%",
+        recode: [
+          { time: "19:35:40", msg: "充电99度，花费66元" },
+        ],
       },
       {
         id: "XNZX05",
@@ -5070,6 +7178,12 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "20:29:43", msg: "充电59度，花费104元" },
+          { time: "05:54:05", msg: "充电79度，花费78元" },
+          { time: "23:13:14", msg: "充电60度，花费57元" },
+          { time: "13:01:06", msg: "充电61度，花费34元" },
+        ],
       },
       {
         id: "XNZX06",
@@ -5078,6 +7192,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "08:37:59", msg: "充电104度，花费64元" },
+          { time: "23:22:47", msg: "充电28度，花费100元" },
+          { time: "08:01:07", msg: "充电15度，花费94元" },
+          { time: "18:28:45", msg: "充电56度，花费107元" },
+          { time: "18:44:48", msg: "充电54度，花费102元" },
+        ],
       },
       {
         id: "XNZX07",
@@ -5086,6 +7207,10 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 4,
+        recode: [
+          { time: "05:18:07", msg: "充电69度，花费68元" },
+          { time: "21:32:24", msg: "充电74度，花费16元" },
+        ],
       },
       {
         id: "XNZX08",
@@ -5095,6 +7220,12 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "73%",
+        recode: [
+          { time: "18:12:46", msg: "充电26度，花费79元" },
+          { time: "00:31:28", msg: "充电31度，花费23元" },
+          { time: "20:15:24", msg: "充电14度，花费11元" },
+          { time: "16:18:16", msg: "充电107度，花费25元" },
+        ],
       },
       {
         id: "XNZX09",
@@ -5103,6 +7234,11 @@ let chargingPile = [
         power: "0KW",
         tem: "18℃",
         status: 6,
+        recode: [
+          { time: "07:12:51", msg: "充电35度，花费47元" },
+          { time: "21:38:25", msg: "充电103度，花费54元" },
+          { time: "00:27:41", msg: "充电102度，花费42元" },
+        ],
       },
       {
         id: "XNZX10",
@@ -5111,6 +7247,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "11:23:24", msg: "充电55度，花费100元" },
+          { time: "06:00:01", msg: "充电17度，花费69元" },
+          { time: "01:01:36", msg: "充电45度，花费91元" },
+        ],
       },
       {
         id: "XNZX11",
@@ -5120,6 +7261,7 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "42%",
+        recode: [],
       },
       {
         id: "XNZX12",
@@ -5128,6 +7270,13 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "07:53:27", msg: "充电12度，花费17元" },
+          { time: "00:25:12", msg: "充电17度，花费63元" },
+          { time: "03:13:52", msg: "充电75度，花费57元" },
+          { time: "21:56:27", msg: "充电20度，花费69元" },
+          { time: "18:31:11", msg: "充电26度，花费51元" },
+        ],
       },
       {
         id: "XNZX13",
@@ -5136,6 +7285,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "11:37:30", msg: "充电43度，花费53元" },
+          { time: "12:10:00", msg: "充电77度，花费12元" },
+          { time: "08:07:56", msg: "充电29度，花费65元" },
+          { time: "05:04:18", msg: "充电45度，花费67元" },
+          { time: "09:36:21", msg: "充电101度，花费39元" },
+          { time: "13:25:22", msg: "充电71度，花费45元" },
+        ],
       },
       {
         id: "XNZX14",
@@ -5145,6 +7302,11 @@ let chargingPile = [
         tem: "27℃",
         status: 2,
         percent: "16%",
+        recode: [
+          { time: "02:32:40", msg: "充电17度，花费21元" },
+          { time: "19:40:11", msg: "充电96度，花费109元" },
+          { time: "08:07:01", msg: "充电33度，花费81元" },
+        ],
       },
       {
         id: "XNZX15",
@@ -5153,6 +7315,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 5,
+        recode: [
+          { time: "15:59:42", msg: "充电77度，花费43元" },
+          { time: "12:42:33", msg: "充电31度，花费36元" },
+          { time: "20:55:00", msg: "充电83度，花费27元" },
+          { time: "19:03:18", msg: "充电25度，花费27元" },
+          { time: "11:55:39", msg: "充电99度，花费95元" },
+          { time: "02:55:54", msg: "充电46度，花费12元" },
+        ],
       },
       {
         id: "XNZX16",
@@ -5161,6 +7331,14 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "20:48:22", msg: "充电36度，花费19元" },
+          { time: "17:06:40", msg: "充电104度，花费98元" },
+          { time: "23:02:27", msg: "充电13度，花费23元" },
+          { time: "04:48:31", msg: "充电96度，花费69元" },
+          { time: "21:17:02", msg: "充电43度，花费49元" },
+          { time: "03:22:17", msg: "充电14度，花费18元" },
+        ],
       },
     ],
   },
@@ -5175,6 +7353,10 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "09:51:23", msg: "充电23度，花费105元" },
+          { time: "20:23:07", msg: "充电77度，花费100元" },
+        ],
       },
       {
         id: "HHXH02",
@@ -5184,6 +7366,7 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "52%",
+        recode: [],
       },
       {
         id: "HHXH03",
@@ -5192,6 +7375,12 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "23:13:53", msg: "充电103度，花费51元" },
+          { time: "13:03:37", msg: "充电82度，花费20元" },
+          { time: "06:42:21", msg: "充电21度，花费46元" },
+          { time: "21:29:43", msg: "充电108度，花费96元" },
+        ],
       },
       {
         id: "HHXH04",
@@ -5201,6 +7390,7 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "76%",
+        recode: [],
       },
       {
         id: "HHXH05",
@@ -5209,6 +7399,10 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 1,
+        recode: [
+          { time: "15:57:51", msg: "充电78度，花费24元" },
+          { time: "20:37:48", msg: "充电44度，花费49元" },
+        ],
       },
       {
         id: "HHXH06",
@@ -5218,6 +7412,7 @@ let chargingPile = [
         tem: "27℃",
         status: 2,
         percent: "21%",
+        recode: [],
       },
       {
         id: "HHXH07",
@@ -5226,6 +7421,13 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 4,
+        recode: [
+          { time: "03:03:24", msg: "充电57度，花费10元" },
+          { time: "21:44:23", msg: "充电67度，花费26元" },
+          { time: "19:41:13", msg: "充电89度，花费107元" },
+          { time: "09:19:11", msg: "充电75度，花费14元" },
+          { time: "09:52:42", msg: "充电68度，花费107元" },
+        ],
       },
       {
         id: "HHXH08",
@@ -5234,6 +7436,9 @@ let chargingPile = [
         power: "0KW",
         tem: "18℃",
         status: 6,
+        recode: [
+          { time: "17:28:07", msg: "充电42度，花费86元" },
+        ],
       },
       {
         id: "HHXH09",
@@ -5242,6 +7447,11 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "06:21:21", msg: "充电22度，花费11元" },
+          { time: "02:56:40", msg: "充电30度，花费62元" },
+          { time: "12:56:33", msg: "充电59度，花费61元" },
+        ],
       },
       {
         id: "HHXH10",
@@ -5251,6 +7461,12 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "64%",
+        recode: [
+          { time: "18:11:28", msg: "充电16度，花费23元" },
+          { time: "09:51:37", msg: "充电58度，花费100元" },
+          { time: "04:57:43", msg: "充电67度，花费30元" },
+          { time: "07:52:51", msg: "充电33度，花费103元" },
+        ],
       },
       {
         id: "HHXH11",
@@ -5259,6 +7475,11 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "00:28:31", msg: "充电77度，花费28元" },
+          { time: "18:28:59", msg: "充电21度，花费108元" },
+          { time: "02:58:31", msg: "充电10度，花费87元" },
+        ],
       },
       {
         id: "HHXH12",
@@ -5267,6 +7488,13 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "01:29:14", msg: "充电26度，花费75元" },
+          { time: "12:36:09", msg: "充电47度，花费41元" },
+          { time: "07:29:14", msg: "充电105度，花费38元" },
+          { time: "08:48:00", msg: "充电32度，花费18元" },
+          { time: "00:15:17", msg: "充电21度，花费12元" },
+        ],
       },
       {
         id: "HHXH13",
@@ -5276,6 +7504,7 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "33%",
+        recode: [],
       },
       {
         id: "HHXH14",
@@ -5284,6 +7513,12 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 5,
+        recode: [
+          { time: "10:17:39", msg: "充电32度，花费87元" },
+          { time: "11:04:11", msg: "充电15度，花费35元" },
+          { time: "05:39:54", msg: "充电96度，花费68元" },
+          { time: "22:45:17", msg: "充电74度，花费41元" },
+        ],
       },
     ],
   },
@@ -5299,6 +7534,10 @@ let chargingPile = [
         tem: "27℃",
         status: 2,
         percent: "34%",
+        recode: [
+          { time: "19:47:11", msg: "充电81度，花费16元" },
+          { time: "23:37:39", msg: "充电71度，花费78元" },
+        ],
       },
       {
         id: "WLHS02",
@@ -5307,6 +7546,13 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "20:10:01", msg: "充电53度，花费67元" },
+          { time: "18:51:16", msg: "充电92度，花费92元" },
+          { time: "13:02:26", msg: "充电75度，花费86元" },
+          { time: "00:48:16", msg: "充电45度，花费103元" },
+          { time: "09:55:06", msg: "充电25度，花费87元" },
+        ],
       },
       {
         id: "WLHS03",
@@ -5316,6 +7562,10 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "66%",
+        recode: [
+          { time: "19:31:27", msg: "充电38度，花费66元" },
+          { time: "20:42:53", msg: "充电54度，花费17元" },
+        ],
       },
       {
         id: "WLHS04",
@@ -5324,6 +7574,13 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "16:00:29", msg: "充电18度，花费28元" },
+          { time: "07:18:34", msg: "充电103度，花费58元" },
+          { time: "08:08:33", msg: "充电106度，花费99元" },
+          { time: "15:34:21", msg: "充电16度，花费10元" },
+          { time: "14:54:56", msg: "充电48度，花费61元" },
+        ],
       },
       {
         id: "WLHS05",
@@ -5332,6 +7589,13 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "14:50:47", msg: "充电89度，花费43元" },
+          { time: "17:44:48", msg: "充电12度，花费103元" },
+          { time: "08:29:13", msg: "充电24度，花费80元" },
+          { time: "23:54:37", msg: "充电81度，花费92元" },
+          { time: "19:48:42", msg: "充电33度，花费19元" },
+        ],
       },
       {
         id: "WLHS06",
@@ -5341,6 +7605,13 @@ let chargingPile = [
         tem: "26℃",
         status: 2,
         percent: "18%",
+        recode: [
+          { time: "12:40:10", msg: "充电73度，花费14元" },
+          { time: "09:39:39", msg: "充电98度，花费27元" },
+          { time: "20:55:36", msg: "充电63度，花费98元" },
+          { time: "11:48:21", msg: "充电98度，花费32元" },
+          { time: "09:01:09", msg: "充电92度，花费86元" },
+        ],
       },
       {
         id: "WLHS07",
@@ -5349,6 +7620,13 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 4,
+        recode: [
+          { time: "17:02:18", msg: "充电23度，花费35元" },
+          { time: "00:04:39", msg: "充电44度，花费46元" },
+          { time: "19:24:19", msg: "充电59度，花费48元" },
+          { time: "20:38:40", msg: "充电45度，花费47元" },
+          { time: "12:56:56", msg: "充电83度，花费47元" },
+        ],
       },
       {
         id: "WLHS08",
@@ -5357,6 +7635,11 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "02:05:49", msg: "充电96度，花费62元" },
+          { time: "18:39:39", msg: "充电18度，花费37元" },
+          { time: "23:41:04", msg: "充电45度，花费100元" },
+        ],
       },
       {
         id: "WLHS09",
@@ -5366,6 +7649,13 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "82%",
+        recode: [
+          { time: "08:08:48", msg: "充电85度，花费47元" },
+          { time: "23:26:32", msg: "充电34度，花费55元" },
+          { time: "00:59:36", msg: "充电97度，花费60元" },
+          { time: "16:50:36", msg: "充电79度，花费26元" },
+          { time: "05:21:24", msg: "充电79度，花费85元" },
+        ],
       },
       {
         id: "WLHS10",
@@ -5374,6 +7664,11 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "19:44:30", msg: "充电55度，花费69元" },
+          { time: "03:53:04", msg: "充电97度，花费42元" },
+          { time: "11:26:29", msg: "充电26度，花费30元" },
+        ],
       },
       {
         id: "WLHS11",
@@ -5382,6 +7677,9 @@ let chargingPile = [
         power: "0KW",
         tem: "17℃",
         status: 6,
+        recode: [
+          { time: "17:07:55", msg: "充电90度，花费88元" },
+        ],
       },
       {
         id: "WLHS12",
@@ -5391,6 +7689,9 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "49%",
+        recode: [
+          { time: "10:06:09", msg: "充电14度，花费108元" },
+        ],
       },
     ],
   },
@@ -5405,6 +7706,11 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "00:32:57", msg: "充电32度，花费61元" },
+          { time: "18:09:45", msg: "充电105度，花费47元" },
+          { time: "05:31:14", msg: "充电42度，花费74元" },
+        ],
       },
       {
         id: "LSBD02",
@@ -5414,6 +7720,7 @@ let chargingPile = [
         tem: "26℃",
         status: 2,
         percent: "41%",
+        recode: [],
       },
       {
         id: "LSBD03",
@@ -5422,6 +7729,13 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 1,
+        recode: [
+          { time: "11:22:49", msg: "充电31度，花费18元" },
+          { time: "23:25:26", msg: "充电80度，花费17元" },
+          { time: "06:28:02", msg: "充电62度，花费59元" },
+          { time: "14:03:29", msg: "充电54度，花费61元" },
+          { time: "07:08:53", msg: "充电65度，花费80元" },
+        ],
       },
       {
         id: "LSBD04",
@@ -5431,6 +7745,12 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "57%",
+        recode: [
+          { time: "21:03:36", msg: "充电69度，花费104元" },
+          { time: "07:43:24", msg: "充电64度，花费78元" },
+          { time: "14:10:45", msg: "充电77度，花费65元" },
+          { time: "21:22:27", msg: "充电58度，花费89元" },
+        ],
       },
       {
         id: "LSBD05",
@@ -5439,6 +7759,9 @@ let chargingPile = [
         power: "0KW",
         tem: "20℃",
         status: 1,
+        recode: [
+          { time: "15:13:13", msg: "充电47度，花费74元" },
+        ],
       },
       {
         id: "LSBD06",
@@ -5447,6 +7770,7 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [],
       },
       {
         id: "LSBD07",
@@ -5455,6 +7779,11 @@ let chargingPile = [
         power: "0KW",
         tem: "19℃",
         status: 4,
+        recode: [
+          { time: "22:09:09", msg: "充电96度，花费104元" },
+          { time: "01:51:10", msg: "充电44度，花费106元" },
+          { time: "16:49:22", msg: "充电37度，花费35元" },
+        ],
       },
       {
         id: "LSBD08",
@@ -5464,6 +7793,13 @@ let chargingPile = [
         tem: "25℃",
         status: 2,
         percent: "22%",
+        recode: [
+          { time: "12:03:42", msg: "充电17度，花费48元" },
+          { time: "06:32:12", msg: "充电108度，花费94元" },
+          { time: "18:03:45", msg: "充电84度，花费58元" },
+          { time: "19:00:23", msg: "充电18度，花费65元" },
+          { time: "21:39:35", msg: "充电62度，花费105元" },
+        ],
       },
       {
         id: "LSBD09",
@@ -5472,6 +7808,13 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 1,
+        recode: [
+          { time: "10:04:31", msg: "充电84度，花费29元" },
+          { time: "04:47:42", msg: "充电40度，花费55元" },
+          { time: "15:51:33", msg: "充电76度，花费35元" },
+          { time: "08:57:25", msg: "充电62度，花费94元" },
+          { time: "07:39:04", msg: "充电64度，花费109元" },
+        ],
       },
       {
         id: "LSBD10",
@@ -5480,6 +7823,7 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [],
       },
       {
         id: "LSBD11",
@@ -5488,6 +7832,9 @@ let chargingPile = [
         power: "0KW",
         tem: "15℃",
         status: 6,
+        recode: [
+          { time: "15:50:51", msg: "充电73度，花费18元" },
+        ],
       },
     ],
   },
@@ -5503,6 +7850,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "68%",
+        recode: [
+          { time: "14:43:26", msg: "充电65度，花费41元" },
+        ],
       },
       {
         id: "SJZYH02",
@@ -5511,6 +7861,12 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "07:13:43", msg: "充电61度，花费24元" },
+          { time: "04:37:08", msg: "充电38度，花费59元" },
+          { time: "08:40:39", msg: "充电40度，花费28元" },
+          { time: "16:00:21", msg: "充电11度，花费10元" },
+        ],
       },
       {
         id: "SJZYH03",
@@ -5520,6 +7876,7 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "39%",
+        recode: [],
       },
       {
         id: "SJZYH04",
@@ -5528,6 +7885,13 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "12:11:43", msg: "充电48度，花费83元" },
+          { time: "00:35:09", msg: "充电95度，花费23元" },
+          { time: "08:23:33", msg: "充电102度，花费58元" },
+          { time: "22:08:10", msg: "充电38度，花费95元" },
+          { time: "10:38:56", msg: "充电28度，花费23元" },
+        ],
       },
       {
         id: "SJZYH05",
@@ -5536,6 +7900,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "03:54:36", msg: "充电109度，花费45元" },
+          { time: "11:22:32", msg: "充电103度，花费91元" },
+          { time: "14:02:52", msg: "充电91度，花费42元" },
+          { time: "23:40:30", msg: "充电61度，花费28元" },
+          { time: "00:20:20", msg: "充电61度，花费68元" },
+          { time: "09:03:30", msg: "充电26度，花费35元" },
+        ],
       },
       {
         id: "SJZYH06",
@@ -5545,6 +7917,14 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "84%",
+        recode: [
+          { time: "03:17:08", msg: "充电94度，花费74元" },
+          { time: "19:17:16", msg: "充电106度，花费80元" },
+          { time: "11:49:47", msg: "充电106度，花费23元" },
+          { time: "11:08:14", msg: "充电54度，花费94元" },
+          { time: "06:27:35", msg: "充电14度，花费58元" },
+          { time: "08:54:41", msg: "充电80度，花费12元" },
+        ],
       },
       {
         id: "SJZYH07",
@@ -5553,6 +7933,14 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 4,
+        recode: [
+          { time: "10:14:07", msg: "充电48度，花费16元" },
+          { time: "21:14:26", msg: "充电16度，花费43元" },
+          { time: "12:24:32", msg: "充电57度，花费80元" },
+          { time: "15:28:00", msg: "充电84度，花费43元" },
+          { time: "17:24:40", msg: "充电43度，花费47元" },
+          { time: "09:37:37", msg: "充电17度，花费57元" },
+        ],
       },
       {
         id: "SJZYH08",
@@ -5561,6 +7949,10 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "14:47:44", msg: "充电106度，花费54元" },
+          { time: "16:50:38", msg: "充电20度，花费100元" },
+        ],
       },
       {
         id: "SJZYH09",
@@ -5570,6 +7962,13 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "25%",
+        recode: [
+          { time: "21:38:27", msg: "充电85度，花费19元" },
+          { time: "06:26:00", msg: "充电80度，花费20元" },
+          { time: "03:15:38", msg: "充电20度，花费68元" },
+          { time: "06:19:37", msg: "充电11度，花费50元" },
+          { time: "19:31:20", msg: "充电42度，花费41元" },
+        ],
       },
       {
         id: "SJZYH10",
@@ -5578,6 +7977,9 @@ let chargingPile = [
         power: "0KW",
         tem: "20℃",
         status: 6,
+        recode: [
+          { time: "04:19:10", msg: "充电92度，花费74元" },
+        ],
       },
       {
         id: "SJZYH11",
@@ -5586,6 +7988,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "18:10:35", msg: "充电92度，花费56元" },
+          { time: "20:05:01", msg: "充电35度，花费98元" },
+          { time: "15:36:57", msg: "充电49度，花费72元" },
+          { time: "09:35:14", msg: "充电75度，花费76元" },
+          { time: "11:42:43", msg: "充电91度，花费108元" },
+          { time: "20:31:57", msg: "充电34度，花费52元" },
+        ],
       },
       {
         id: "SJZYH12",
@@ -5595,6 +8005,9 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "52%",
+        recode: [
+          { time: "22:26:08", msg: "充电99度，花费77元" },
+        ],
       },
       {
         id: "SJZYH13",
@@ -5603,6 +8016,12 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "15:22:04", msg: "充电38度，花费13元" },
+          { time: "10:57:33", msg: "充电59度，花费21元" },
+          { time: "21:56:17", msg: "充电100度，花费61元" },
+          { time: "21:11:35", msg: "充电106度，花费32元" },
+        ],
       },
       {
         id: "SJZYH14",
@@ -5611,6 +8030,10 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 5,
+        recode: [
+          { time: "15:24:04", msg: "充电40度，花费85元" },
+          { time: "17:29:47", msg: "充电80度，花费108元" },
+        ],
       },
       {
         id: "SJZYH15",
@@ -5620,6 +8043,9 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "17%",
+        recode: [
+          { time: "05:32:00", msg: "充电59度，花费61元" },
+        ],
       },
       {
         id: "SJZYH16",
@@ -5628,6 +8054,14 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "05:42:35", msg: "充电85度，花费10元" },
+          { time: "06:06:39", msg: "充电89度，花费103元" },
+          { time: "23:04:11", msg: "充电32度，花费17元" },
+          { time: "08:50:05", msg: "充电81度，花费27元" },
+          { time: "03:02:20", msg: "充电34度，花费57元" },
+          { time: "13:49:03", msg: "充电71度，花费99元" },
+        ],
       },
       {
         id: "SJZYH17",
@@ -5636,6 +8070,7 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 3,
+        recode: [],
       },
       {
         id: "SJZYH18",
@@ -5645,6 +8080,11 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "61%",
+        recode: [
+          { time: "17:02:57", msg: "充电49度，花费72元" },
+          { time: "06:02:37", msg: "充电20度，花费17元" },
+          { time: "15:54:56", msg: "充电45度，花费66元" },
+        ],
       },
       {
         id: "SJZYH19",
@@ -5653,6 +8093,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [],
       },
     ],
   },
@@ -5667,6 +8108,9 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "05:29:42", msg: "充电64度，花费87元" },
+        ],
       },
       {
         id: "CCRM02",
@@ -5676,6 +8120,10 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "55%",
+        recode: [
+          { time: "10:02:45", msg: "充电39度，花费63元" },
+          { time: "17:59:54", msg: "充电106度，花费54元" },
+        ],
       },
       {
         id: "CCRM03",
@@ -5684,6 +8132,11 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "05:08:54", msg: "充电44度，花费36元" },
+          { time: "20:13:30", msg: "充电92度，花费104元" },
+          { time: "17:50:29", msg: "充电93度，花费23元" },
+        ],
       },
       {
         id: "CCRM04",
@@ -5693,6 +8146,11 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "79%",
+        recode: [
+          { time: "19:30:55", msg: "充电56度，花费44元" },
+          { time: "08:20:07", msg: "充电66度，花费102元" },
+          { time: "07:57:49", msg: "充电96度，花费73元" },
+        ],
       },
       {
         id: "CCRM05",
@@ -5701,6 +8159,7 @@ let chargingPile = [
         power: "0KW",
         tem: "20℃",
         status: 1,
+        recode: [],
       },
       {
         id: "CCRM06",
@@ -5709,6 +8168,14 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "05:42:35", msg: "充电27度，花费24元" },
+          { time: "01:12:58", msg: "充电92度，花费38元" },
+          { time: "17:16:53", msg: "充电47度，花费15元" },
+          { time: "04:40:58", msg: "充电94度，花费32元" },
+          { time: "06:09:27", msg: "充电102度，花费93元" },
+          { time: "00:14:53", msg: "充电49度，花费75元" },
+        ],
       },
       {
         id: "CCRM07",
@@ -5718,6 +8185,13 @@ let chargingPile = [
         tem: "27℃",
         status: 2,
         percent: "24%",
+        recode: [
+          { time: "14:21:00", msg: "充电44度，花费54元" },
+          { time: "06:00:37", msg: "充电66度，花费81元" },
+          { time: "06:35:07", msg: "充电100度，花费81元" },
+          { time: "16:57:05", msg: "充电107度，花费31元" },
+          { time: "09:03:42", msg: "充电11度，花费88元" },
+        ],
       },
       {
         id: "CCRM08",
@@ -5726,6 +8200,13 @@ let chargingPile = [
         power: "0KW",
         tem: "16℃",
         status: 6,
+        recode: [
+          { time: "12:53:27", msg: "充电56度，花费68元" },
+          { time: "09:37:14", msg: "充电69度，花费48元" },
+          { time: "07:54:38", msg: "充电12度，花费74元" },
+          { time: "14:20:45", msg: "充电58度，花费95元" },
+          { time: "07:17:02", msg: "充电58度，花费71元" },
+        ],
       },
       {
         id: "CCRM09",
@@ -5734,6 +8215,11 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 4,
+        recode: [
+          { time: "21:25:15", msg: "充电60度，花费48元" },
+          { time: "18:15:34", msg: "充电98度，花费36元" },
+          { time: "00:30:38", msg: "充电69度，花费36元" },
+        ],
       },
       {
         id: "CCRM10",
@@ -5742,6 +8228,12 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "20:15:53", msg: "充电29度，花费96元" },
+          { time: "08:22:42", msg: "充电15度，花费86元" },
+          { time: "12:18:15", msg: "充电36度，花费69元" },
+          { time: "03:40:42", msg: "充电20度，花费90元" },
+        ],
       },
       {
         id: "CCRM11",
@@ -5751,6 +8243,11 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "48%",
+        recode: [
+          { time: "23:12:15", msg: "充电29度，花费67元" },
+          { time: "23:02:24", msg: "充电21度，花费93元" },
+          { time: "18:51:06", msg: "充电19度，花费97元" },
+        ],
       },
       {
         id: "CCRM12",
@@ -5759,6 +8256,9 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "09:06:45", msg: "充电94度，花费79元" },
+        ],
       },
       {
         id: "CCRM13",
@@ -5767,6 +8267,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
       {
         id: "CCRM14",
@@ -5775,6 +8276,13 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 5,
+        recode: [
+          { time: "16:56:38", msg: "充电24度，花费37元" },
+          { time: "11:59:55", msg: "充电60度，花费89元" },
+          { time: "17:45:33", msg: "充电68度，花费45元" },
+          { time: "07:07:13", msg: "充电41度，花费35元" },
+          { time: "21:10:09", msg: "充电17度，花费14元" },
+        ],
       },
       {
         id: "CCRM15",
@@ -5784,6 +8292,14 @@ let chargingPile = [
         tem: "27℃",
         status: 2,
         percent: "31%",
+        recode: [
+          { time: "05:54:47", msg: "充电36度，花费38元" },
+          { time: "09:49:11", msg: "充电25度，花费81元" },
+          { time: "23:45:39", msg: "充电108度，花费104元" },
+          { time: "20:00:41", msg: "充电41度，花费18元" },
+          { time: "14:06:00", msg: "充电12度，花费96元" },
+          { time: "10:47:58", msg: "充电19度，花费46元" },
+        ],
       },
       {
         id: "CCRM16",
@@ -5792,6 +8308,7 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [],
       },
     ],
   },
@@ -5807,6 +8324,13 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "63%",
+        recode: [
+          { time: "07:04:54", msg: "充电24度，花费77元" },
+          { time: "08:07:37", msg: "充电107度，花费41元" },
+          { time: "04:15:37", msg: "充电83度，花费82元" },
+          { time: "17:24:44", msg: "充电36度，花费28元" },
+          { time: "04:28:03", msg: "充电33度，花费89元" },
+        ],
       },
       {
         id: "TYWY02",
@@ -5815,6 +8339,10 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "03:30:59", msg: "充电78度，花费81元" },
+          { time: "12:13:51", msg: "充电81度，花费35元" },
+        ],
       },
       {
         id: "TYWY03",
@@ -5823,6 +8351,7 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [],
       },
       {
         id: "TYWY04",
@@ -5832,6 +8361,14 @@ let chargingPile = [
         tem: "28℃",
         status: 2,
         percent: "28%",
+        recode: [
+          { time: "20:35:15", msg: "充电100度，花费77元" },
+          { time: "22:20:32", msg: "充电108度，花费72元" },
+          { time: "07:27:03", msg: "充电63度，花费34元" },
+          { time: "18:46:50", msg: "充电50度，花费29元" },
+          { time: "21:03:15", msg: "充电42度，花费35元" },
+          { time: "13:05:36", msg: "充电18度，花费15元" },
+        ],
       },
       {
         id: "TYWY05",
@@ -5841,6 +8378,14 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "81%",
+        recode: [
+          { time: "19:43:24", msg: "充电64度，花费77元" },
+          { time: "11:55:06", msg: "充电48度，花费79元" },
+          { time: "22:54:02", msg: "充电75度，花费48元" },
+          { time: "18:23:53", msg: "充电90度，花费77元" },
+          { time: "16:04:45", msg: "充电13度，花费98元" },
+          { time: "11:14:21", msg: "充电13度，花费55元" },
+        ],
       },
       {
         id: "TYWY06",
@@ -5849,6 +8394,10 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "17:58:45", msg: "充电88度，花费20元" },
+          { time: "23:11:58", msg: "充电93度，花费14元" },
+        ],
       },
       {
         id: "TYWY07",
@@ -5857,6 +8406,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "09:31:07", msg: "充电73度，花费63元" },
+          { time: "05:50:23", msg: "充电81度，花费23元" },
+          { time: "09:25:55", msg: "充电18度，花费71元" },
+        ],
       },
       {
         id: "TYWY08",
@@ -5865,6 +8419,12 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 4,
+        recode: [
+          { time: "04:42:23", msg: "充电43度，花费78元" },
+          { time: "14:11:22", msg: "充电78度，花费15元" },
+          { time: "14:02:00", msg: "充电10度，花费55元" },
+          { time: "05:05:28", msg: "充电100度，花费76元" },
+        ],
       },
       {
         id: "TYWY09",
@@ -5874,6 +8434,12 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "46%",
+        recode: [
+          { time: "06:38:19", msg: "充电104度，花费20元" },
+          { time: "11:34:29", msg: "充电87度，花费85元" },
+          { time: "11:32:48", msg: "充电53度，花费106元" },
+          { time: "12:09:34", msg: "充电84度，花费62元" },
+        ],
       },
       {
         id: "TYWY10",
@@ -5882,6 +8448,11 @@ let chargingPile = [
         power: "0KW",
         tem: "18℃",
         status: 6,
+        recode: [
+          { time: "22:01:27", msg: "充电80度，花费92元" },
+          { time: "18:06:49", msg: "充电82度，花费76元" },
+          { time: "20:35:40", msg: "充电42度，花费16元" },
+        ],
       },
       {
         id: "TYWY11",
@@ -5890,6 +8461,9 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "00:17:10", msg: "充电34度，花费42元" },
+        ],
       },
       {
         id: "TYWY12",
@@ -5899,6 +8473,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "72%",
+        recode: [
+          { time: "12:21:55", msg: "充电109度，花费23元" },
+        ],
       },
       {
         id: "TYWY13",
@@ -5907,6 +8484,9 @@ let chargingPile = [
         power: "0KW",
         tem: "22℃",
         status: 1,
+        recode: [
+          { time: "05:13:50", msg: "充电73度，花费16元" },
+        ],
       },
       {
         id: "TYWY14",
@@ -5915,6 +8495,9 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 5,
+        recode: [
+          { time: "20:17:30", msg: "充电106度，花费104元" },
+        ],
       },
       {
         id: "TYWY15",
@@ -5924,6 +8507,9 @@ let chargingPile = [
         tem: "26℃",
         status: 2,
         percent: "13%",
+        recode: [
+          { time: "12:38:07", msg: "充电107度，花费64元" },
+        ],
       },
       {
         id: "TYWY16",
@@ -5932,6 +8518,9 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 1,
+        recode: [
+          { time: "02:28:59", msg: "充电22度，花费14元" },
+        ],
       },
       {
         id: "TYWY17",
@@ -5940,6 +8529,9 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 3,
+        recode: [
+          { time: "09:27:25", msg: "充电44度，花费84元" },
+        ],
       },
       {
         id: "TYWY18",
@@ -5948,6 +8540,9 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 1,
+        recode: [
+          { time: "03:03:22", msg: "充电80度，花费100元" },
+        ],
       },
       {
         id: "TYWY19",
@@ -5957,6 +8552,12 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "55%",
+        recode: [
+          { time: "14:18:59", msg: "充电108度，花费50元" },
+          { time: "18:35:46", msg: "充电62度，花费41元" },
+          { time: "03:38:58", msg: "充电41度，花费86元" },
+          { time: "21:34:48", msg: "充电17度，花费87元" },
+        ],
       },
       {
         id: "TYWY20",
@@ -5965,6 +8566,7 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 6,
+        recode: [],
       },
       {
         id: "TYWY21",
@@ -5973,6 +8575,13 @@ let chargingPile = [
         power: "0KW",
         tem: "23℃",
         status: 5,
+        recode: [
+          { time: "05:35:53", msg: "充电87度，花费26元" },
+          { time: "12:42:28", msg: "充电98度，花费20元" },
+          { time: "13:34:15", msg: "充电104度，花费84元" },
+          { time: "03:22:23", msg: "充电97度，花费71元" },
+          { time: "12:45:31", msg: "充电76度，花费75元" },
+        ],
       },
     ],
   },
@@ -5988,6 +8597,9 @@ let chargingPile = [
         tem: "35℃",
         status: 2,
         percent: "91%",
+        recode: [
+          { time: "02:27:31", msg: "充电30度，花费70元" },
+        ],
       },
       {
         id: "BJGB02",
@@ -5996,6 +8608,14 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "11:29:31", msg: "充电103度，花费60元" },
+          { time: "06:37:07", msg: "充电48度，花费58元" },
+          { time: "03:10:41", msg: "充电88度，花费25元" },
+          { time: "04:21:46", msg: "充电41度，花费21元" },
+          { time: "14:19:55", msg: "充电14度，花费60元" },
+          { time: "21:16:53", msg: "充电39度，花费109元" },
+        ],
       },
       {
         id: "BJGB03",
@@ -6004,6 +8624,7 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 1,
+        recode: [],
       },
       {
         id: "BJGB04",
@@ -6013,6 +8634,9 @@ let chargingPile = [
         tem: "31℃",
         status: 2,
         percent: "47%",
+        recode: [
+          { time: "22:56:40", msg: "充电46度，花费105元" },
+        ],
       },
       {
         id: "BJGB05",
@@ -6022,6 +8646,14 @@ let chargingPile = [
         tem: "33℃",
         status: 2,
         percent: "68%",
+        recode: [
+          { time: "19:22:19", msg: "充电36度，花费69元" },
+          { time: "19:29:17", msg: "充电11度，花费100元" },
+          { time: "09:44:20", msg: "充电18度，花费57元" },
+          { time: "00:29:42", msg: "充电54度，花费25元" },
+          { time: "15:13:53", msg: "充电89度，花费99元" },
+          { time: "01:53:28", msg: "充电36度，花费68元" },
+        ],
       },
       {
         id: "BJGB06",
@@ -6030,6 +8662,11 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 4,
+        recode: [
+          { time: "21:56:02", msg: "充电74度，花费76元" },
+          { time: "15:43:00", msg: "充电46度，花费34元" },
+          { time: "04:00:56", msg: "充电38度，花费105元" },
+        ],
       },
       {
         id: "BJGB07",
@@ -6038,6 +8675,7 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [],
       },
       {
         id: "BJGB08",
@@ -6047,6 +8685,11 @@ let chargingPile = [
         tem: "30℃",
         status: 2,
         percent: "20%",
+        recode: [
+          { time: "10:36:45", msg: "充电91度，花费59元" },
+          { time: "17:52:41", msg: "充电13度，花费35元" },
+          { time: "17:31:54", msg: "充电15度，花费90元" },
+        ],
       },
       {
         id: "BJGB09",
@@ -6055,6 +8698,11 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 1,
+        recode: [
+          { time: "11:38:52", msg: "充电93度，花费14元" },
+          { time: "00:21:49", msg: "充电78度，花费44元" },
+          { time: "06:43:40", msg: "充电72度，花费88元" },
+        ],
       },
       {
         id: "BJGB10",
@@ -6063,6 +8711,14 @@ let chargingPile = [
         power: "0KW",
         tem: "24℃",
         status: 6,
+        recode: [
+          { time: "16:55:50", msg: "充电91度，花费27元" },
+          { time: "09:27:46", msg: "充电24度，花费75元" },
+          { time: "15:34:39", msg: "充电18度，花费31元" },
+          { time: "09:13:09", msg: "充电50度，花费93元" },
+          { time: "16:24:19", msg: "充电11度，花费68元" },
+          { time: "10:39:49", msg: "充电65度，花费30元" },
+        ],
       },
       {
         id: "BJGB11",
@@ -6072,6 +8728,14 @@ let chargingPile = [
         tem: "34℃",
         status: 2,
         percent: "83%",
+        recode: [
+          { time: "06:18:10", msg: "充电87度，花费84元" },
+          { time: "16:58:20", msg: "充电14度，花费61元" },
+          { time: "01:21:18", msg: "充电78度，花费78元" },
+          { time: "02:27:07", msg: "充电25度，花费74元" },
+          { time: "13:45:33", msg: "充电100度，花费55元" },
+          { time: "07:27:03", msg: "充电64度，花费99元" },
+        ],
       },
       {
         id: "BJGB12",
@@ -6080,6 +8744,9 @@ let chargingPile = [
         power: "0KW",
         tem: "26℃",
         status: 1,
+        recode: [
+          { time: "16:15:23", msg: "充电103度，花费97元" },
+        ],
       },
       {
         id: "BJGB13",
@@ -6088,6 +8755,10 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "18:07:12", msg: "充电54度，花费78元" },
+          { time: "19:48:53", msg: "充电58度，花费20元" },
+        ],
       },
       {
         id: "BJGB14",
@@ -6097,6 +8768,13 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "58%",
+        recode: [
+          { time: "09:41:35", msg: "充电18度，花费96元" },
+          { time: "17:28:24", msg: "充电25度，花费16元" },
+          { time: "00:42:47", msg: "充电27度，花费96元" },
+          { time: "06:03:33", msg: "充电22度，花费82元" },
+          { time: "03:13:26", msg: "充电105度，花费82元" },
+        ],
       },
       {
         id: "BJGB15",
@@ -6105,6 +8783,11 @@ let chargingPile = [
         power: "0KW",
         tem: "29℃",
         status: 5,
+        recode: [
+          { time: "04:52:53", msg: "充电23度，花费75元" },
+          { time: "16:05:48", msg: "充电16度，花费63元" },
+          { time: "08:27:00", msg: "充电15度，花费33元" },
+        ],
       },
       {
         id: "BJGB16",
@@ -6113,6 +8796,9 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "11:37:46", msg: "充电90度，花费96元" },
+        ],
       },
       {
         id: "BJGB17",
@@ -6121,6 +8807,11 @@ let chargingPile = [
         power: "0KW",
         tem: "27℃",
         status: 3,
+        recode: [
+          { time: "21:27:25", msg: "充电43度，花费33元" },
+          { time: "14:27:01", msg: "充电54度，花费72元" },
+          { time: "00:32:00", msg: "充电102度，花费49元" },
+        ],
       },
       {
         id: "BJGB18",
@@ -6130,6 +8821,9 @@ let chargingPile = [
         tem: "29℃",
         status: 2,
         percent: "35%",
+        recode: [
+          { time: "16:36:16", msg: "充电103度，花费99元" },
+        ],
       },
       {
         id: "BJGB19",
@@ -6138,6 +8832,10 @@ let chargingPile = [
         power: "0KW",
         tem: "28℃",
         status: 1,
+        recode: [
+          { time: "10:50:29", msg: "充电27度，花费57元" },
+          { time: "11:48:57", msg: "充电60度，花费86元" },
+        ],
       },
       {
         id: "BJGB20",
@@ -6146,6 +8844,9 @@ let chargingPile = [
         power: "0KW",
         tem: "31℃",
         status: 1,
+        recode: [
+          { time: "05:01:58", msg: "充电83度，花费57元" },
+        ],
       },
       {
         id: "BJGB21",
@@ -6154,6 +8855,9 @@ let chargingPile = [
         power: "0KW",
         tem: "32℃",
         status: 5,
+        recode: [
+          { time: "01:07:09", msg: "充电50度，花费101元" },
+        ],
       },
       {
         id: "BJGB22",
@@ -6163,6 +8867,12 @@ let chargingPile = [
         tem: "23℃",
         status: 2,
         percent: "30%",
+        recode: [
+          { time: "13:35:34", msg: "充电102度，花费92元" },
+          { time: "17:29:49", msg: "充电108度，花费21元" },
+          { time: "15:05:25", msg: "充电66度，花费93元" },
+          { time: "10:01:29", msg: "充电19度，花费19元" },
+        ],
       },
       {
         id: "BJGB23",
@@ -6171,6 +8881,11 @@ let chargingPile = [
         power: "0KW",
         tem: "21℃",
         status: 1,
+        recode: [
+          { time: "21:23:34", msg: "充电50度，花费93元" },
+          { time: "20:05:02", msg: "充电25度，花费54元" },
+          { time: "16:05:46", msg: "充电64度，花费43元" },
+        ],
       },
       {
         id: "BJGB24",
@@ -6179,6 +8894,11 @@ let chargingPile = [
         power: "0KW",
         tem: "25℃",
         status: 1,
+        recode: [
+          { time: "05:36:10", msg: "充电87度，花费63元" },
+          { time: "10:41:44", msg: "充电49度，花费19元" },
+          { time: "02:12:53", msg: "充电60度，花费10元" },
+        ],
       },
       {
         id: "BJGB25",
@@ -6188,6 +8908,11 @@ let chargingPile = [
         tem: "32℃",
         status: 2,
         percent: "58%",
+        recode: [
+          { time: "09:36:49", msg: "充电22度，花费84元" },
+          { time: "19:36:05", msg: "充电62度，花费78元" },
+          { time: "15:27:41", msg: "充电28度，花费59元" },
+        ],
       },
     ],
   },

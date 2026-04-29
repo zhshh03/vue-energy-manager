@@ -26,7 +26,7 @@
         <el-radio-button :label="`故障/离线(${checkCount(6)})`" :value="6" />
       </el-radio-group>
     </div>
-    <el-row :gutter="20">
+    <el-row :gutter="20" v-loading="loading">
       <el-col :span="6" v-for="item in dataListCopy" :key="item.id">
         <div class="station-card">
           <div class="item">
@@ -53,8 +53,34 @@
             <div class="btn-footer">
               <span class="warn-text">暂无预警</span>
               <div>
-                <el-button size="small">维保记录</el-button>
-                <el-button size="small" type="primary">使用记录</el-button>
+                <el-popover placement="left" :width="100" trigger="hover">
+                  <template #reference>
+                    <el-button size="small">维保记录</el-button>
+                  </template>
+                  <div class="usage-timeline">
+                    <h3>暂无维保记录</h3>
+                  </div>
+                </el-popover>
+                <el-popover placement="right" :width="250" trigger="hover">
+                  <template #reference>
+                    <el-button size="small" type="primary">使用记录</el-button>
+                  </template>
+                  <div class="usage-timeline" v-if="item.recode.length > 0">
+                    <h3 class="usage-title">使用记录</h3>
+                    <el-timeline>
+                      <el-timeline-item
+                        v-for="record in item.recode"
+                        :timestamp="record.time"
+                        placement="top"
+                      >
+                        {{ record.msg }}
+                      </el-timeline-item>
+                    </el-timeline>
+                  </div>
+                  <div class="usage-timeline" v-else>
+                    <h3>暂无使用记录</h3>
+                  </div>
+                </el-popover>
               </div>
             </div>
           </div>
@@ -69,15 +95,18 @@ import { getCurrentListApi } from "@/api/chargingstation";
 import { computed } from "@vue/reactivity";
 import { ref, onMounted, watch } from "vue";
 
+const loading = ref<boolean>(false);
 const options = ref<any>([]);
 const value = ref<string>("");
 const dataList = ref<any>([]);
 const dataListCopy = ref<any>([]);
 const loadData = async () => {
+  loading.value = true;
   const { data } = await getCurrentListApi();
   options.value = data;
   dataList.value = data[0].list;
   dataListCopy.value = data[0].list;
+  loading.value = false;
 };
 
 const checkCount = (num: number) => {
@@ -264,6 +293,45 @@ onMounted(() => {
         color: #999;
       }
     }
+  }
+}
+
+.usage-timeline {
+  padding: 4px 0;
+
+  .usage-title {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #303133;
+  }
+
+  :deep(.el-timeline) {
+    padding-left: 0;
+  }
+
+  :deep(.el-timeline-item__wrapper) {
+    padding-left: 20px;
+  }
+
+  :deep(.el-timeline-item__timestamp) {
+    font-size: 12px;
+    color: #909399;
+    line-height: 1;
+  }
+
+  :deep(.el-timeline-item__content) {
+    font-size: 14px;
+    color: #606266;
+    margin-top: 4px;
+  }
+
+  :deep(.el-timeline-item__tail) {
+    border-left: 2px solid #e4e7ed;
+  }
+
+  :deep(.el-timeline-item__node) {
+    background: #409eff;
   }
 }
 </style>
