@@ -1,6 +1,146 @@
 <template>
-  <div>订单管理</div>
+  <el-card>
+    <el-row :gutter="20">
+      <el-col :span="6">
+        <el-input
+          placeholder="请输入订单号"
+          v-model="searchParams.orderOn"
+        ></el-input>
+      </el-col>
+      <el-col :span="6">
+        <el-select placeholder="订单状态" v-model="searchParams.status">
+          <el-option label="全部" value="1"></el-option>
+          <el-option label="进行中" value="2"></el-option>
+          <el-option label="已完成" value="3"></el-option>
+          <el-option label="异常" value="4"></el-option>
+        </el-select>
+      </el-col>
+      <el-col :span="6">
+        <el-input placeholder="设备编号" v-model="searchParams.no"></el-input>
+      </el-col>
+      <el-col :span="6">
+        <el-button type="primary" @click="loadData">查询</el-button>
+        <el-button @click="handleReset">重置</el-button>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20" class="mt">
+      <el-col :span="6">
+        <el-input
+          placeholder="请输入站点名称"
+          v-model="searchParams.name"
+        ></el-input>
+      </el-col>
+      <el-col :span="6">
+        <el-date-picker
+          v-model="date"
+          type="daterange"
+          range-separator="/"
+          start-placeholder="开始日期"
+          end-placeholder="结束日期"
+          style="width: 100%"
+          value-format="YYYY-MM-DD"
+          @change="handleDateChange"
+        />
+      </el-col>
+    </el-row>
+  </el-card>
+  <el-card class="mt">
+    <el-button type="danger">批量删除</el-button>
+    <el-button type="primary" icon="Download">导出订单数据到Excel</el-button>
+  </el-card>
+  <el-card class="mt">
+    <el-table :data="dataList" v-loading="loading">
+      <el-table-column label="订单号" prop="orderNo"></el-table-column>
+      <el-table-column label="设备编号" prop="equipmentNo"></el-table-column>
+      <el-table-column label="订单日期" prop="date"></el-table-column>
+      <el-table-column label="开始时间" prop="startTime"></el-table-column>
+      <el-table-column label="结束时间" prop="ednTime"></el-table-column>
+      <el-table-column label="金额" prop="money"></el-table-column>
+      <el-table-column label="支付方式" prop="pay"></el-table-column>
+      <el-table-column label="订单状态" prop="status"></el-table-column>
+      <el-table-column label="操作">
+        <template #default="scope">
+          <el-button type="primary" size="small">详情</el-button>
+          <el-button type="danger" size="small">删除</el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+    <el-pagination
+      class="mt mb fr"
+      v-model:current-page="pageInfo.page"
+      v-model:page-size="pageInfo.pageSize"
+      :page-sizes="[10, 15, 20, 25]"
+      layout="sizes, prev, pager, next,total"
+      :total="totals"
+      background
+      @size-change="handleSizeChange"
+      @current-change="handleCurrentChange"
+    />
+  </el-card>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
+import { useHttp } from "@/hooks/useHttp";
+
+const date = ref([]);
+
+interface SearchParams {
+  orderOn: string;
+  status?: number;
+  no: string;
+  name: string;
+  startTime: string;
+  endTime: string;
+}
+
+interface Order {
+  orderNo: string;
+  equipmentNo: string;
+  date: string;
+  startTime: string;
+  endTime: string;
+  money: number;
+  pay: string;
+  status: number;
+}
+
+const searchParams = ref<SearchParams>({
+  orderOn: "",
+  status: undefined,
+  no: "",
+  name: "",
+  startTime: "",
+  endTime: "",
+});
+
+const handleDateChange = (val: any) => {
+  searchParams.value.startTime = val[0];
+  searchParams.value.endTime = val[1];
+};
+
+const handleReset = () => {
+  searchParams.value = {
+    orderOn: "",
+    status: undefined,
+    no: "",
+    name: "",
+    startTime: "",
+    endTime: "",
+  };
+  date.value = [];
+  resetPagination();
+  loadData();
+};
+
+const {
+  dataList,
+  loading,
+  totals,
+  pageInfo,
+  loadData,
+  handleSizeChange,
+  handleCurrentChange,
+  resetPagination,
+} = useHttp<Order>("/orderList", searchParams);
 </script>

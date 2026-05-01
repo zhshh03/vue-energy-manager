@@ -8751,7 +8751,7 @@ let stations = [
     count: 10,
   },
   {
-    position: [106.63, 23.90],
+    position: [106.63, 23.9],
     title: "桂林市七星区",
     status: "2",
     count: 7,
@@ -8769,7 +8769,7 @@ let stations = [
     count: 11,
   },
   {
-    position: [106.71, 26.60],
+    position: [106.71, 26.6],
     title: "贵阳市观山湖区",
     status: "1",
     count: 6,
@@ -8781,7 +8781,7 @@ let stations = [
     count: 9,
   },
   {
-    position: [114.30, 30.58],
+    position: [114.3, 30.58],
     title: "武汉市武昌区",
     status: "2",
     count: 12,
@@ -8823,19 +8823,19 @@ let stations = [
     count: 13,
   },
   {
-    position: [116.40, 39.90],
+    position: [116.4, 39.9],
     title: "北京市朝阳区",
     status: "1",
     count: 15,
   },
   {
-    position: [117.20, 39.13],
+    position: [117.2, 39.13],
     title: "天津市滨海新区",
     status: "2",
     count: 11,
   },
   {
-    position: [123.43, 41.80],
+    position: [123.43, 41.8],
     title: "沈阳市沈河区",
     status: "1",
     count: 9,
@@ -8853,7 +8853,7 @@ let stations = [
     count: 10,
   },
   {
-    position: [117.00, 36.67],
+    position: [117.0, 36.67],
     title: "济南市历下区",
     status: "2",
     count: 8,
@@ -8876,14 +8876,14 @@ let stations = [
     status: "1",
     count: 12,
   },
-]
-mock.mock("https://www.demo.com/mapList","post",() => {
+];
+mock.mock("https://www.demo.com/mapList", "post", () => {
   return {
-    code:200,
-    success:true,
-    data:stations
-  }
-})
+    code: 200,
+    success: true,
+    data: stations,
+  };
+});
 //新增地图站点接口
 mock.mock("https://www.demo.com/addMapStation", "post", (options: any) => {
   const newStation = JSON.parse(options.body);
@@ -8898,4 +8898,31 @@ mock.mock("https://www.demo.com/addMapStation", "post", (options: any) => {
     message: "新增成功",
     success: true,
   };
-})
+});
+//订单管理接口
+mock.mock("https://www.demo.com/orderList", "post", (options: any) => {
+  const { page, pageSize, orderNo, no, status, startTime, endTime, name } =
+    JSON.parse(options.body);
+  console.log(JSON.parse(options.body));
+  return {
+    code: 200,
+    success: true,
+    data: mock.mock({
+      [`list|${pageSize}`]: [
+        {
+          orderNo: '@string("number",6)',
+          date: '@date("yyyy-MM-dd")',
+          startTime: "08:00:03",
+          ednTime: "09:12:15",
+          "equipmentNo|1": ["B109", "C227", "C106", "D158", "E101"],
+          "money|1": [
+            66.5, 88.9, 100.1, 120.2, 150.3, 238.4, 334.5, 430.6, 520.7, 662.8,
+          ],
+          "pay|1": ["微信", "支付宝", "现金", "储蓄卡"],
+          "status|1": [2, 3, 4],
+        },
+      ],
+      total: 54,
+    }),
+  };
+});
