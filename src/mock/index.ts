@@ -8884,3 +8884,18 @@ mock.mock("https://www.demo.com/mapList","post",() => {
     data:stations
   }
 })
+//新增地图站点接口
+mock.mock("https://www.demo.com/addMapStation", "post", (options: any) => {
+  const newStation = JSON.parse(options.body);
+  stations.push({
+    position: newStation.position,
+    title: newStation.title,
+    status: newStation.status,
+    count: newStation.count,
+  });
+  return {
+    code: 200,
+    message: "新增成功",
+    success: true,
+  };
+})

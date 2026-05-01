@@ -1,9 +1,14 @@
-import {post} from '@/utils/http'
+import { post } from "@/utils/http";
 
 const Api = {
-  map: '/mapList'
-} as const
+  map: "/mapList",
+  addMap: "/addMapStation",
+} as const;
 
 export const getMapApi = () => {
-  return post(Api.map)
-}
+  return post(Api.map);
+};
+
+export const addMapApi = (data: any) => {
+  return post(Api.addMap, data);
+};
