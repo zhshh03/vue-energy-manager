@@ -78,7 +78,12 @@
       </el-table-column>
       <el-table-column label="操作">
         <template #default="scope">
-          <el-button type="primary" size="small">详情</el-button>
+          <el-button
+            type="primary"
+            size="small"
+            @click="handleDetail(scope.row.orderNo)"
+            >详情</el-button
+          >
           <el-button type="danger" size="small">删除</el-button>
         </template>
       </el-table-column>
@@ -102,6 +107,8 @@ import { ref, computed } from "vue";
 import { useHttp } from "@/hooks/useHttp";
 import { batchDelete } from "@/api/operation";
 import { ElMessage } from "element-plus";
+import { useRouter } from "vue-router";
+import { useTabsStore } from "@/store/tabs";
 
 const date = ref([]);
 
@@ -172,6 +179,14 @@ const handleDelete = async () => {
     ElMessage.success("删除成功");
     loadData();
   }
+};
+
+const router = useRouter();
+const tabsStore = useTabsStore();
+const handleDetail = (orderNo: string) => {
+  tabsStore.addTab("订单详情", "/operation/detail", "Share");
+  tabsStore.setCurrentTab("订单详情", "/operation/detail");
+  router.push("/operation/detail?orderNo=" + orderNo);
 };
 
 const {
