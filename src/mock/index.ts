@@ -8903,7 +8903,6 @@ mock.mock("https://www.demo.com/addMapStation", "post", (options: any) => {
 mock.mock("https://www.demo.com/orderList", "post", (options: any) => {
   const { page, pageSize, orderNo, no, status, startTime, endTime, name } =
     JSON.parse(options.body);
-  console.log(JSON.parse(options.body));
   return {
     code: 200,
     success: true,
@@ -8924,5 +8923,14 @@ mock.mock("https://www.demo.com/orderList", "post", (options: any) => {
       ],
       total: 54,
     }),
+  };
+});
+//订单管理删除接口
+mock.mock("https://www.demo.com/deleteOrder", "post", (options: any) => {
+  const { orderNo } = JSON.parse(options.body);
+  return {
+    code: 200,
+    message: "删除成功",
+    success: true,
   };
 });
