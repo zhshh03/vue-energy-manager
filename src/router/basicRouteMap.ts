@@ -46,6 +46,9 @@ const routes: RouteRecordRaw[] = [
             path: "order",
             name: "OperationOrder",
             component: () => import("@/views/Operation/order.vue"),
+            meta: {
+              keepAlive: true,
+            },
           },
           {
             path: "detail",

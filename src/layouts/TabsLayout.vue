@@ -23,7 +23,20 @@
       </template>
     </el-tab-pane>
   </el-tabs>
-  <router-view></router-view>
+  <router-view v-slot="{ Component }">
+    <keep-alive>
+      <component
+        :is="Component"
+        :key="$route.name"
+        v-if="$route.meta.keepAlive"
+      ></component>
+    </keep-alive>
+    <component
+      :is="Component"
+      :key="$route.name"
+      v-if="!$route.meta.keepAlive"
+    ></component>
+  </router-view>
 </template>
 
 <script lang="ts" setup>

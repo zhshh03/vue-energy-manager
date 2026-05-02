@@ -103,11 +103,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useHttp } from "@/hooks/useHttp";
 import { batchDelete } from "@/api/operation";
 import { ElMessage } from "element-plus";
-import { useRouter } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
 import { useTabsStore } from "@/store/tabs";
 
 const date = ref([]);
@@ -182,6 +182,7 @@ const handleDelete = async () => {
 };
 
 const router = useRouter();
+const route = useRoute();
 const tabsStore = useTabsStore();
 const handleDetail = (orderNo: string) => {
   tabsStore.addTab("订单详情", "/operation/detail", "Share");
@@ -199,4 +200,15 @@ const {
   handleCurrentChange,
   resetPagination,
 } = useHttp<Order>("/orderList", searchParams);
+
+watch(
+  () => route.name,
+  (to, form) => {
+    console.log(to, form);
+
+    if (to === "OperationOrder" && form !== "OperationDetail") {
+      loadData();
+    }
+  },
+);
 </script>
