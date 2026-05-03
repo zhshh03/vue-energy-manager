@@ -209,9 +209,9 @@ const addTimeSlot = () => {
 
 const loading = ref(false);
 const submit = () => {
-  loading.value = true;
   ruleFormRef.value?.validate((valid: boolean) => {
     if (valid) {
+      loading.value = true;
       setTimeout(() => {
         ElMessage.success("创建成功");
         ruleForm.value = {
