@@ -48,7 +48,11 @@
     <el-button type="danger" @click="handleDelete" :disabled="disabled"
       >批量删除</el-button
     >
-    <el-button type="primary" icon="Download" :disabled="disabled"
+    <el-button
+      @click="exportToExcel"
+      type="primary"
+      icon="Download"
+      :disabled="disabled"
       >导出订单数据到Excel</el-button
     >
   </el-card>
@@ -109,6 +113,8 @@ import { batchDelete } from "@/api/operation";
 import { ElMessage } from "element-plus";
 import { useRouter, useRoute } from "vue-router";
 import { useTabsStore } from "@/store/tabs";
+import * as XLSX from "xlsx";
+import { saveAs } from "file-saver";
 
 const date = ref([]);
 
@@ -188,6 +194,15 @@ const handleDetail = (orderNo: string) => {
   tabsStore.addTab("订单详情", "/operation/detail", "Share");
   tabsStore.setCurrentTab("订单详情", "/operation/detail");
   router.push("/operation/detail?orderNo=" + orderNo);
+};
+
+const exportToExcel = () => {
+  const ws = XLSX.utils.json_to_sheet(selectionList.value);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "订单数据");
+  const wbout = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+  const blob = new Blob([wbout], { type: "application/octet-stream" });
+  saveAs(blob, "订单数据.xlsx");
 };
 
 const {
