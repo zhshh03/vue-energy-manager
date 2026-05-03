@@ -8934,3 +8934,199 @@ mock.mock("https://www.demo.com/deleteOrder", "post", (options: any) => {
     success: true,
   };
 });
+//计费管理接口
+const cityList = [
+  {
+    label: "北京总部",
+    children: [
+      {
+        label: "东城区",
+        children: [
+          { label: "东城区充电站01" },
+          { label: "东城区充电站02" },
+          { label: "东城区充电站03" },
+          { label: "东城区充电站04" },
+        ],
+      },
+      {
+        label: "西城区",
+        children: [
+          { label: "西城区充电站01" },
+          { label: "西城区充电站02" },
+          { label: "西城区充电站03" },
+        ],
+      },
+      {
+        label: "朝阳区",
+        children: [
+          { label: "朝阳区充电站01" },
+          { label: "朝阳区充电站02" },
+          { label: "朝阳区充电站03" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "上海分部",
+    children: [
+      {
+        label: "浦东新区",
+        children: [
+          { label: "浦东新区充电站01" },
+          { label: "浦东新区充电站02" },
+          { label: "浦东新区充电站03" },
+        ],
+      },
+      {
+        label: "黄浦区",
+        children: [{ label: "黄浦区充电站01" }, { label: "黄浦区充电站02" }],
+      },
+      {
+        label: "徐汇区",
+        children: [
+          { label: "徐汇区充电站01" },
+          { label: "徐汇区充电站02" },
+          { label: "徐汇区充电站03" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "广州分部",
+    children: [
+      {
+        label: "天河区",
+        children: [
+          { label: "天河区充电站01" },
+          { label: "天河区充电站02" },
+          { label: "天河区充电站03" },
+        ],
+      },
+      {
+        label: "越秀区",
+        children: [{ label: "越秀区充电站01" }, { label: "越秀区充电站02" }],
+      },
+      {
+        label: "白云区",
+        children: [
+          { label: "白云区充电站01" },
+          { label: "白云区充电站02" },
+          { label: "白云区充电站03" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "深圳分部",
+    children: [
+      {
+        label: "南山区",
+        children: [
+          { label: "南山区充电站01" },
+          { label: "南山区充电站02" },
+          { label: "南山区充电站03" },
+        ],
+      },
+      {
+        label: "福田区",
+        children: [{ label: "福田区充电站01" }, { label: "福田区充电站02" }],
+      },
+      {
+        label: "宝安区",
+        children: [
+          { label: "宝安区充电站01" },
+          { label: "宝安区充电站02" },
+          { label: "宝安区充电站03" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "成都分部",
+    children: [
+      {
+        label: "锦江区",
+        children: [
+          { label: "锦江区充电站01" },
+          { label: "锦江区充电站02" },
+          { label: "锦江区充电站03" },
+        ],
+      },
+      {
+        label: "武侯区",
+        children: [{ label: "武侯区充电站01" }, { label: "武侯区充电站02" }],
+      },
+      {
+        label: "高新区",
+        children: [
+          { label: "高新区充电站01" },
+          { label: "高新区充电站02" },
+          { label: "高新区充电站03" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "武汉分部",
+    children: [
+      {
+        label: "武昌区",
+        children: [
+          { label: "武昌区充电站01" },
+          { label: "武昌区充电站02" },
+          { label: "武昌区充电站03" },
+        ],
+      },
+      {
+        label: "洪山区",
+        children: [
+          { label: "洪山区充电站01" },
+          { label: "洪山区充电站02" },
+        ],
+      },
+      {
+        label: "江汉区",
+        children: [
+          { label: "江汉区充电站01" },
+          { label: "江汉区充电站02" },
+          { label: "江汉区充电站03" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "杭州分部",
+    children: [
+      {
+        label: "西湖区",
+        children: [
+          { label: "西湖区充电站01" },
+          { label: "西湖区充电站02" },
+          { label: "西湖区充电站03" },
+        ],
+      },
+      {
+        label: "余杭区",
+        children: [
+          { label: "余杭区充电站01" },
+          { label: "余杭区充电站02" },
+        ],
+      },
+      {
+        label: "滨江区",
+        children: [
+          { label: "滨江区充电站01" },
+          { label: "滨江区充电站02" },
+          { label: "滨江区充电站03" },
+        ],
+      },
+    ],
+  },
+];
+mock.mock("https://www.demo.com/cityList", "get", () => {
+  return {
+    code: 200,
+    success: true,
+    data: cityList,
+  };
+});
