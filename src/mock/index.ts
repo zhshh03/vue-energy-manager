@@ -1,4 +1,3 @@
-import { time } from "echarts";
 import mock from "mockjs";
 
 mock.setup({
@@ -8902,7 +8901,7 @@ mock.mock("https://www.demo.com/addMapStation", "post", (options: any) => {
 });
 //订单管理接口
 mock.mock("https://www.demo.com/orderList", "post", (options: any) => {
-  const { page, pageSize, orderNo, no, status, startTime, endTime, name } =
+  const { pageSize} =
     JSON.parse(options.body);
   return {
     code: 200,
@@ -8928,7 +8927,10 @@ mock.mock("https://www.demo.com/orderList", "post", (options: any) => {
 });
 //订单管理删除接口
 mock.mock("https://www.demo.com/deleteOrder", "post", (options: any) => {
-  const { orderNo } = JSON.parse(options.body);
+
+  const { order } = JSON.parse(options.body);
+  console.log(order);
+  
   return {
     code: 200,
     message: "删除成功",
@@ -9241,5 +9243,39 @@ mock.mock("https://www.demo.com/alarmList", "get", () => {
     code: 200,
     success: true,
     data: alarmList,
+  };
+});
+//会员卡管理接口数据
+mock.mock("https://www.demo.com/memberCardList", "post", (options: any) => {
+  const {pageSize} = JSON.parse(options.body);
+  return {
+    code: 200,
+    success: true,
+    data: mock.mock({
+      [`list|${pageSize}`]: [
+        {
+          "memberCardNumber": "@id",
+          "cardType|1": ["普通卡", "VIP卡", "季卡"],
+          "issueDate": "@date('yyyy-MM-dd')",
+          "holderName": "@cname",
+          "holderPhone": /^1[3456789]\d{9}$/,
+          "cardBalance": "@float(0, 10000, 2, 2)",
+          "transactionHistory|1-5": [
+            {
+              "transactionDate": "@date('yyyy-MM-dd')",
+              "transactionAmount": "@float(0, 500, 2, 2)",
+              "transactionType|1": [
+                "充电扣款",
+                "服务费扣款",
+                "停车费扣款",
+                "其他",
+              ],
+            },
+          ],
+          "vaildUntil": "@date('yyyy-MM-dd')",
+        },
+      ],
+      total: 53,
+    }),
   };
 });
