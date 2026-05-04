@@ -1,3 +1,4 @@
+import { time } from "echarts";
 import mock from "mockjs";
 
 mock.setup({
@@ -9079,10 +9080,7 @@ const cityList = [
       },
       {
         label: "洪山区",
-        children: [
-          { label: "洪山区充电站01" },
-          { label: "洪山区充电站02" },
-        ],
+        children: [{ label: "洪山区充电站01" }, { label: "洪山区充电站02" }],
       },
       {
         label: "江汉区",
@@ -9107,10 +9105,7 @@ const cityList = [
       },
       {
         label: "余杭区",
-        children: [
-          { label: "余杭区充电站01" },
-          { label: "余杭区充电站02" },
-        ],
+        children: [{ label: "余杭区充电站01" }, { label: "余杭区充电站02" }],
       },
       {
         label: "滨江区",
@@ -9128,5 +9123,123 @@ mock.mock("https://www.demo.com/cityList", "get", () => {
     code: 200,
     success: true,
     data: cityList,
+  };
+});
+//报警管理数据接口
+const alarmList = [
+  {
+    description: "充电站拿不下来",
+    address: "北京市东城区",
+    equNo: "VBJ1001",
+    level: 1, //1:严重 2:紧急 3:一般
+    time: "2024-06-01 10:23:45",
+    code: 10023,
+    status: 1,
+  },
+  {
+    description: "充电桩离线告警",
+    address: "上海市浦东新区",
+    equNo: "VSH1002",
+    level: 2, //1:严重 2:紧急 3:一般
+    time: "2024-06-01 11:15:32",
+    code: 10024,
+    status: 3,
+  },
+  {
+    description: "温度过高",
+    address: "广州市天河区",
+    equNo: "VGZ1003",
+    level: 1, //1:严重 2:紧急 3:一般
+    time: "2024-06-01 12:08:17",
+    code: 10025,
+    status: 2,
+  },
+  {
+    description: "电流异常波动",
+    address: "深圳市南山区",
+    equNo: "VSZ1004",
+    level: 3, //1:严重 2:紧急 3:一般
+    time: "2024-06-01 13:42:55",
+    code: 10026,
+    status: 1,
+  },
+  {
+    description: "急停按钮被按下",
+    address: "成都市武侯区",
+    equNo: "VCD1005",
+    level: 2, //1:严重 2:紧急 3:一般
+    time: "2024-06-02 08:30:12",
+    code: 10027,
+    status: 1,
+  },
+  {
+    description: "充电模块故障",
+    address: "杭州市西湖区",
+    equNo: "VHZ1006",
+    level: 1, //1:严重 2:紧急 3:一般
+    time: "2024-06-02 09:17:48",
+    code: 10028,
+    status: 2,
+  },
+  {
+    description: "通信链路中断",
+    address: "武汉市洪山区",
+    equNo: "VWH1007",
+    level: 2, //1:严重 2:紧急 3:一般
+    time: "2024-06-02 14:05:33",
+    code: 10029,
+    status: 1,
+  },
+  {
+    description: "绝缘检测异常",
+    address: "南京市鼓楼区",
+    equNo: "VNJ1008",
+    level: 2, //1:严重 2:紧急 3:一般
+    time: "2024-06-03 09:26:41",
+    code: 10030,
+    status: 1,
+  },
+  {
+    description: "充电枪未归位",
+    address: "西安市雁塔区",
+    equNo: "VXA1009",
+    level: 3, //1:严重 2:紧急 3:一般
+    time: "2024-06-03 10:54:08",
+    code: 10031,
+    status: 3,
+  },
+  {
+    description: "漏电保护触发",
+    address: "苏州市工业园区",
+    equNo: "VSU1010",
+    level: 1, //1:严重 2:紧急 3:一般
+    time: "2024-06-03 13:12:27",
+    code: 10032,
+    status: 2,
+  },
+  {
+    description: "计费模块通信异常",
+    address: "重庆市渝北区",
+    equNo: "VCQ1011",
+    level: 2, //1:严重 2:紧急 3:一般
+    time: "2024-06-03 15:39:56",
+    code: 10033,
+    status: 1,
+  },
+  {
+    description: "BMS握手超时",
+    address: "天津市南开区",
+    equNo: "VTJ1012",
+    level: 1, //1:严重 2:紧急 3:一般
+    time: "2024-06-03 17:08:19",
+    code: 10034,
+    status: 2,
+  },
+];
+mock.mock("https://www.demo.com/alarmList", "get", () => {
+  return {
+    code: 200,
+    success: true,
+    data: alarmList,
   };
 });
