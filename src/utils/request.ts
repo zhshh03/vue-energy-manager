@@ -8,7 +8,7 @@ import type {
 import { ElNotification } from "element-plus";
 
 export const request: AxiosInstance = axios.create({
-  baseURL: "https://www.demo.com",
+  baseURL: import.meta.env.VITE_API_URL,
   timeout: 5000,
 });
 
