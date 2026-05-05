@@ -67,7 +67,7 @@
       }"
     />
     <el-button type="primary" class="mt mb" @click="exportToHtml">导出html文件</el-button>
-    <el-button type="primary" :loading="submitLoading" @click="submit">提交</el-button>
+    <el-button type="primary" :loading="submitLoading" @click="submit" v-permission="'admin'">提交</el-button>
 </template>
 
 <script setup lang="ts">
@@ -165,6 +165,12 @@ const submit = async () => {
 .tox-promotion,
 .tox-promotion-link,
 .tox .tox-promotion {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+.tox-statusbar__help-text {
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;

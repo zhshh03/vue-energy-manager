@@ -20,7 +20,6 @@ export const useUserStore = defineStore("user", {
   actions: {
     async login(data: LoginParams) {
       const res = await loginApi(data);
-      console.log(res);
       this.token = res.data.token;
       this.rolus = res.data.user.roles;
       this.username = res.data.user.username;
