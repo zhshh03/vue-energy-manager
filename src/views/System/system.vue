@@ -64,7 +64,7 @@
       @current-change="handleCurrentChange"
     />
   </el-card>
-  <auth-modal v-model:visible="visible" :checkedKeys="checkedKeys" :loading="authLoading"></auth-modal>
+  <auth-modal v-model:visible="visible" :checkedKeys="checkedKeys" :loading="authLoading" :btnAuth="btnAuth"></auth-modal>
 </template> 
 
 <script setup lang="ts">
@@ -100,6 +100,7 @@ function collectUrls(tree:MenuItem[]) {
   return urls
 }
 const checkedKeys = ref<string[]>([])
+const btnAuth = ref<string[]>([])
 const settingAuth = async(pageAuthority: string) => {
   visible.value = true
   authLoading.value = true
@@ -108,6 +109,7 @@ const settingAuth = async(pageAuthority: string) => {
   try {
     const {data} = await getSystemListApi(pageAuthority)
     checkedKeys.value = collectUrls(data.list)
+    btnAuth.value = data.btn
   } finally {
     authLoading.value = false
   }
