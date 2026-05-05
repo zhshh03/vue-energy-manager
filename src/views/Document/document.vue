@@ -1,5 +1,5 @@
 <template>
-  <el-card>
+  <el-card class="mb">
     <div class="mt">
       <span class="title">文档类型：</span>
       <el-tag @click="handleTagClick(-1,0,'全部')" :type="currentIndex[0] === -1 ? 'primary' : 'info'">全部</el-tag>
@@ -55,12 +55,26 @@
       </el-tag>
     </div>
   </el-card>
-
+  <Editor
+    v-model="editorContent"
+    id="<uid>"
+    apiKey="setjn0fktlffj9vhof8klk6toldh4ntm2hrznq4a2jtha91t"
+      :init="{
+        language_url: '/langs/zh_CN.js',
+        language: 'zh_CN',
+        plugins: 'lists link image table code help wordcount',
+        branding: false,
+      }"
+    />
+    <el-button type="primary" class="mt mb" @click="exportToHtml">导出html文件</el-button>
+    <el-button type="primary" :loading="submitLoading" @click="submit">提交</el-button>
 </template>
 
 <script setup lang="ts">
 import { getDocumentList } from "@/api/document";
 import { ref,onMounted } from "vue";
+import { ElMessage } from "element-plus";
+import Editor from '@tinymce/tinymce-vue'
 
 interface Document {
   type:string[],
@@ -92,13 +106,47 @@ const handleTagClick = (index: number,num:number,name:string) => {
   } else {
     selectedList.value[ind] = {name,num}
   }
-  
 };
+
+const editorContent = ref('')
 onMounted(() => {
   getDocumentList().then((res) => {
     documentList.value = res.data;
   });
 });
+
+const exportToHtml = () => {
+  const bolb = new Blob([editorContent.value],{type: 'text/html'})
+  const link = document.createElement('a')
+  link.href = URL.createObjectURL(bolb)
+  link.download = 'document.html'
+  link.click()
+  URL.revokeObjectURL(link.href)
+}
+
+const submitLoading = ref(false)
+
+const submit = async () => {
+  submitLoading.value = true
+
+  const selectedTagArray = selectedList.value.map((item) => item.name);
+  const params = {
+    content: editorContent.value,
+    type: selectedTagArray[0],
+    important: selectedTagArray[1],
+    publish: selectedTagArray[2],
+  }
+  console.log(params);
+  
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+
+  currentIndex.value = [-1, -1, -1]
+  selectedList.value = []
+  editorContent.value = ""
+
+  submitLoading.value = false
+  ElMessage.success("提交成功")
+}
 
 </script>
 
@@ -110,5 +158,16 @@ onMounted(() => {
 }
 .el-tag{
   cursor: pointer;
+}
+</style>
+
+<style>
+.tox-promotion,
+.tox-promotion-link,
+.tox .tox-promotion {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 </style>
