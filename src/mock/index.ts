@@ -9291,7 +9291,7 @@ mock.mock("https://www.demo.com/investmentList", "get", () => {
     }
   }
 });
-//系统设置表格数据
+//系统设置账号数据
 mock.Random.extend({
   account:function(){
     const chars = 'abcdefghijkmnopqrstuvwxyzABCDEFGHIJKMNOPQRSTUVWXYZ0123456789'
@@ -9303,7 +9303,7 @@ mock.Random.extend({
     return result;
   }
 })
-//权限设置页面
+//系统设置表格数据
 mock.mock('https://www.demo.com/roleList','post',(req:any) => {
   const {pageSize} = JSON.parse(req.body)
   return {
@@ -9324,5 +9324,61 @@ mock.mock('https://www.demo.com/roleList','post',(req:any) => {
       ],
       total:41
     })
+  }
+})
+//权限页面
+const userMenulist = [
+  {
+      name:'数据看板',
+      url:'/dashboard',
+      icon:'DataLine'
+  },
+  {
+    name:'充电桩管理',
+    url:'/chargingstation',
+    icon:'Linghtning',
+    children:[
+      {   
+        name:'充电站监控',    
+        url:'/chargingstation/monitor',
+        icon:'VideoCamera' 
+      },
+      {
+        name:'充电桩管理',
+        url:'/chargingstation/fault',
+        icon:'Warning'
+      }       
+    ] 
+  },
+  {
+    name:'电子地图',
+    url:'/map',
+    icon:'MapLocation'
+  },
+  {
+    name:'报警管理',
+    url:'/alarm',
+    icon:'Phone'
+  },
+  {
+    name:'会员卡管理',
+    url:'/equipment',
+    icon:'Magnet'
+  },
+  {
+    name:'个人中心',
+    url:'/personal',
+    icon:'User'
+  }
+]
+mock.mock('https://www.demo.com/userAuth','post',(req:any) => {
+  const {pageAuthority} = JSON.parse(req.body)
+  return {
+    code:200,
+    success:true,
+    data:{
+      list:pageAuthority == 'user' ? userMenulist : (pageAuthority == 'manager' ? menulist2 : menulist),
+      btn:pageAuthority == 'user' ? ['add'] :(pageAuthority=='manager' ? ['add','edit']:['add','delete','edit','all'])
+    } 
   }
 })

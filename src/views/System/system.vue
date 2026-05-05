@@ -45,9 +45,11 @@
         </template>
       </el-table-column>
       <el-table-column label="操作" width="280">
-        <el-button type="primary" size="small">权限设置</el-button>
-        <el-button type="danger" size="small">删除</el-button>
-        <el-button type="text" size="small">禁用</el-button>
+        <template #default="{row}">
+          <el-button type="primary" size="small" @click="settingAuth(row.pageAuthority)">权限设置</el-button>
+          <el-button type="danger" size="small">删除</el-button>
+          <el-button type="warning" size="small">禁用</el-button>
+        </template>
       </el-table-column>
     </el-table>
     <el-pagination
@@ -62,11 +64,15 @@
       @current-change="handleCurrentChange"
     />
   </el-card>
+  <auth-modal v-model:visible="visible" :checkedKeys="checkedKeys" :loading="authLoading"></auth-modal>
 </template> 
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useHttp } from '@/hooks/useHttp'
+import AuthModal from './AuthModal.vue'
+import { getSystemListApi } from '@/api/system'
+import type { MenuItem } from '@/types/user'
 
 interface SearchParams {
   name: string,
@@ -77,7 +83,35 @@ const searchParams = ref<SearchParams>({
   name: '',
   department: '',
 })
+const visible = ref<boolean>(false)
+const authLoading = ref<boolean>(false)
 
+function collectUrls(tree:MenuItem[]) {
+  const urls:string[] = []
+  function traverse(node:MenuItem) {
+    if(node.url && !node.children) {
+      urls.push(node.url)
+    }
+    if(node.children) {
+      node.children.forEach((chid:MenuItem) => traverse(chid))
+    }
+  }
+  tree.forEach((node:MenuItem) => traverse(node))
+  return urls
+}
+const checkedKeys = ref<string[]>([])
+const settingAuth = async(pageAuthority: string) => {
+  visible.value = true
+  authLoading.value = true
+  checkedKeys.value = []
+
+  try {
+    const {data} = await getSystemListApi(pageAuthority)
+    checkedKeys.value = collectUrls(data.list)
+  } finally {
+    authLoading.value = false
+  }
+}
 
 const { dataList,
     loading,
@@ -86,5 +120,6 @@ const { dataList,
     loadData,
     handleSizeChange,
     handleCurrentChange,
-    resetPagination, } = useHttp('/roleList',searchParams)
+    resetPagination, 
+    } = useHttp('/roleList',searchParams)
 </script>
