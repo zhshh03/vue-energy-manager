@@ -9291,3 +9291,38 @@ mock.mock("https://www.demo.com/investmentList", "get", () => {
     }
   }
 });
+//系统设置表格数据
+mock.Random.extend({
+  account:function(){
+    const chars = 'abcdefghijkmnopqrstuvwxyzABCDEFGHIJKMNOPQRSTUVWXYZ0123456789'
+    const length = mock.mock('@natural(6,10)');
+    let result = '';
+    for(let i = 0; i < length; i++){
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+  }
+})
+//权限设置页面
+mock.mock('https://www.demo.com/roleList','post',(req:any) => {
+  const {pageSize} = JSON.parse(req.body)
+  return {
+    code:200,
+    success:true,
+    data:mock.mock({
+      [`list|${pageSize}`]:[
+        {
+          "name": "@cname",
+          "account": "@account",
+          "phone": /^1[3456789]\d{9}$/,
+          "idNo": "@id",
+          "position|1": ["客服专员", "客服经理", "市场专员","市场经理","运营专员","运营经理", "技术工程师","技术经理","Boss"],
+          "department|1": ["总裁办", "技术部", "市场部","维修部","运营部","客服部"],
+          "pageAuthority|1":["amin","manger","user","自定义权限"],
+          "btnAuthority|1":["add","delete","edit","all","自定义权限"],
+        }
+      ],
+      total:41
+    })
+  }
+})
