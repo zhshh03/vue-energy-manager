@@ -22,7 +22,7 @@
         >
         </el-tree>
       </el-card>
-      <el-card class="mt">
+      <el-card class="mt mb">
         <template #header>
           <div class="card-header">
             <span>按钮权限</span>
@@ -35,6 +35,10 @@
           <el-checkbox label="删除" value="delete"></el-checkbox>
         </el-checkbox-group>
       </el-card>
+      <div class="dialog-footer" style="text-align: right;">
+        <el-button type="primary" :loading="confirmLoading" @click="handleConfirm">确认</el-button>
+        <el-button @click="handleDialogVisibleChange(false)">取消</el-button>
+      </div>
     </el-skeleton>
   </el-dialog>
 </template>
@@ -43,16 +47,20 @@
 import { useUserStore } from '@/store/auth';
 import { nextTick, ref, watch } from 'vue';
 import { transformMenu } from '@/utils/transformMenu';
+import { setAuthApi } from '@/api/system';
+import { ElMessage } from 'element-plus';
 
 const props =  defineProps<{
   visible: boolean,
   checkedKeys: string[],
   loading: boolean,
   btnAuth: string[],
+  accountNo: string,
 }>()
 
 const emit = defineEmits<{
   (e: 'update:visible', value: boolean): void
+  (e: 'reload'): void
 }>()
 
 const userStore = useUserStore()
@@ -60,6 +68,7 @@ const menuList = transformMenu(userStore.menu)
 const treeData = ref(menuList)
 const treeRef = ref<any>(null)
 const initBtnAuth = ref<string[]>([])
+const confirmLoading = ref(false)
 
 const handleDialogVisibleChange = (value: boolean) => {
   emit('update:visible', value)
@@ -74,6 +83,21 @@ const syncCheckedKeys = async () => {
 
 const handleOpen = async () => {
   await syncCheckedKeys()
+}
+
+const handleConfirm = async() => {
+  confirmLoading.value = true
+  try {
+    const res = await setAuthApi(props.accountNo, treeRef.value.getCheckedKeys(true), initBtnAuth.value)
+    if(res.code === 200) {
+      ElMessage.success('设置成功')
+      handleDialogVisibleChange(false)
+    }
+  } finally {
+    confirmLoading.value = false
+    // 通知父组件重新加载数据
+    emit('reload')
+  }
 }
 
 watch(

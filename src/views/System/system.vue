@@ -17,7 +17,7 @@
       </el-col>
       <el-col :span="6">
         <el-button type="primary" @click="loadData">查询</el-button>
-        <el-button @click="resetPagination">重置</el-button>
+        <el-button @click="handleReset">重置</el-button>
       </el-col>
     </el-row>
   </el-card>
@@ -46,9 +46,15 @@
       </el-table-column>
       <el-table-column label="操作" width="280">
         <template #default="{row}">
-          <el-button type="primary" size="small" @click="settingAuth(row.pageAuthority)">权限设置</el-button>
-          <el-button type="danger" size="small">删除</el-button>
-          <el-button type="warning" size="small">禁用</el-button>
+          <el-button type="primary" size="small" @click="settingAuth(row.pageAuthority,row.account)">权限设置</el-button>
+          <el-button type="danger" size="small" @click="handleDelete">删除</el-button>
+          <el-button
+            :type="disabledAccountSet.has(row.account) ? 'success' : 'warning'"
+            size="small"
+            @click="handleDisable(row.account)"
+          >
+            {{ disabledAccountSet.has(row.account) ? '启用' : '禁用' }}
+          </el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -64,11 +70,12 @@
       @current-change="handleCurrentChange"
     />
   </el-card>
-  <auth-modal v-model:visible="visible" :checkedKeys="checkedKeys" :loading="authLoading" :btnAuth="btnAuth"></auth-modal>
+  <auth-modal v-model:visible="visible" :checkedKeys="checkedKeys" :loading="authLoading" :btnAuth="btnAuth" :accountNo="accountNo" @reload="loadData"></auth-modal>
 </template> 
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { ElMessage, ElMessageBox } from 'element-plus'
 import { useHttp } from '@/hooks/useHttp'
 import AuthModal from './AuthModal.vue'
 import { getSystemListApi } from '@/api/system'
@@ -85,6 +92,8 @@ const searchParams = ref<SearchParams>({
 })
 const visible = ref<boolean>(false)
 const authLoading = ref<boolean>(false)
+const accountNo = ref<string>('')
+const disabledAccountSet = ref<Set<string>>(new Set())
 
 function collectUrls(tree:MenuItem[]) {
   const urls:string[] = []
@@ -101,8 +110,9 @@ function collectUrls(tree:MenuItem[]) {
 }
 const checkedKeys = ref<string[]>([])
 const btnAuth = ref<string[]>([])
-const settingAuth = async(pageAuthority: string) => {
+const settingAuth = async(pageAuthority: string,account: string) => {
   visible.value = true
+  accountNo.value = account
   authLoading.value = true
   checkedKeys.value = []
 
@@ -113,6 +123,38 @@ const settingAuth = async(pageAuthority: string) => {
   } finally {
     authLoading.value = false
   }
+}
+
+const handleReset = () => {
+  searchParams.value = {
+    name: '',
+    department: '',
+  }
+  resetPagination()
+}
+
+const handleDelete = async () => {
+  try {
+    await ElMessageBox.confirm('确定删除该用户吗？', '提示', {
+      confirmButtonText: '确定',
+      cancelButtonText: '取消',
+      type: 'warning',
+    })
+    ElMessage.success('删除成功')
+    loadData()
+  } catch {
+    // 用户取消删除
+  }
+}
+
+const handleDisable = (account: string) => {
+  if (disabledAccountSet.value.has(account)) {
+    disabledAccountSet.value.delete(account)
+    ElMessage.success('已启用')
+    return
+  }
+  disabledAccountSet.value.add(account)
+  ElMessage.success('已禁用')
 }
 
 const { dataList,

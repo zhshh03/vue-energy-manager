@@ -9382,3 +9382,16 @@ mock.mock('https://www.demo.com/userAuth','post',(req:any) => {
     } 
   }
 })
+//修改权限提交接口
+mock.mock('https://www.demo.com/updateAuth','post',(req:any) => {
+  const { btnList,pageList,account } = JSON.parse(req.body)
+  return {
+    code:200,
+    success:true,
+    data:{
+      btnList,
+      pageList,
+      account
+    }
+  }
+})
