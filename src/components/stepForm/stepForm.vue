@@ -16,7 +16,7 @@
     <div class="mt" v-if="currentStep == 2">
       <slot name="step-3"></slot>
     </div>
-    <div class="step-button">
+    <div class="step-button mt">
       <el-button v-if="currentStep > 0" @click="currentStep--"
         >上一步</el-button
       >
@@ -43,7 +43,7 @@ const nextStep = () => {
       if (currentStep.value < props.steps.length - 1) {
         currentStep.value++;
       } else {
-        emit("submit");
+        emit("submit"); 
       }
     }
   });
