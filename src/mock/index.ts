@@ -9377,8 +9377,8 @@ mock.mock('https://www.demo.com/userAuth','post',(req:any) => {
     code:200,
     success:true,
     data:{
-      list:pageAuthority == 'user' ? userMenulist : (pageAuthority == 'manager' ? menulist2 : menulist),
-      btn:pageAuthority == 'user' ? ['add'] :(pageAuthority=='manager' || pageAuthority=='自定义权限' ? ['add','edit']:['add','delete','edit','all'])
+      list:pageAuthority == 'user' ? userMenulist : (pageAuthority == 'manger' ? menulist2 : menulist),
+      btn:pageAuthority == 'user' ? ['add'] : (pageAuthority=='manger' ? ['add','edit'] : ['add','delete','edit','all'])
     } 
   }
 })

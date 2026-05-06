@@ -55,10 +55,12 @@
       </el-tag>
     </div>
   </el-card>
-  <Editor
-    v-model="editorContent"
-    id="<uid>"
-    apiKey="setjn0fktlffj9vhof8klk6toldh4ntm2hrznq4a2jtha91t"
+  <div v-loading="editorLoading" element-loading-text="编辑器加载中..." class="editor-loading-wrap">
+    <Editor
+      v-model="editorContent"
+      id="<uid>"
+      apiKey="setjn0fktlffj9vhof8klk6toldh4ntm2hrznq4a2jtha91t"
+      @init="handleEditorInit"
       :init="{
         language_url: '/langs/zh_CN.js',
         language: 'zh_CN',
@@ -66,6 +68,7 @@
         branding: false,
       }"
     />
+  </div>
     <el-button type="primary" class="mt mb" @click="exportToHtml">导出html文件</el-button>
     <el-button type="primary" :loading="submitLoading" @click="submit" v-permission="'admin'">提交</el-button>
 </template>
@@ -125,6 +128,11 @@ const exportToHtml = () => {
 }
 
 const submitLoading = ref(false)
+const editorLoading = ref(true)
+
+const handleEditorInit = () => {
+  editorLoading.value = false
+}
 
 const submit = async () => {
   submitLoading.value = true
@@ -158,6 +166,9 @@ const submit = async () => {
 }
 .el-tag{
   cursor: pointer;
+}
+.editor-loading-wrap {
+  min-height: 380px;
 }
 </style>
 
