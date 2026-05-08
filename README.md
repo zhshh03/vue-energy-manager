@@ -30,11 +30,11 @@
 
 6.招商管理
 
-![77825164795](./src/assets/ProjectImage/image5.png)
+![77825164795](./src/assets/ProjectImage/image8.png)
 
 7.系统设置（权限设置）
 
-![77825173184](./src/assets/ProjectImage/image8.png)
+![77825173184](./src/assets/ProjectImage/image5.png)
 
 8.个人中心
 
