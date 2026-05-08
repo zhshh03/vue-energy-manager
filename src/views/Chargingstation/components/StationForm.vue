@@ -170,7 +170,7 @@ defineExpose({
 }
 
 :deep(.el-form-item__label) {
-  color: #25364d !important;
+  color: #ffffff !important;
   font-weight: 700;
 }
 
