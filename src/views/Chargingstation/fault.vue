@@ -330,20 +330,56 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped lang="less">
+/* 顶部筛选区样式统一 */
+:deep(.el-select__wrapper),
+:deep(.el-input__wrapper) {
+  background: rgba(11, 21, 38, 0.82) !important;
+  box-shadow: 0 0 0 1px rgba(125, 194, 255, 0.28) inset !important;
+  border-radius: 10px;
+}
+
+:deep(.el-select__placeholder),
+:deep(.el-input__inner) {
+  color: #cfe0fb !important;
+}
+
+:deep(.el-radio-group) {
+  gap: 8px;
+}
+
+:deep(.el-radio-button__inner) {
+  color: #d7e7ff !important;
+  background: rgba(16, 28, 48, 0.88) !important;
+  border-color: rgba(125, 194, 255, 0.3) !important;
+  box-shadow: none !important;
+}
+
+:deep(.el-radio-button__inner:hover) {
+  color: #ffffff !important;
+  background: rgba(74, 144, 226, 0.2) !important;
+}
+
+:deep(.el-radio-button__original-radio:checked + .el-radio-button__inner) {
+  color: #fff !important;
+  background: linear-gradient(90deg, rgba(74, 144, 226, 0.95), rgba(74, 144, 226, 0.62)) !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.35) !important;
+}
+
 .el-col {
   margin-bottom: 20px;
 }
 
 .station-card {
-  border: 1px solid #e4e7ed;
-  border-radius: 10px;
+  border: 1px solid rgba(125, 194, 255, 0.24);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(2, 8, 20, 0.28);
   transition: box-shadow 0.3s;
-  background: #fff;
+  background: rgba(16, 28, 48, 0.78);
 
   &:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 26px rgba(2, 8, 20, 0.4);
   }
 
   .item {
@@ -377,62 +413,62 @@ onBeforeUnmount(() => {
 
     // 空闲中 - 绿色
     .status-1 {
-      background: linear-gradient(135deg, #f0f9eb 0%, #e1f3d8 100%);
+      background: linear-gradient(135deg, rgba(103, 194, 58, 0.16) 0%, rgba(103, 194, 58, 0.08) 100%);
 
       p:first-child,
       .iconfont,
       p:last-child {
-        color: #67c23a;
+        color: #8ce86a;
       }
     }
 
     // 充电中 - 蓝色
     .status-2 {
-      background: linear-gradient(135deg, #ecf5ff 0%, #d9ecff 100%);
+      background: linear-gradient(135deg, rgba(64, 158, 255, 0.18) 0%, rgba(64, 158, 255, 0.1) 100%);
 
       p:first-child,
       .iconfont {
-        color: #409eff;
+        color: #7dc2ff;
       }
     }
 
     // 连接中 - 橙色
     .status-3 {
-      background: linear-gradient(135deg, #fdf6ec 0%, #faecd8 100%);
+      background: linear-gradient(135deg, rgba(230, 162, 60, 0.18) 0%, rgba(230, 162, 60, 0.1) 100%);
 
       p:first-child,
       .iconfont {
-        color: #e6a23c;
+        color: #ffcc7a;
       }
     }
 
     // 排队中 - 紫色
     .status-4 {
-      background: linear-gradient(135deg, #f3e8ff 0%, #e6d5f8 100%);
+      background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(155, 89, 182, 0.1) 100%);
 
       p:first-child,
       .iconfont {
-        color: #9b59b6;
+        color: #d09bf0;
       }
     }
 
     // 已预约 - 青色
     .status-5 {
-      background: linear-gradient(135deg, #e8f8f5 0%, #d1f2eb 100%);
+      background: linear-gradient(135deg, rgba(26, 188, 156, 0.2) 0%, rgba(26, 188, 156, 0.1) 100%);
 
       p:first-child,
       .iconfont {
-        color: #1abc9c;
+        color: #58e0c5;
       }
     }
 
     // 故障/离线 - 红色
     .status-6 {
-      background: linear-gradient(135deg, #fef0f0 0%, #fde2e2 100%);
+      background: linear-gradient(135deg, rgba(245, 108, 108, 0.2) 0%, rgba(245, 108, 108, 0.1) 100%);
 
       p:first-child,
       .iconfont {
-        color: #f56c6c;
+        color: #ff9b9b;
       }
     }
 
@@ -442,16 +478,16 @@ onBeforeUnmount(() => {
 
       h3 {
         font-size: 15px;
-        color: #303133;
+        color: #eaf2ff;
         font-weight: 600;
         margin: 0 0 10px 0;
         padding-bottom: 8px;
-        border-bottom: 1px solid #ebeef5;
+        border-bottom: 1px solid rgba(125, 194, 255, 0.22);
       }
 
       p {
         font-size: 13px;
-        color: #606266;
+        color: #c7d8f4;
         line-height: 2;
         margin: 0;
       }
@@ -462,7 +498,7 @@ onBeforeUnmount(() => {
     padding: 0 18px 12px;
 
     .divder {
-      border-top: 1px solid #ebeef5;
+      border-top: 1px solid rgba(125, 194, 255, 0.22);
       margin-bottom: 8px;
     }
 
@@ -473,7 +509,7 @@ onBeforeUnmount(() => {
 
       .warn-text {
         font-size: 12px;
-        color: #999;
+        color: #a9c0e3;
       }
     }
   }
@@ -520,8 +556,8 @@ onBeforeUnmount(() => {
 
 .station-tag {
   font-size: 11px;
-  color: #909399;
-  padding: 4px 10px 0;
+  color: #a9c0e3;
+  padding: 6px 10px 0;
   text-align: right;
 }
 

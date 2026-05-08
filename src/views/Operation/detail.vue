@@ -1,6 +1,6 @@
 <template>
-  <el-card>
-    <el-descriptions :title="`订单编号：${$route.query.orderNo}`">
+  <el-card class="order-detail-card">
+    <el-descriptions class="order-detail" :column="3" border :title="`订单编号：${$route.query.orderNo}`">
       <el-descriptions-item label="订单编号">{{
         $route.query.orderNo
       }}</el-descriptions-item>
@@ -38,3 +38,48 @@
 </template>
 
 <script setup lang="ts"></script>
+
+<style scoped lang="less">
+.order-detail-card {
+  :deep(.el-card__body) {
+    padding: 18px 18px 10px;
+  }
+}
+
+.order-detail {
+  :deep(.el-descriptions__title) {
+    color: #eef5ff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+  }
+
+  :deep(.el-descriptions__label.el-descriptions__cell.is-bordered-label) {
+    width: 170px;
+    color: #eaf2ff;
+    font-weight: 700;
+    background: #1f3556;
+    border-color: #355b8e;
+  }
+
+  :deep(.el-descriptions__content.el-descriptions__cell.is-bordered-content) {
+    color: #f5f9ff;
+    font-weight: 500;
+    background: #182c49;
+    border-color: #2f527f;
+  }
+
+  :deep(.el-descriptions__table) {
+    border-color: #355b8e;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  :deep(.el-tag) {
+    border-color: rgba(125, 194, 255, 0.4);
+    background: rgba(74, 144, 226, 0.18);
+    color: #eaf2ff;
+  }
+}
+</style>

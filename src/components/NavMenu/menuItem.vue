@@ -55,20 +55,20 @@ export default defineComponent({
 
 <style lang="less" scoped>
 .el-menu-item.is-active {
-  background-color: rgb(34, 136, 255) !important;
+  background: linear-gradient(90deg, rgba(74, 144, 226, 0.92), rgba(74, 144, 226, 0.58)) !important;
   color: #fff !important;
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.35);
+
   div {
     span {
       color: #fff;
     }
   }
 }
-.el-menu-item:not(.is-active):hover {
-  background-color: transparent !important;
-  color: rgb(34, 136, 255) !important;
-}
-::v-deep .el-sub-menu:not(.is-active) .el-sub-menu__title:hover {
-  background-color: transparent !important;
-  color: rgb(34, 136, 255) !important;
+
+:deep(.el-sub-menu .el-menu-item) {
+  background: rgba(8, 17, 32, 0.28);
 }
 </style>
+
+

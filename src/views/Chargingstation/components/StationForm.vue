@@ -130,3 +130,136 @@ defineExpose({
   openDialog,
 });
 </script>
+
+<style scoped lang="less">
+:deep(.el-dialog) {
+  border-radius: 14px;
+  border: 1px solid #dbe7f7;
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(15, 33, 61, 0.18);
+  overflow: hidden;
+}
+
+:deep(.el-dialog__header) {
+  margin-right: 0;
+  padding: 16px 20px 14px;
+  border-bottom: 1px solid #e8eef7;
+  background: linear-gradient(180deg, #f8fbff 0%, #f2f7ff 100%);
+}
+
+:deep(.el-dialog__title) {
+  color: #1f2d3d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+:deep(.el-dialog__headerbtn .el-dialog__close) {
+  color: #5f6b7a;
+}
+
+:deep(.el-dialog__headerbtn:hover .el-dialog__close) {
+  color: #2f78d9;
+}
+
+:deep(.el-dialog__body) {
+  padding: 20px 20px 8px;
+}
+
+:deep(.el-form-item) {
+  margin-bottom: 18px;
+}
+
+:deep(.el-form-item__label) {
+  color: #25364d !important;
+  font-weight: 700;
+}
+
+/* 输入框：浅色内凹（下陷感） */
+:deep(.el-input__wrapper),
+:deep(.el-select__wrapper) {
+  background: linear-gradient(180deg, #eef3fb 0%, #e8eef8 100%) !important;
+  border-radius: 10px;
+  box-shadow:
+    inset 0 2px 5px rgba(129, 149, 179, 0.28),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.95),
+    0 0 0 1px #d2ddec !important;
+  color: #1b2a3d !important;
+}
+
+
+:deep(.el-input__wrapper.is-focus),
+:deep(.el-select__wrapper.is-focused) {
+  box-shadow:
+    inset 0 2px 5px rgba(129, 149, 179, 0.24),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.98),
+    0 0 0 1px #6ea8f1 !important;
+}
+
+:deep(.el-input.is-disabled .el-input__wrapper),
+:deep(.el-select.is-disabled .el-select__wrapper) {
+  background: linear-gradient(180deg, #f4f7fc 0%, #edf2f9 100%) !important;
+  box-shadow:
+    inset 0 1px 3px rgba(129, 149, 179, 0.16),
+    0 0 0 1px #dee6f2 !important;
+}
+
+:deep(.el-input__inner),
+:deep(.el-select__selected-item),
+:deep(.el-textarea__inner) {
+  color: #1b2a3d !important;
+  -webkit-text-fill-color: #1b2a3d !important;
+  font-weight: 500;
+  caret-color: #2f78d9 !important;
+}
+
+:deep(.el-input),
+:deep(.el-textarea),
+:deep(.el-select) {
+  --el-input-text-color: #1b2a3d;
+  --el-text-color-regular: #1b2a3d;
+}
+
+:deep(.el-input__inner::selection),
+:deep(.el-textarea__inner::selection) {
+  background: rgba(47, 120, 217, 0.22);
+  color: #10243b;
+}
+
+
+:deep(.el-input__inner::placeholder),
+:deep(.el-textarea__inner::placeholder),
+:deep(.el-select__placeholder) {
+  color: #7f8ea3 !important;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 8px 4px 6px;
+}
+
+:deep(.el-dialog__footer) {
+  padding: 12px 20px 16px;
+  border-top: 1px solid #e8eef7;
+  background: #f8fbff;
+}
+
+.dialog-footer :deep(.el-button:not(.el-button--primary)) {
+  color: #2d4058;
+  background: #ffffff;
+  border-color: #cdd9ea;
+}
+
+.dialog-footer :deep(.el-button:not(.el-button--primary):hover) {
+  color: #1f5fb8;
+  border-color: #8fb6ec;
+  background: #f3f8ff;
+}
+
+:deep(.el-form-item__error) {
+  color: #d83c3c;
+}
+</style>
+
+

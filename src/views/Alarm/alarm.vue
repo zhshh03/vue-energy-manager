@@ -49,7 +49,14 @@
     <span>已加载全部告警</span>
   </div>
 
-  <el-drawer v-model="drawer" title="报警任务指派">
+  <el-drawer
+    v-model="drawer"
+    title="报警任务指派"
+    header-class="alarm-assign-drawer__header"
+    body-class="alarm-assign-drawer__body"
+    footer-class="alarm-assign-drawer__footer"
+    modal-class="alarm-assign-drawer__modal"
+  >
     <div v-loading="loading" style="min-height: 200px">
       <stepForm
         :steps="steps"
@@ -157,10 +164,10 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 import { Loading } from "@element-plus/icons-vue";
+import { ElMessage, type FormInstance } from "element-plus";
 import { getAlarmListApi } from "@/api/alarm";
 import { getLabel } from "@/views/Alarm/fileLabelMap";
 import stepForm from "@/components/stepForm/stepForm.vue";
-import { ElMessage, type FormInstance } from "element-plus";
 
 interface AlarmItem {
   description: string;
@@ -205,9 +212,11 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const loadMore = async () => {
   if (!hasMore.value || loadingMore.value) return;
+
   loadingMore.value = true;
   await sleep(550);
   await nextTick();
+
   visibleCount.value = Math.min(
     visibleCount.value + PAGE_SIZE,
     alarmList.value.length,
@@ -217,6 +226,7 @@ const loadMore = async () => {
 
 const initObserver = () => {
   if (!loadMoreTrigger.value) return;
+
   observer = new IntersectionObserver(
     (entries) => {
       const [entry] = entries;
@@ -230,19 +240,23 @@ const initObserver = () => {
       threshold: 0,
     },
   );
+
   observer.observe(loadMoreTrigger.value);
 };
 
 const drawer = ref<boolean>(false);
+const loading = ref<boolean>(false);
+
 const form1 = ref<FormInstance>();
 const form2 = ref<FormInstance>();
 const form3 = ref<FormInstance>();
-const loading = ref<boolean>(false);
+
 const steps = [
   { title: "基本信息" },
   { title: "审批信息" },
   { title: "负责人信息" },
 ];
+
 const formData = ref({
   basicInfo: {
     name: "",
@@ -279,6 +293,7 @@ const basicRules = {
   ],
   jobNo: [{ required: true, message: "请输入工号", trigger: "blur" }],
 };
+
 const approvalRules = {
   approvalRemarks: [
     { required: true, message: "请选择审批部门", trigger: "change" },
@@ -287,6 +302,7 @@ const approvalRules = {
     { required: true, message: "请选择抄送部门", trigger: "change" },
   ],
 };
+
 const assigneeRules = {
   assignee: [{ required: true, message: "请输入指派人", trigger: "blur" }],
   assigneePhone: [
@@ -307,6 +323,7 @@ const handleSumbit = () => {
     ElMessage.success("指派成功");
   }, 1000);
 };
+
 onMounted(async () => {
   const { data } = await getAlarmListApi();
   alarmList.value = data as AlarmItem[];
@@ -324,14 +341,66 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style scoped>
+<style scoped lang="less">
+:deep(.el-radio-group) {
+  gap: 8px;
+}
+
+:deep(.el-radio-button__inner) {
+  color: #d7e7ff !important;
+  background: rgba(16, 28, 48, 0.88) !important;
+  border-color: rgba(125, 194, 255, 0.3) !important;
+  box-shadow: none !important;
+}
+
+:deep(.el-radio-button__inner:hover) {
+  color: #ffffff !important;
+  background: rgba(74, 144, 226, 0.2) !important;
+}
+
+:deep(.el-radio-button__original-radio:checked + .el-radio-button__inner) {
+  color: #fff !important;
+  background: linear-gradient(90deg, rgba(74, 144, 226, 0.95), rgba(74, 144, 226, 0.62)) !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.35) !important;
+}
+
+:deep(.el-alert) {
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: rgba(245, 158, 11, 0.12) !important;
+  border-radius: 10px;
+}
+
+:deep(.el-alert__title) {
+  color: #ffe9c2 !important;
+  font-weight: 600;
+}
+
+:deep(.el-descriptions__label.el-descriptions__cell.is-bordered-label) {
+  color: #eaf2ff;
+  font-weight: 700;
+  background: #1f3556;
+  border-color: #355b8e;
+}
+
+:deep(.el-descriptions__content.el-descriptions__cell.is-bordered-content) {
+  color: #f5f9ff;
+  font-weight: 500;
+  background: #182c49;
+  border-color: #2f527f;
+}
+
+:deep(.el-descriptions__table) {
+  border-color: #355b8e;
+}
+
 .load-more-trigger {
   height: 1px;
 }
 
 .loading-status {
   margin-top: 12px;
-  color: var(--el-text-color-secondary);
+  color: #c7d8f4;
   font-size: 13px;
   display: flex;
   align-items: center;
@@ -340,6 +409,36 @@ onBeforeUnmount(() => {
 }
 
 .loading-status.done {
-  color: var(--el-text-color-placeholder);
+  color: #9fb2d1;
+}
+</style>
+
+<style>
+/* Drawer 是 Teleport 到 body，使用官方 class 钩子最稳 */
+.alarm-assign-drawer__header {
+  margin-bottom: 0 !important;
+  padding-bottom: 14px !important;
+  background: #193255 !important;
+  border-bottom: 1px solid #355b8e !important;
+}
+
+.alarm-assign-drawer__header .el-drawer__title {
+  color: #eaf2ff !important;
+  font-weight: 700;
+}
+
+.alarm-assign-drawer__body {
+  background: #142741 !important;
+  color: #eef5ff !important;
+}
+
+.alarm-assign-drawer__footer {
+  background: #193255 !important;
+  border-top: 1px solid #355b8e !important;
+}
+
+/* 可选：遮罩颜色微调 */
+.alarm-assign-drawer__modal {
+  background: rgba(4, 10, 18, 0.55) !important;
 }
 </style>

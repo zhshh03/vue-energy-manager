@@ -84,9 +84,37 @@ const remove = (name: string) => {
 
 <style lang="less" scoped>
 .demo-tabs {
-  ::v-deep .is-active {
-    background-color: rgb(21, 126, 255);
+  margin-bottom: 12px;
+
+  :deep(.el-tabs__header) {
+    margin-bottom: 12px;
+  }
+
+  :deep(.el-tabs__nav-wrap::after) {
+    background-color: rgba(96, 165, 250, 0.25);
+  }
+
+  :deep(.el-tabs__item) {
+    color: #b8cae7;
+    border: 1px solid rgba(96, 165, 250, 0.2) !important;
+    background: rgba(14, 24, 42, 0.55);
+    transition: all 0.25s;
+  }
+
+  :deep(.el-tabs__item:hover) {
+    color: #e7eefb;
+  }
+
+  :deep(.el-tabs__item.is-active) {
+    background: linear-gradient(90deg, rgba(74, 144, 226, 0.9), rgba(74, 144, 226, 0.55));
     color: #fff;
+    border-color: transparent !important;
+  }
+
+  :deep(.el-tabs__new-tab),
+  :deep(.el-tabs__item .is-icon-close) {
+    color: #c6d7f4;
   }
 }
 </style>
+

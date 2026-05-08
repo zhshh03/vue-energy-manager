@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+    <div class="header">
     <div class="personal">
       <el-badge is-dot>
         <el-icon>
@@ -7,8 +7,8 @@
         </el-icon>
       </el-badge>
       <el-avatar
-        src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"
-      />
+              :src="logo"
+            />
 
       <el-dropdown @command="handleCommand">
         <span class="el-dropdown-link">
@@ -35,6 +35,8 @@
 <script lang="ts" setup>
 import { useUserStore } from "@/store/auth";
 import { useRouter } from "vue-router";
+import logo from "@/assets/images/logo.png";
+
 
 const router = useRouter();
 const userStore = useUserStore();
@@ -57,8 +59,10 @@ const handleCommand = (command: string) => {
   align-items: center;
   padding: 0 20px;
   height: 60px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: #152844;
+  border: 1px solid rgba(125, 194, 255, 0.28);
+  box-shadow: 0 12px 28px rgba(2, 8, 20, 0.35);
 
   .personal {
     display: flex;
@@ -69,30 +73,37 @@ const handleCommand = (command: string) => {
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
       cursor: pointer;
-      font-size: 20px;
-      color: #606266;
-      transition: color 0.3s;
+      font-size: 18px;
+      color: #b4c8ea;
+      background: rgba(74, 144, 226, 0.14);
+      transition: all 0.25s;
 
       &:hover {
-        color: #409eff;
+        color: #fff;
+        background: rgba(74, 144, 226, 0.3);
       }
     }
 
     .el-avatar {
       cursor: pointer;
+      border: 2px solid rgba(96, 165, 250, 0.45);
+      box-shadow: 0 4px 14px rgba(74, 144, 226, 0.35);
     }
 
     .el-dropdown-link {
       display: flex;
       align-items: center;
       cursor: pointer;
-      color: #303133;
+      color: #dce8fb;
       font-size: 14px;
       outline: none;
 
       &:hover {
-        color: #409eff;
+        color: #7dc2ff;
       }
 
       &:focus {

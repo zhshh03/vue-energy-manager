@@ -259,3 +259,54 @@ watch(filterText, (newValue) => {
   treeRef.value!.filter(newValue);
 });
 </script>
+
+<style scoped lang="less">
+/* 左侧树形菜单卡片区域 */
+:deep(.el-tree) {
+  background: transparent !important;
+  color: #eaf2ff;
+}
+
+:deep(.el-tree-node__content) {
+  height: 36px;
+  border-radius: 8px;
+  color: #f3f8ff;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+:deep(.el-tree-node__content:hover) {
+  background: rgba(74, 144, 226, 0.16) !important;
+  color: #ffffff;
+}
+
+:deep(.el-tree-node:focus > .el-tree-node__content),
+:deep(.el-tree-node.is-current > .el-tree-node__content) {
+  background: linear-gradient(90deg, rgba(74, 144, 226, 0.92), rgba(74, 144, 226, 0.58)) !important;
+  color: #ffffff !important;
+}
+
+:deep(.el-tree-node__expand-icon) {
+  color: #dbe9ff;
+}
+
+:deep(.el-tree-node__expand-icon.expanded) {
+  color: #ffffff;
+}
+
+:deep(.el-tree-node__label) {
+  font-size: 14px;
+  color: #f3f8ff;
+}
+
+/* 搜索框和分割视觉统一 */
+:deep(.el-input__wrapper) {
+  background: rgba(11, 21, 38, 0.9) !important;
+  box-shadow: 0 0 0 1px rgba(125, 194, 255, 0.35) inset !important;
+}
+
+:deep(.el-input__inner),
+:deep(.el-input__inner::placeholder) {
+  color: #eaf2ff !important;
+}
+</style>

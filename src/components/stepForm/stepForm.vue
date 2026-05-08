@@ -1,5 +1,5 @@
 <template>
-  <div class="max-width: 600px">
+  <div class="step-form-wrap">
     <el-steps :active="currentStep" finish-status="success" align-center>
       <el-step
         v-for="(step, index) in steps"
@@ -49,3 +49,62 @@ const nextStep = () => {
   });
 };
 </script>
+
+<style scoped lang="less">
+.step-form-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+:deep(.el-steps) {
+  padding: 8px 6px 4px;
+  border-radius: 12px;
+  background: #1a3152;
+  border: 1px solid #355b8e;
+}
+
+:deep(.el-step__title) {
+  color: #cfe0fb !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+:deep(.el-step__title.is-process),
+:deep(.el-step__title.is-success) {
+  color: #f3f8ff !important;
+}
+
+:deep(.el-step__head.is-process .el-step__icon) {
+  border-color: #7dc2ff;
+  background: #2d5a91;
+  color: #ffffff;
+}
+
+:deep(.el-step__head.is-success .el-step__icon) {
+  border-color: #4fd38a;
+  background: #2b7c56;
+  color: #ffffff;
+}
+
+:deep(.el-step__line) {
+  background-color: #3c648f !important;
+}
+
+.mt {
+  margin-top: 16px;
+}
+
+.step-form-wrap > .mt {
+  padding: 16px 14px 8px;
+  border-radius: 12px;
+  background: #182d4a;
+  border: 1px solid #2f527f;
+}
+
+.step-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+</style>
+

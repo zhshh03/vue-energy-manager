@@ -30,8 +30,9 @@
           <el-popover
           placement="top-start"
           title="消费记录"
-          :width="200"
+          :width="220"
           trigger="hover"
+          popper-class="consume-record-popover"
           :content="row.transactionHistory"
           >
         <template #reference>
@@ -103,5 +104,36 @@ const {
 }
 .compact-timeline :deep(.el-timeline-item__wrapper) {
   padding-left: 18px !important;
+}
+</style>
+
+<style>
+.consume-record-popover {
+  background: #182d4a !important;
+  border: 1px solid rgba(125, 194, 255, 0.35) !important;
+  box-shadow: 0 10px 24px rgba(2, 8, 20, 0.35) !important;
+}
+
+.consume-record-popover .el-popover__title {
+  color: #f2f7ff !important;
+  font-weight: 700;
+}
+
+.consume-record-popover p,
+.consume-record-popover span,
+.consume-record-popover div {
+  color: #eaf2ff;
+}
+
+.consume-record-popover .el-timeline-item__timestamp {
+  color: #bcd2f2 !important;
+}
+
+.consume-record-popover .el-timeline-item__content {
+  color: #eef5ff !important;
+}
+
+.consume-record-popover .el-timeline-item__tail {
+  border-left-color: rgba(125, 194, 255, 0.35) !important;
 }
 </style>

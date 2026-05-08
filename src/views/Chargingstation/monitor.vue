@@ -189,3 +189,31 @@ onMounted(() => {
   getList();
 });
 </script>
+
+<style scoped lang="less">
+:deep(.el-statistic) {
+  padding: 4px 0;
+}
+
+/* 顶部统计栏目标题（你说看不清的那一行） */
+:deep(.el-statistic__head) {
+  color: #d7e7ff !important;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+/* 顶部统计数值 */
+:deep(.el-statistic__content) {
+  color: #f3f8ff !important;
+  font-weight: 700;
+}
+
+/* 查询栏控件文字顺带提亮，避免同区域发灰 */
+:deep(.el-input__inner),
+:deep(.el-select__selected-item),
+:deep(.el-input-group__append) {
+  color: #eaf2ff !important;
+}
+</style>

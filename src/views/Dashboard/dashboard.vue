@@ -231,6 +231,10 @@ const getChartData = async () => {
     title: {
       text: "电量统计",
       left: 0,
+      textStyle: {
+        color: "#eaf2ff",
+        fontWeight: 600,
+      },
     },
     tooltip: {
       trigger: "axis",
@@ -238,10 +242,26 @@ const getChartData = async () => {
     legend: {
       top: "5%",
       data: [],
+      textStyle: {
+        color: "#cfe0fb",
+      },
     },
     xAxis: {
       type: "category",
       boundaryGap: false,
+      axisLabel: {
+        color: "#c7d8f4",
+      },
+      axisLine: {
+        lineStyle: {
+          color: "rgba(125, 194, 255, 0.45)",
+        },
+      },
+      splitLine: {
+        lineStyle: {
+          color: "rgba(125, 194, 255, 0.12)",
+        },
+      },
       data: [
         "13:00",
         "14:00",
@@ -258,6 +278,17 @@ const getChartData = async () => {
       type: "value",
       axisLabel: {
         formatter: "{value}kw",
+        color: "#c7d8f4",
+      },
+      axisLine: {
+        lineStyle: {
+          color: "rgba(125, 194, 255, 0.45)",
+        },
+      },
+      splitLine: {
+        lineStyle: {
+          color: "rgba(125, 194, 255, 0.14)",
+        },
       },
     },
     series: [
@@ -318,6 +349,9 @@ const getChartData2 = async () => {
   const chartOptions: any = reactive({
     legend: {
       top: "bottom",
+      textStyle: {
+        color: "#cfe0fb",
+      },
     },
     tooltip: {
       trigger: "item",
@@ -347,7 +381,8 @@ const getChartData2 = async () => {
       style: {
         text: "营收占比",
         fontSize: 20,
-        fill: "#333",
+        fill: "#eaf2ff",
+        fontWeight: 600,
       },
     },
   });
@@ -359,6 +394,24 @@ const getChartData2 = async () => {
 const getChartData3 = async () => {
   const chartOptions: any = reactive({
     radar: {
+      axisName: {
+        color: "#d7e7ff",
+      },
+      axisLine: {
+        lineStyle: {
+          color: "rgba(125, 194, 255, 0.35)",
+        },
+      },
+      splitLine: {
+        lineStyle: {
+          color: "rgba(125, 194, 255, 0.18)",
+        },
+      },
+      splitArea: {
+        areaStyle: {
+          color: ["rgba(74, 144, 226, 0.05)", "rgba(74, 144, 226, 0.1)"],
+        },
+      },
       indicator: [
         { name: "闲置数", max: 65 },
         { name: "使用数", max: 160 },
@@ -444,7 +497,7 @@ const functionList = ref([
       font-size: 18px;
       font-weight: bold;
       margin: 0;
-      color: #1d2129;
+      color: #e7eefb;
     }
 
     .header-right {
@@ -452,7 +505,7 @@ const functionList = ref([
       align-items: center;
 
       p {
-        color: #86909c;
+        color: #9fb2d1;
         font-size: 14px;
         margin: 0;
       }
@@ -471,7 +524,7 @@ const functionList = ref([
     .equipment-item {
       flex: 1;
       padding: 24px 20px;
-      border-right: 1px solid #f0f0f0;
+      border-right: 1px solid rgba(96, 165, 250, 0.18);
       display: flex;
       flex-direction: column;
 
@@ -487,7 +540,7 @@ const functionList = ref([
         margin-bottom: 20px;
 
         h4 {
-          color: #4e5969;
+          color: #bcd0ee;
           font-size: 14px;
           font-weight: normal;
           margin: 0;
@@ -496,7 +549,7 @@ const functionList = ref([
         .icon-box {
           width: 48px;
           height: 48px;
-          border-radius: 8px;
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -514,20 +567,20 @@ const functionList = ref([
         .num {
           font-size: 40px;
           font-weight: bold;
-          color: #1d2129;
+          color: #e7eefb;
           line-height: 1.2;
         }
 
         .split {
           font-size: 28px;
-          color: #c9cdd4;
+          color: #87a3cf;
           margin: 0 6px;
         }
 
         .total {
           font-size: 40px;
           font-weight: bold;
-          color: #86909c;
+          color: #9fb2d1;
           line-height: 1.2;
         }
       }
@@ -537,7 +590,7 @@ const functionList = ref([
         flex-direction: column;
         gap: 10px;
         font-size: 13px;
-        color: #86909c;
+        color: #9fb2d1;
 
         .abnormal,
         .compare {
@@ -555,7 +608,7 @@ const functionList = ref([
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 25px 0;
-    color: #1d2129;
+    color: #e7eefb;
   }
 
   .function-list {
@@ -586,7 +639,7 @@ const functionList = ref([
 
       span {
         font-size: 13px;
-        color: #4e5969;
+        color: #bcd0ee;
       }
     }
   }
@@ -601,11 +654,11 @@ const functionList = ref([
     display: flex;
     align-items: center;
     padding: 8px 10px;
-    border-bottom: 1px solid #f2f3f5;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.16);
 
     &:nth-child(even) {
-      background-color: #f2f3f5;
-      border-radius: 8px;
+      background-color: rgba(74, 144, 226, 0.09);
+      border-radius: 10px;
       margin: 0 -8px;
       padding-left: 18px;
       padding-right: 18px;
@@ -623,7 +676,7 @@ const functionList = ref([
       align-items: center;
       justify-content: center;
       font-size: 14px;
-      color: #4e5969;
+      color: #bcd0ee;
       flex-shrink: 0;
 
       &.top-rank {
@@ -635,14 +688,14 @@ const functionList = ref([
     .store-name {
       margin-left: 10px;
       font-size: 15px;
-      color: #1d2129;
+      color: #e7eefb;
       flex: 1;
     }
 
     .sales {
       font-size: 16px;
       font-weight: 600;
-      color: #86909c;
+      color: #9fb2d1;
       margin-right: 20px;
     }
 
@@ -685,12 +738,12 @@ const functionList = ref([
     .el-timeline-item__timestamp {
       margin-bottom: 4px;
       font-size: 12px;
-      color: #86909c;
+      color: #9fb2d1;
     }
 
     .el-card {
       margin: 0 !important;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(2, 8, 20, 0.28);
 
       :deep(&__body) {
         padding: 6px 12px;
@@ -698,7 +751,7 @@ const functionList = ref([
 
       h4 {
         font-size: 13px;
-        color: #1d2129;
+        color: #e7eefb;
         margin: 0;
         font-weight: normal;
       }

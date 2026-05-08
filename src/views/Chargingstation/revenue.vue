@@ -103,7 +103,7 @@
   <el-card class="mt">
     <el-input
       v-model="name"
-      style="max-width: 400px"
+      style="max-width: 400px; margin-bottom: 20px;"
       placeholder="请输入充电站名称"
     >
       <template #append>
@@ -118,10 +118,12 @@
       <el-table-column label="充电桩总量(个)" prop="count"></el-table-column>
       <el-table-column label="月总收入(万元)">
         <template #default="scope">
-          <span style="margin-right: 10px">{{ scope.row.month }}</span>
-          <el-tag :type="scope.row.mpercnet > 0 ? 'danger' : 'success'">{{
-            scope.row.mpercnet + "%"
-          }}</el-tag>
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
+            <span>{{ scope.row.month }}</span>
+            <el-tag :type="scope.row.mpercnet > 0 ? 'danger' : 'success'">
+              {{ scope.row.mpercnet + "%" }}
+            </el-tag>
+          </div>
         </template>
       </el-table-column>
       <el-table-column
@@ -139,10 +141,12 @@
       <el-table-column label="会员储值金(元)" prop="member"></el-table-column>
       <el-table-column label="单日总收入(元)" prop="day">
         <template #default="scope">
-          <span style="margin-right: 10px">{{ scope.row.day }}</span>
-          <el-tag :type="scope.row.percent > 0 ? 'danger' : 'success'">{{
-            scope.row.percent + "%"
-          }}</el-tag>
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
+            <span>{{ scope.row.day }}</span>
+            <el-tag :type="scope.row.percent > 0 ? 'danger' : 'success'">
+              {{ scope.row.percent + "%" }}
+            </el-tag>
+          </div>
         </template>
       </el-table-column>
     </el-table>
@@ -173,16 +177,36 @@ const getChartData = async () => {
     title: {
       text: "销售统计",
       left: 0,
+      textStyle: {
+        color: "#eaf2ff",
+        fontWeight: 600,
+      },
     },
     tooltip: {
       trigger: "axis",
     },
     legend: {
       data: [],
+      textStyle: {
+        color: "#cfe0fb",
+      },
     },
     xAxis: [
       {
         type: "category",
+        axisLabel: {
+          color: "#c7d8f4",
+        },
+        axisLine: {
+          lineStyle: {
+            color: "rgba(125, 194, 255, 0.45)",
+          },
+        },
+        splitLine: {
+          lineStyle: {
+            color: "rgba(125, 194, 255, 0.12)",
+          },
+        },
         data: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
       },
     ],
@@ -190,11 +214,43 @@ const getChartData = async () => {
       {
         type: "value",
         name: "销售",
+        nameTextStyle: {
+          color: "#cfe0fb",
+        },
+        axisLabel: {
+          color: "#c7d8f4",
+        },
+        axisLine: {
+          lineStyle: {
+            color: "rgba(125, 194, 255, 0.45)",
+          },
+        },
+        splitLine: {
+          lineStyle: {
+            color: "rgba(125, 194, 255, 0.14)",
+          },
+        },
         position: "left",
       },
       {
         type: "value",
         name: "访问量",
+        nameTextStyle: {
+          color: "#cfe0fb",
+        },
+        axisLabel: {
+          color: "#c7d8f4",
+        },
+        axisLine: {
+          lineStyle: {
+            color: "rgba(125, 194, 255, 0.45)",
+          },
+        },
+        splitLine: {
+          lineStyle: {
+            color: "rgba(125, 194, 255, 0.14)",
+          },
+        },
         position: "right",
       },
     ],
@@ -281,38 +337,55 @@ onMounted(() => {
 .title {
   display: flex;
   align-items: center;
+
   .round {
     display: flex;
     margin-right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    background-color: rgb(234, 236, 245);
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.26), rgba(125, 194, 255, 0.2));
+    border: 1px solid rgba(125, 194, 255, 0.42);
     align-items: center;
     justify-content: center;
+    box-shadow: 0 6px 14px rgba(74, 144, 226, 0.25);
+
+    :deep(.el-icon) {
+      color: #eaf2ff;
+      font-size: 16px;
+    }
   }
+
   h4 {
-    color: #666;
+    color: #d7e7ff;
+    font-weight: 600;
+    letter-spacing: 0.2px;
   }
 }
+
 .total {
   display: flex;
   margin-top: 20px;
   align-items: center;
+
   h1 {
     font-size: 30px;
     margin-right: 20px;
+    color: #f3f8ff;
+    font-weight: 700;
   }
+
   .percent {
     display: inline-block;
-    height: 20px;
+    height: 22px;
     margin-top: 5px;
-    padding: 0 5px 5px 5px;
-    color: green;
+    padding: 0 8px;
+    color: #55d187;
     font-size: 12px;
-    background-color: rgb(235, 247, 239);
-    line-height: 25px;
-    border-radius: 2px;
+    background-color: rgba(85, 209, 135, 0.14);
+    line-height: 22px;
+    border: 1px solid rgba(85, 209, 135, 0.36);
+    border-radius: 4px;
   }
 }
 </style>
