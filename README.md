@@ -14,7 +14,7 @@
 
 2.数据看板：
 
-![77825076970](C:\Users\86187\AppData\Local\Temp\1778250769701.png)
+![alt text](image-1.png)
 
 3.充电站监控
 
