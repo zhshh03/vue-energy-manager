@@ -5,7 +5,7 @@
         <div class="logo-icon">
           <span class="logo-text">D</span>
         </div>
-        <h1 class="title">动力港能源管理平台</h1>
+        <h1 class="title">电能源管理平台</h1>
       </div>
       <el-form ref="formRef" :model="formData" :rules="rules" size="large">
         <el-form-item prop="username">

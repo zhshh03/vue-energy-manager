@@ -12,7 +12,7 @@
 
       <el-dropdown @command="handleCommand">
         <span class="el-dropdown-link">
-          欢迎你{{ userName }}
+          您好，{{ userName }}
           <el-icon class="el-icon--right">
             <arrow-down />
           </el-icon>
